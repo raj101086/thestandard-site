@@ -559,3 +559,11 @@
     grid-template-columns: 1fr;
   }
 }
+.intro-quote {
+  padding: 1rem 1.25rem;
+  border-left: 3px solid #3b82f6;
+  background: rgba(59,130,246,0.08);
+  border-radius: 12px;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
