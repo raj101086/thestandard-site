@@ -255,7 +255,7 @@
 
   /* Image styles - HeroUI card style */
   .article-content img {
-    max-width: 100%;
+    max-width: 720px;
     height: auto;
     margin: 2.5em auto;
     display: block;
