@@ -526,4 +526,36 @@
     }
   }
 }
+.post-intro {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 3rem;
+  align-items: start;
+  margin: 3rem 0;
+}
 
+.post-copy {
+  font-size: 1.05rem;
+  line-height: 1.95;
+}
+
+.post-copy blockquote {
+  padding: 1rem 1.25rem;
+  border-left: 3px solid #3b82f6;
+  background: rgba(59,130,246,0.08);
+  border-radius: 12px;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+.post-visual img {
+  width: 100%;
+  border-radius: 18px;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .post-intro {
+    grid-template-columns: 1fr;
+  }
+}
