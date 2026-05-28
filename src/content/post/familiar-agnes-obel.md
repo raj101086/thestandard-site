@@ -7,31 +7,50 @@ img: "/assets/posts/dark.jpg"
 img_alt: "Dark cinematic atmosphere"
 ---
 
-<div class="my-8">
-  ```html
 <div style="
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 2.5rem;
+  grid-template-columns: 1fr 0.85fr;
+  gap: 2rem;
   align-items: start;
-  margin: 3rem 0;
+  margin: 2rem 0 3rem 0;
 ">
 
   <div>
 
-> <em>“Can you pull me out of this alive?”</em>
+    <blockquote style="
+      margin-bottom: 1.5rem;
+      padding: 1rem 1.25rem;
+      border-left: 3px solid #3b82f6;
+      background: rgba(59,130,246,0.08);
+      border-radius: 12px;
+      font-style: italic;
+    ">
+      “Can you pull me out of this alive?”
+    </blockquote>
 
-I first heard <em>Familiar</em> while watching <em>Dark</em> on Netflix.
+    <p>
+      I first heard <em>Familiar</em> while watching <em>Dark</em> on Netflix.
+    </p>
 
-One of those scenes where the music doesn't just support the moment — it becomes the moment.
+    <p>
+      One of those scenes where the music doesn't just support the moment — it becomes the moment.
+    </p>
 
-The track feels cold, distant and intimate at the same time. Almost like a memory you cannot fully place.
+    <p>
+      The track feels cold, distant and intimate at the same time. Almost like a memory you cannot fully place.
+    </p>
 
-Agnes Obel's voice paired with the unsettling harmony creates something strangely hypnotic.
+    <p>
+      Agnes Obel's voice paired with the unsettling harmony creates something strangely hypnotic.
+    </p>
 
-Some songs feel cinematic.
+    <p>
+      Some songs feel cinematic.
+    </p>
 
-This one feels like fog, silence and late-night thoughts.
+    <p>
+      This one feels like fog, silence and late-night thoughts.
+    </p>
 
   </div>
 
@@ -41,14 +60,15 @@ This one feels like fog, silence and late-night thoughts.
       alt="Familiar"
       style="
         width: 100%;
+        max-width: 360px;
         border-radius: 18px;
         display: block;
+        margin: 0 auto;
       "
     />
   </div>
 
 </div>
-```
 
 ## Listen
 
