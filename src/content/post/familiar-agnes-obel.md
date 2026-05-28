@@ -1,13 +1,13 @@
 ---
 
-title: Familiar — Agnes Obel
-description: First heard while watching Dark on Netflix. Haunting, cinematic and strangely hypnotic.
-publishDate: 2026-05-28
+title: "Familiar - Agnes Obel"
+description: "First heard while watching Dark on Netflix. Haunting, cinematic and strangely hypnotic."
+publishDate: "2026-05-28"
 tags:
 
-* music
-* dark
-* agnes-obel
+* "music"
+* "dark"
+* "agnes-obel"
   featured: true
 
 ---
