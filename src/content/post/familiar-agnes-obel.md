@@ -24,6 +24,7 @@ img_alt: "Dark cinematic atmosphere"
       background: rgba(59,130,246,0.08);
       border-radius: 12px;
       font-style: italic;
+      line-height: 1.7;
     ">
       “Can you pull me out of this alive?”
     </blockquote>
@@ -60,7 +61,7 @@ img_alt: "Dark cinematic atmosphere"
       alt="Familiar"
       style="
         width: 100%;
-        max-width: 360px;
+        max-width: 340px;
         border-radius: 18px;
         display: block;
         margin: 0 auto;
