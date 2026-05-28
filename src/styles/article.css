@@ -567,3 +567,7 @@
   font-style: italic;
   margin-bottom: 1.5rem;
 }
+.intro-quote::before,
+.intro-quote::after {
+  content: none !important;
+}
