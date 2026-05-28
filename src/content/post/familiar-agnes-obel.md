@@ -6,45 +6,13 @@ featured: true
 img: "/assets/posts/dark.jpg"
 img_alt: "Dark cinematic atmosphere"
 ---
-<div class="post-intro">
+> *“Can you pull me out of this alive?”*
 
-  <div class="post-text">
+| |
+|---|---|
+| I first heard *Familiar* while watching *Dark* on Netflix. One of those scenes where the music doesn't just support the moment — it becomes the moment. The track feels cold, distant and intimate at the same time. Agnes Obel's voice paired with the unsettling harmony creates something strangely hypnotic. Some songs feel cinematic. This one feels like fog, silence and late-night thoughts. | ![](/assets/posts/dark.jpg) |
 
-    <blockquote>
-      “Can you pull me out of this alive?”
-    </blockquote>
-
-    <p>
-      I first heard <em>Familiar</em> while watching <em>Dark</em> on Netflix.
-    </p>
-
-    <p>
-      One of those scenes where the music doesn't just support the moment — it becomes the moment.
-    </p>
-
-    <p>
-      The track feels cold, distant and intimate at the same time.
-    </p>
-
-    <p>
-      Agnes Obel's voice paired with the unsettling harmony creates something strangely hypnotic.
-    </p>
-
-    <p>
-      Some songs feel cinematic.
-    </p>
-
-    <p>
-      This one feels like fog, silence and late-night thoughts.
-    </p>
-
-  </div>
-
-  <div class="post-image">
-    <img src="/assets/posts/dark.jpg" alt="Familiar" />
-  </div>
-
-</div>
+---
 
 ## Listen
 
