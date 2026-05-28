@@ -80,16 +80,10 @@ const filtered = headings.filter(h => h.depth <= 2);
 			</header>
 
 			<!-- Content area -->
-			<div class="relative flex flex-col lg:flex-row gap-8 lg:gap-12 xl:gap-16">
-				<!-- Left TOC - Fixed on desktop -->
-				<aside class="relative hidden lg:block lg:w-40 xl:w-50 flex-shrink-0">
-					<div class="toc-sticky-wrapper">
-						<Toc headings={filtered} />
-					</div>
-				</aside>
+			<div class="relative flex justify-center">"
 
 				<!-- Article content -->
-				<div class="relative flex-1 min-w-0 w-full lg:max-w-none">
+				<div class="relative w-full max-w-3xl">
 					<article class="article-wrapper">
 						<div class="article-content">
 							<Content />
@@ -100,13 +94,6 @@ const filtered = headings.filter(h => h.depth <= 2);
 		</main>
 	</div>
 </PostLayout>
-
-<style>
-.toc-sticky-wrapper {
-  position: sticky;
-  top: 8rem;
-}
-</style>
 
 <script>
 // Reading progress bar
