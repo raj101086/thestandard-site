@@ -570,8 +570,10 @@
 .intro-quote::before,
 .intro-quote::after {
   content: none !important;
-}
-*::before,
-*::after {
-  content: none !important;
+  }
+  .lyrics-box {
+  padding: 1rem 1.25rem;
+  background: rgba(59,130,246,0.06);
+  border-radius: 12px;
+  margin: 1.5rem 0;
 }
