@@ -571,3 +571,7 @@
 .intro-quote::after {
   content: none !important;
 }
+*::before,
+*::after {
+  content: none !important;
+}
