@@ -7,7 +7,11 @@ img: "/assets/posts/familiar-dark.jpg"
 img_alt: "Dark cinematic atmosphere"
 ---
 
-![Familiar](/assets/posts/familiar-dark.jpg)
+<img
+  src="/assets/posts/familiar-dark.jpg"
+  alt="Familiar"
+  class="w-full rounded-xl mb-6"
+/>
 
 > *“Can you pull me out of this alive?”*
 
@@ -30,7 +34,7 @@ This one feels like fog, silence and late-night thoughts.
 <iframe
   width="100%"
   height="420"
-  src="https://youtu.be/32kYH6XZrIo"
+  src="https://www.youtube.com/embed/32kYH6XZrIo"
   title="Familiar - Agnes Obel"
   frameborder="0"
   allowfullscreen>
