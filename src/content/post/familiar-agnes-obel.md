@@ -3,12 +3,12 @@ title: "Familiar"
 description: "First heard while watching Dark on Netflix."
 publishDate: "2026-05-28"
 featured: true
-img: "/assets/posts/familiar-dark.jpg"
+img: "/assets/posts/dark.jpg"
 img_alt: "Dark cinematic atmosphere"
 ---
 
 <img
-  src="/assets/posts/familiar-dark.jpg"
+  src="/assets/posts/dark.jpg"
   alt="Familiar"
   class="w-full rounded-xl mb-6"
 />
