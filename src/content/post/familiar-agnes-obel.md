@@ -8,16 +8,20 @@ img_alt: "Dark cinematic atmosphere"
 ---
 
 <div class="my-8">
-  <img
-    src="/assets/posts/dark.jpg"
-    alt="Familiar"
-    class="w-full max-w-2xl mx-auto rounded-2xl opacity-95 hover:opacity-100 transition duration-500"
-  />
-</div>
+  ```html
+<div style="
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 2.5rem;
+  align-items: start;
+  margin: 3rem 0;
+">
 
-> *“Can you pull me out of this alive?”*
+  <div>
 
-I first heard *Familiar* while watching *Dark* on Netflix.
+> <em>“Can you pull me out of this alive?”</em>
+
+I first heard <em>Familiar</em> while watching <em>Dark</em> on Netflix.
 
 One of those scenes where the music doesn't just support the moment — it becomes the moment.
 
@@ -29,7 +33,22 @@ Some songs feel cinematic.
 
 This one feels like fog, silence and late-night thoughts.
 
----
+  </div>
+
+  <div>
+    <img
+      src="/assets/posts/dark.jpg"
+      alt="Familiar"
+      style="
+        width: 100%;
+        border-radius: 18px;
+        display: block;
+      "
+    />
+  </div>
+
+</div>
+```
 
 ## Listen
 
