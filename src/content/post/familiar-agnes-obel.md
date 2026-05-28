@@ -7,11 +7,13 @@ img: "/assets/posts/dark.jpg"
 img_alt: "Dark cinematic atmosphere"
 ---
 
-<img
-  src="/assets/posts/dark.jpg"
-  alt="Familiar"
-  class="w-full rounded-xl mb-6"
-/>
+<div class="my-8">
+  <img
+    src="/assets/posts/dark.jpg"
+    alt="Familiar"
+    class="w-full max-w-2xl mx-auto rounded-2xl opacity-95 hover:opacity-100 transition duration-500"
+  />
+</div>
 
 > *“Can you pull me out of this alive?”*
 
