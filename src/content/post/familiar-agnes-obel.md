@@ -6,26 +6,11 @@ featured: true
 img: "/assets/posts/dark.jpg"
 img_alt: "Dark cinematic atmosphere"
 ---
+<div class="post-intro">
 
-<div style="
-  display: grid;
-  grid-template-columns: 1fr 0.85fr;
-  gap: 2rem;
-  align-items: start;
-  margin: 2rem 0 3rem 0;
-">
+  <div class="post-text">
 
-  <div>
-
-    <blockquote style="
-      margin-bottom: 1.5rem;
-      padding: 1rem 1.25rem;
-      border-left: 3px solid #3b82f6;
-      background: rgba(59,130,246,0.08);
-      border-radius: 12px;
-      font-style: italic;
-      line-height: 1.7;
-    ">
+    <blockquote>
       “Can you pull me out of this alive?”
     </blockquote>
 
@@ -38,7 +23,7 @@ img_alt: "Dark cinematic atmosphere"
     </p>
 
     <p>
-      The track feels cold, distant and intimate at the same time. Almost like a memory you cannot fully place.
+      The track feels cold, distant and intimate at the same time.
     </p>
 
     <p>
@@ -55,18 +40,8 @@ img_alt: "Dark cinematic atmosphere"
 
   </div>
 
-  <div>
-    <img
-      src="/assets/posts/dark.jpg"
-      alt="Familiar"
-      style="
-        width: 100%;
-        max-width: 340px;
-        border-radius: 18px;
-        display: block;
-        margin: 0 auto;
-      "
-    />
+  <div class="post-image">
+    <img src="/assets/posts/dark.jpg" alt="Familiar" />
   </div>
 
 </div>
