@@ -4,7 +4,6 @@ title: "Familiar — Agnes Obel"
 description: "First heard while watching Dark on Netflix. Haunting, cinematic and strangely hypnotic."
 pubDate: "2026-05-28"
 category: "Music"
-heroImage: "/assets/posts/familiar.jpg"
 ---
 
 I first heard *Familiar* while watching *Dark* on Netflix.
