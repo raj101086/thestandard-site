@@ -308,23 +308,41 @@ const formattedDate = (date: Date) =>
   const listAll = document.getElementById('list-all');
   const catSections = document.querySelectorAll<HTMLElement>('.category-section');
 
+  function activateFilter(filter: string) {
+    tabs.forEach(t => t.classList.remove('active'));
+    const matchingTab = Array.from(tabs).find(t => t.dataset.filter === filter);
+    matchingTab?.classList.add('active');
+
+    if (filter === 'all') {
+      listAll?.classList.remove('hidden');
+      catSections.forEach(s => s.classList.add('hidden'));
+    } else {
+      listAll?.classList.add('hidden');
+      catSections.forEach(s => s.classList.add('hidden'));
+      const id = `cat-${filter.replace(/[^a-z0-9]/gi, '-').toLowerCase()}`;
+      document.getElementById(id)?.classList.remove('hidden');
+    }
+  }
+
+  // Check URL query param on load
+  const params = new URLSearchParams(window.location.search);
+  const categoryParam = params.get('category');
+  if (categoryParam) {
+    activateFilter(categoryParam);
+  }
+
   tabs.forEach(tab => {
     tab.addEventListener('click', () => {
-      // Update active tab
-      tabs.forEach(t => t.classList.remove('active'));
-      tab.classList.add('active');
-
-      const filter = tab.dataset.filter;
-
+      const filter = tab.dataset.filter || 'all';
+      activateFilter(filter);
+      // Update URL without reload
+      const url = new URL(window.location.href);
       if (filter === 'all') {
-        listAll?.classList.remove('hidden');
-        catSections.forEach(s => s.classList.add('hidden'));
+        url.searchParams.delete('category');
       } else {
-        listAll?.classList.add('hidden');
-        catSections.forEach(s => s.classList.add('hidden'));
-        const id = `cat-${filter!.replace(/[^a-z0-9]/gi, '-').toLowerCase()}`;
-        document.getElementById(id)?.classList.remove('hidden');
+        url.searchParams.set('category', filter);
       }
+      window.history.replaceState({}, '', url.toString());
     });
   });
 </script>
