@@ -1,5 +1,5 @@
 [
   { "name": "Home", "url": "/" },
-  { "name": "Archive", "url": "/blog" },
+  { "name": "Archive", "url": "/archive" },
   { "name": "About", "url": "/about" }
 ]
