@@ -2,102 +2,184 @@
 @import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
-
 @import "tailwindcss";
 
 /* Path relative to current CSS file */
 @config "../../tailwind.config.mjs";
 
 
-/* Define theme font mappings */
+/* ─── THEME TOKENS ────────────────────────────────────────────────────────── */
 @theme {
-  --font-brand: "Instrument Serif", ui-sans-serif, system-ui, Noto Sans SC, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-sans: "Inter", ui-sans-serif, system-ui, Noto Sans SC, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-body: "Inter", ui-sans-serif, system-ui, Noto Sans SC, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --max-screen: 1200px;
+  --font-brand: "Instrument Serif", Georgia, "Times New Roman", serif;
+  --font-sans:  "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-body:  "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --max-screen:   1280px;
   --inner-screen: 800px;
 
-  --color-neutral-50: #f7f9fc;
-  --color-neutral-100: #edf1f8;
-  --color-neutral-200: #dfe4ed;
-  --color-neutral-300: #c5cedb;
-  --color-neutral-400: #92a1b7;
-  --color-neutral-500: #677487;
-  --color-neutral-600: #4f5a6d;
-  --color-neutral-700: #3f4a5a;
-  --color-neutral-800: #2c3542;
-  --color-neutral-900: #19222f;
-  --color-neutral-950: #10161f;
+  /* ── Neutral scale (kept for any components that reference it) */
+  --color-neutral-50:  #f7f6f2;
+  --color-neutral-100: #edeae3;
+  --color-neutral-200: #d4d0c8;
+  --color-neutral-300: #b0aca2;
+  --color-neutral-400: #888480;
+  --color-neutral-500: #66635e;
+  --color-neutral-600: #4e4b47;
+  --color-neutral-700: #3a3835;
+  --color-neutral-800: #2a2825;
+  --color-neutral-900: #1c1c1a;
+  --color-neutral-950: #141412;
 
-  --color-primary: #2d6dc3;
-  --color-primary-rgb: 45, 109, 195;
-  --color-primary-strong: #0066ff;
-  --color-primary-dark: #2d6dc3;
-  --color-primary-light: #8fb9ff;
-  --color-primary-light-dark: #bcd8ff;
-  --color-primary-lighter: #6da7ff;
-  /* Article-specific variables */
-  --color-primary-bg: var(--color-bg-primary-light);
-  --color-primary-bg-light: var(--color-bg-secondary);
+  /* ── Gold accent — the only "primary" colour */
+  --color-primary:            #B8986A;
+  --color-primary-rgb:        184, 152, 106;
+  --color-primary-strong:     #D4B078;
+  --color-primary-dark:       #B8986A;
+  --color-primary-light:      #D4B078;
+  --color-primary-light-dark: #D4B078;
+  --color-primary-lighter:    #E8D0A0;
 
+  /* Article-specific — point to correct bg vars */
+  --color-primary-bg:       rgba(184, 152, 106, 0.08);
+  --color-primary-bg-light: rgba(184, 152, 106, 0.04);
 
-  --color-btn-primary: #2d6dc3;
-  --color-btn-primary-hover: #0066ff;
-  --color-btn-primary-dark: #2871e9;
-  --color-btn-primary-dark-hover: #2d6dc3;
+  /* ── Buttons */
+  --color-btn-primary:           #B8986A;
+  --color-btn-primary-hover:     #D4B078;
+  --color-btn-primary-dark:      #B8986A;
+  --color-btn-primary-dark-hover:#D4B078;
 
-  /* Accent colors */
-  --color-accent: #fad13b;
-  --color-accent-light: #faeb75;
+  /* ── Accent */
+  --color-accent:       #B8986A;
+  --color-accent-light: #D4B078;
 
-  /* Background colors */
+  /* ── Backgrounds
+       The site is always dark — light/dark mode both use charcoal.
+       (The dark-mode toggle in the nav will still work but both states
+        look dark, which is intentional.) */
+  --color-bg-primary:       #1C1C1A;
+  --color-bg-secondary:     #191917;
+  --color-bg-primary-light: #222220;
+  --color-bg-primary-deep:  #1C1C1A;
 
-  --color-bg-primary: #fdfaf5;
-  --color-bg-secondary: #fff;
-  --color-bg-primary-light: #faf9f5;
-  --color-bg-primary-deep: #fefcf4;
+  --color-bg-primary-dark:   #1C1C1A;
+  --color-bg-secondary-dark: #141412;
 
-  --color-bg-primary-dark: #0b1220;
-  --color-bg-secondary-dark: #0f1b2d;
+  /* ── Text */
+  --color-text-primary:   #E8E2D6;   /* cream — headings */
+  --color-text-secondary: #A09890;   /* muted — body copy */
+  --color-text-tertiary:  #666360;   /* very muted — meta / labels */
 
+  --color-text-primary-dark:   #E8E2D6;
+  --color-text-secondary-dark: #A09890;
+  --color-text-tertiary-dark:  #666360;
 
-  /* Text colors */
-  --color-text-primary: #2d6dc3;
-  --color-text-secondary: #3f4a5a;
-  --color-text-tertiary: #7a6550;
-
-  --color-text-primary-dark: #3884eb;
-  --color-text-secondary-dark: #c5cedb;
-  --color-text-tertiary-dark: #9bb3d7;
+  /* ── Gold shorthand (used in index.astro scoped styles) */
+  --color-gold:     #B8986A;
+  --color-gold-dim: #7A5F3A;
+  --color-border:   #2A2A28;
 }
 
-/* Dark mode variable overrides */
+
+/* ─── DARK MODE OVERRIDES (same values — always dark) ────────────────────── */
 html.dark {
-  --color-primary-rgb: 56, 132, 235;
-  --color-primary-light-dark: #3884eb;
-  --color-primary-lighter: #8fb9ff;
-  --color-primary-bg: rgba(56, 132, 235, 0.15);
-  --color-primary-bg-light: rgba(56, 132, 235, 0.05);
+  --color-primary-rgb:        184, 152, 106;
+  --color-primary-light-dark: #D4B078;
+  --color-primary-lighter:    #E8D0A0;
+  --color-primary-bg:         rgba(184, 152, 106, 0.10);
+  --color-primary-bg-light:   rgba(184, 152, 106, 0.05);
 }
 
-/* Add typography styles */
+
+/* ─── BASE ────────────────────────────────────────────────────────────────── */
+html {
+  font-family: var(--font-sans);
+  scroll-behavior: smooth;
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-secondary);
+}
+html.dark {
+  color-scheme: dark;
+}
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-secondary);
+}
+
+/* Headings — cream, not blue */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-text-primary);
+}
+html.dark h1,
+html.dark h2,
+html.dark h3,
+html.dark h4,
+html.dark h5,
+html.dark h6 {
+  color: var(--color-text-primary-dark);
+}
+
+/* Links */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  color: var(--color-gold);
+}
+
+
+/* ─── COMPONENTS ──────────────────────────────────────────────────────────── */
 @layer components {
-  .font-brand{
-    font-weight: 400!important;
+
+  .font-brand {
+    font-weight: 400 !important;
   }
+
+  /* Typography plugin */
   .prose {
     max-width: 65ch;
+    color: var(--color-text-secondary);
   }
   .prose img {
-    border-radius: 30px;
+    border-radius: 12px;
   }
-  .container{
-    max-width: var(--max-screen);
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
+  /* Override prose's blue links */
+  .prose a {
+    color: var(--color-gold);
   }
+  .prose a:hover {
+    color: var(--color-primary-strong);
+  }
+  /* Override prose headings */
+  .prose h1,
+  .prose h2,
+  .prose h3,
+  .prose h4 {
+    color: var(--color-text-primary);
+  }
+  /* Prose hr / blockquote border */
+  .prose hr {
+    border-color: var(--color-border);
+  }
+  .prose blockquote {
+    border-left-color: var(--color-gold);
+    color: var(--color-text-tertiary);
+  }
+  .prose code {
+    background: var(--color-bg-secondary);
+    color: var(--color-gold);
+    border-radius: 4px;
+    padding: 1px 5px;
+  }
+  .prose pre {
+    background: var(--color-bg-secondary-dark);
+    border: 0.5px solid var(--color-border);
+    border-radius: 8px;
+  }
+
+  /* Layout containers */
+  .container,
   .site-container {
     max-width: var(--max-screen);
     margin-left: auto;
@@ -112,138 +194,69 @@ html.dark {
     padding-left: 1rem;
     padding-right: 1rem;
   }
-  .gradient-title {
-    background: linear-gradient(to right, #746aff, #0b046d);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
- .gradient-title-light{
-    background: linear-gradient(to right, #bcb7ff, #746aff);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+
+  /* Remove gradient titles — replace with gold */
+  .gradient-title,
+  .gradient-title-light {
+    background: none;
+    -webkit-background-clip: unset;
+    background-clip: unset;
+    color: var(--color-gold);
   }
 }
-html,body{
-  color: var(--color-text-secondary);
-}
-html.dark,html.dark body{
-  color: var(--color-text-secondary-dark);
-}
-h1,h2,h3{
-  color:var(--color-text-primary);
-}
-html.dark h1,html.dark h2,html.dark h3{
-  color:var(--color-text-primary-dark);
-}
 
-/* Custom CSS styles */
-#sun {
-  transform: rotate(0);
-}
 
-#moon {
-  transform: rotate(0);
-}
+/* ─── DARK MODE TOGGLE ANIMATIONS ────────────────────────────────────────── */
+#sun  { transform: rotate(0); }
+#moon { transform: rotate(0); }
 
-#darkToggle:hover #sun {
-  transform: rotate(360deg);
-}
-
-#darkToggle:hover #moon {
-   transform: rotate(45deg);
-}
-
+#darkToggle:hover #sun  { transform: rotate(360deg); }
+#darkToggle:hover #moon { transform: rotate(45deg); }
 
 html.dark #darkToggle:hover .horizon {
-  border-color: #718096 !important;
+  border-color: #555 !important;
 }
 
-html{
-  font-family: var(--font-sans);
-  scroll-behavior: smooth;
-}
-html.dark {
-  color-scheme: dark;
-}
-
-.horizon .setting {
-  animation: 1s ease 0s 1 setting;
-}
-
-.horizon .rising {
-  animation: 1s ease 0s 1 rising;
-}
+.horizon .setting { animation: 1s ease 0s 1 setting; }
+.horizon .rising  { animation: 1s ease 0s 1 rising; }
 
 @keyframes setting {
-  0% {
-    transform: translate3d(0, 10px, 0);
-  }
-
-  40% {
-    transform: translate3d(0, -2px, 0);
-  }
-
-  to {
-    transform: translate3d(0, 30px, 0);
-  }
+  0%   { transform: translate3d(0, 10px, 0); }
+  40%  { transform: translate3d(0, -2px, 0); }
+  to   { transform: translate3d(0, 30px, 0); }
 }
-
 @keyframes rising {
-  0% {
-    opacity: 0;
-    transform: translate3d(0, 30px, 0);
-  }
-
-  40% {
-    opacity: 1;
-    transform: translate3d(0, -2px, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: translate3d(0, 10px, 0);
-  }
+  0%   { opacity: 0; transform: translate3d(0, 30px, 0); }
+  40%  { opacity: 1; transform: translate3d(0, -2px, 0); }
+  to   { opacity: 1; transform: translate3d(0, 10px, 0); }
 }
 
 
-
-
+/* ─── SCROLLBAR ───────────────────────────────────────────────────────────── */
 html::-webkit-scrollbar,
 body::-webkit-scrollbar,
 div::-webkit-scrollbar {
-  width: 6px !important;
+  width: 4px !important;
 }
-
 html::-webkit-scrollbar-track,
 body::-webkit-scrollbar-track,
 div::-webkit-scrollbar-track {
-  background: var(--color-neutral-200) !important;
-  border-radius: 6px !important;
-  -webkit-border-radius: 6px !important;
-  -moz-border-radius: 6px !important;
-  -ms-border-radius: 6px !important;
-  -o-border-radius: 6px !important;
+  background: var(--color-bg-secondary) !important;
+  border-radius: 4px !important;
 }
-
 html::-webkit-scrollbar-thumb,
 body::-webkit-scrollbar-thumb,
 div::-webkit-scrollbar-thumb {
-  background: var(--color-primary-light) !important;
-  border-radius: 6px !important;
+  background: #333 !important;
+  border-radius: 4px !important;
 }
-
 html::-webkit-scrollbar-thumb:hover,
 body::-webkit-scrollbar-thumb:hover,
 div::-webkit-scrollbar-thumb:hover {
-  background: var(--color-primary) !important;
+  background: var(--color-gold-dim) !important;
 }
-
 html::-webkit-scrollbar-thumb:active,
 body::-webkit-scrollbar-thumb:active,
 div::-webkit-scrollbar-thumb:active {
-  background: var(--color-primary-dark) !important;
+  background: var(--color-gold) !important;
 }
-
-
