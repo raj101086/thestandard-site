@@ -10,10 +10,10 @@
 
   /* Article content area */
   .article-content {
-    font-size: 1rem;
-    line-height: 1.8;
-    color: var(--color-text-secondary);
-  }
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #E8E0D5;
+}
 
   html.dark .article-content {
     color: var(--color-text-secondary-dark);
@@ -48,9 +48,9 @@
   .article-content h2 {
     font-size: 2rem;
     letter-spacing: -0.025em;
-    color: var(--color-text-primary);
+    color: #C8B08A;
     padding-bottom: 0.75rem;
-    border-bottom: 1px dashed rgba(var(--color-primary-rgb), 0.2);
+    border-bottom: 1px solid #2A2A2A;
     margin-top: 2em;
   }
 
@@ -438,9 +438,9 @@
     font-size: 0.875rem;
     font-weight: 400;
     letter-spacing: .5px;
-    color: var(--color-primary-lighter);
-    background: var(--color-primary-bg);
-    border: 1px solid rgba(var(--color-primary-rgb), .2);
+    color: #C8B08A;
+    background: rgba(200,176,138,0.08);
+    border: 1px solid #2A2A2A;
     border-radius: 9999px;
     transition: all 0.2s ease;
   }
@@ -541,8 +541,8 @@
 
 .post-copy blockquote {
   padding: 1rem 1.25rem;
-  border-left: 3px solid #3b82f6;
-  background: rgba(59,130,246,0.08);
+  border-left: 3px solid #C8B08A;
+background: rgba(200,176,138,0.08);
   border-radius: 12px;
   font-style: italic;
   margin-bottom: 1.5rem;
@@ -573,7 +573,8 @@
   }
   .lyrics-box {
   padding: 1rem 1.25rem;
-  background: rgba(59,130,246,0.06);
+  background: rgba(200,176,138,0.06);
+  border: 1px solid #2A2A2A;
   border-radius: 12px;
   margin: 1.5rem 0;
 }
