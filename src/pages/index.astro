@@ -23,21 +23,27 @@ const latestPosts = allPosts
   <!-- ─── TICKER ─────────────────────────────────────────────────── -->
   <div class="ticker-wrap">
     <div class="ticker-inner">
-      <span>Recently: Setting up TheStandard</span>
-      <span class="sep">·</span>
+      {latestPosts.map(post => (
+        <>
+          <span class="ticker-label">New</span>
+          <span>{post.tags[0] && <span class="ticker-cat">{post.tags[0]}</span>}{post.title}</span>
+          <span class="sep">·</span>
+        </>
+      ))}
       <span>Location: Pune, India</span>
       <span class="sep">·</span>
-      <span>Categories: Fashion · Motorcycles · Film · Music · Photography · Books · Coffee · Travel · Watches</span>
-      <span class="sep">·</span>
-      <span>Status: First posts coming soon</span>
+      <span>thestandard.co.in</span>
       <span class="gap"></span>
-      <span>Recently: Setting up TheStandard</span>
-      <span class="sep">·</span>
+      {latestPosts.map(post => (
+        <>
+          <span class="ticker-label">New</span>
+          <span>{post.tags[0] && <span class="ticker-cat">{post.tags[0]}</span>}{post.title}</span>
+          <span class="sep">·</span>
+        </>
+      ))}
       <span>Location: Pune, India</span>
       <span class="sep">·</span>
-      <span>Categories: Fashion · Motorcycles · Film · Music · Photography · Books · Coffee · Travel · Watches</span>
-      <span class="sep">·</span>
-      <span>Status: First posts coming soon</span>
+      <span>thestandard.co.in</span>
     </div>
   </div>
 
@@ -150,6 +156,22 @@ const latestPosts = allPosts
     color: #B8986A;
   }
   .ticker-inner .sep { color: #4a4840; }
+  .ticker-label {
+    color: #555;
+    font-size: 9px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    border: 0.5px solid #333;
+    padding: 1px 6px;
+    margin-right: 4px;
+  }
+  .ticker-cat {
+    color: #666;
+    margin-right: 6px;
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
   .ticker-inner .gap { display: inline-block; width: 80px; }
   @keyframes ticker {
     0%   { transform: translateX(0); }
