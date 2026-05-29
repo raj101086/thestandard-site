@@ -1,32 +1,74 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import PageHeader from "@/components/elements/PageHeader.astro";
 import BlogSection from "@/components/sections/BlogSection.astro";
 
-// 使用与分页页面相同的每页文章数量
 const POSTS_PER_PAGE = 6;
-// 博客首页显示第一页内容
 const currentPage = 1;
 ---
 
-<Layout title="Blog">
-  <section class="relative z-20 container mx-auto my-12 px-7 lg:px-0">
-    <PageHeader
-      title="My Blog"
-      description="Explore my thoughts on design and development, the convergence of thinking and innovation. Feel free to follow the updates!"
-    />
-  </section>
-  <section class="relative z-20 mx-auto my-12  lg:px-0">
-    <div class="mt-12">
-      <BlogSection
-        title=""
-        listPage={true}
-        pagination={{
-          enable: true,
-          currentPage: currentPage
-        }}
-        postsPerPage={POSTS_PER_PAGE}
-      />
+<Layout title="The Standard">
+
+  <!-- Editorial Intro -->
+  <section class="relative z-20 container mx-auto px-7 lg:px-0 mt-20 mb-20">
+
+    <div class="max-w-3xl mx-auto text-center">
+
+      <h1 class="font-brand text-6xl md:text-7xl mb-8">
+        The Standard
+      </h1>
+
+      <p class="text-xl leading-relaxed text-neutral-600 dark:text-neutral-300 max-w-2xl mx-auto">
+        A personal editorial journal on music, motorcycles,
+        film, travel, watches and modern aesthetics.
+      </p>
+
+      <p class="mt-6 text-lg text-neutral-500 dark:text-neutral-400 max-w-2xl mx-auto">
+        Thoughtfully curated observations, recommendations
+        and stories collected along the way.
+      </p>
+
     </div>
+
   </section>
+
+  <!-- Categories -->
+  <section class="container mx-auto px-7 lg:px-0 mb-20">
+
+    <div class="flex flex-wrap justify-center gap-3">
+
+      <span class="px-4 py-2 border rounded-full">Music</span>
+      <span class="px-4 py-2 border rounded-full">Film & Series</span>
+      <span class="px-4 py-2 border rounded-full">Motorcycles</span>
+      <span class="px-4 py-2 border rounded-full">Watches</span>
+      <span class="px-4 py-2 border rounded-full">Travel</span>
+      <span class="px-4 py-2 border rounded-full">Books</span>
+      <span class="px-4 py-2 border rounded-full">Photography</span>
+
+    </div>
+
+  </section>
+
+  <!-- Latest Writing -->
+  <section class="relative z-20 mx-auto my-12 lg:px-0">
+
+    <div class="container mx-auto px-7 lg:px-0">
+
+      <h2 class="font-brand text-4xl mb-12">
+        Latest Writing
+      </h2>
+
+    </div>
+
+    <BlogSection
+      title=""
+      listPage={true}
+      pagination={{
+        enable: true,
+        currentPage: currentPage
+      }}
+      postsPerPage={POSTS_PER_PAGE}
+    />
+
+  </section>
+
 </Layout>
