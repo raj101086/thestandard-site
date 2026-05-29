@@ -12,7 +12,7 @@ const categories = [...new Set(allPosts.flatMap(p => p.data.tags || []))];
   <!-- PAGE HEADER -->
   <div class="about-header">
     <div class="about-eyebrow">About</div>
-    <h1 class="about-title font-brand">The Standard</h1>
+    <h1 class="about-title font-brand">The<em>Standard</em></h1>
     <p class="about-subtitle">A personal editorial journal. Pune, India.</p>
   </div>
 
@@ -105,6 +105,10 @@ const categories = [...new Set(allPosts.flatMap(p => p.data.tags || []))];
     text-transform: uppercase;
     color: #B8986A;
     margin-bottom: 1.25rem;
+  }
+  .about-title em {
+    font-style: italic;
+    color: #B8986A;
   }
   .about-title {
     font-size: clamp(44px, 5vw, 72px);
