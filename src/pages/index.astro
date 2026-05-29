@@ -1,110 +1,289 @@
 ---
-import Button from "../components/ui/Button.astro";
-import { siteConfig } from "@/config/site";
-import HeroCard from "@/components/home/HeroCard.astro";
 import Layout from "@/layouts/Layout.astro";
-import FeaturedWork from "../components/sections/FeaturedWork.astro";
 import BlogSection from "@/components/sections/BlogSection.astro";
-import SocialCard from "@/components/cards/SocialCard.astro";
-import AnimatedText from "@/components/ui/AnimatedText.astro";
-import Explore from "@/components/sections/Explore.astro";
+
+const POSTS_PER_PAGE = 6;
+const currentPage = 1;
 ---
 
-<Layout
-title="Rico Portfolio Site 2025"
-description="Welcome to Rico's portfolio site! Explore my work as a web/UI designer with 8+ years of experience in creating captivating visuals and interactive experiences."
-keywords="Rico, Portfolio, Web Design, UI Design, Frontend Development, Creative Designer"
->
-  <div
-    class="relative site-container z-20  w-full mx-auto mt-16 px-4 md:mt-18 lg:mt-20 xl:px-0"
-  >
-    <div class="relative w-full px-4 flex flex-col items-center justify-between md:flex-row mb-16 ">
-      <div class="relative w-full md:max-w-[420px] md:w-1/2 text-center sm:text-left sm:-mt-8">
-        <!-- Title - AnimatedText animation -->
-        <h1 class="mb-4">
-          <AnimatedText
-            content="The Standard"
-            delay={0.1}
-            duration={0.5}
-            stagger={0.08}
-            class="text-5xl text-pri leading-tight md:text-4xl lg:text-6xl font-brand "
-          />
-        </h1>
+<Layout title="The Standard">
 
-        <!-- First description - AnimatedText animation -->
-        <div class="mb-2">
-          <AnimatedText
-            content="A personal journal on music, motorcycles, film, style, watches, travel, books and the things worth paying attention to."
-            delay={0.3}
-            duration={0.5}
-            stagger={0.015}
-            class="text-base text-neutral-700 dark:text-neutral-300"
-          />
-        </div>
-
-        <!-- Second description - AnimatedText animation -->
-        <div class="mb-4">
-          <AnimatedText
-            content="Thoughtfully curated notes, photographs, recommendations and reflections from everyday life."
-            delay={0.5}
-            duration={0.5}
-            stagger={0.015}
-            class="text-base text-neutral-700 dark:text-neutral-300"
-          />
-        </div>
-
-        <!-- Button - AOS animation -->
-        <div
-          class=""
-          data-aos="fade-up-sm"
-          data-aos-delay="900"
-          data-aos-duration="500"
-          data-aos-once="true"
-        >
-          <Button url="/writing" type="fill" className="m-auto mt-4 text-center sm:text-left sm:m-0 sm:mt-6 max-w-[200px]">
-           Explore Journal
-          </Button>
-
-        <!-- Social Cards - AOS animation -->
-        <div
-          class="social mt-8 mb-8"
-          data-aos="fade-up-sm"
-          data-aos-delay="1000"
-          data-aos-duration="600"
-          data-aos-once="true"
-        >
-          <SocialCard displaySocialIds={[1, 2, 3,4]}/>
-        </div>
-      </div>
-
-      
+  <!-- ─── TICKER ─────────────────────────────────────────────────── -->
+  <div class="ticker-wrap">
+    <div class="ticker-inner">
+      <span>Recently: Setting up TheStandard</span>
+      <span class="sep">·</span>
+      <span>Location: Pune, India</span>
+      <span class="sep">·</span>
+      <span>Categories: Fashion · Motorcycles · Film · Music · Photography · Books · Coffee · Travel · Watches</span>
+      <span class="sep">·</span>
+      <span>Status: First posts coming soon</span>
+      <!-- duplicate for seamless loop -->
+      <span class="gap"></span>
+      <span>Recently: Setting up TheStandard</span>
+      <span class="sep">·</span>
+      <span>Location: Pune, India</span>
+      <span class="sep">·</span>
+      <span>Categories: Fashion · Motorcycles · Film · Music · Photography · Books · Coffee · Travel · Watches</span>
+      <span class="sep">·</span>
+      <span>Status: First posts coming soon</span>
     </div>
   </div>
 
-  
+  <!-- ─── HERO ───────────────────────────────────────────────────── -->
+  <div class="hero-grid">
 
-  <section
-    class="mt-26 mb-12"
-    data-aos="fade-up-sm"
-    data-aos-delay="100"
-    data-aos-duration="600"
-    data-aos-once="true"
-  >
-    <FeaturedWork title="Featured Work ↓" description="I create innovative and purposeful designs that not only capture attention but also drive meaningful results." limit={5} />
-  </section>
+    <div class="hero-left">
+      <div class="hero-eyebrow">
+        Coming Soon
+        <span class="eyebrow-year">— 2026</span>
+      </div>
 
-  <section
-    class="mt-26 mb-12"
-    data-aos="fade-up-sm"
-    data-aos-delay="100"
-    data-aos-duration="600"
-    data-aos-once="true"
-  >
+      <h1 class="font-brand hero-h1">
+        Real posts are<br>
+        <em>on the way.</em>
+      </h1>
+
+      <p class="hero-desc">
+        Motorcycles, fashion, film, music, photography, books, coffee,
+        and travel. Posted when something is genuinely worth sharing.
+      </p>
+
+      <a href="/blog" class="hero-cta">Explore Categories →</a>
+    </div>
+
+    <div class="hero-right">
+      <img
+        src="/logo.png"
+        alt="The Standard"
+        class="hero-logo-img"
+      />
+      <span class="hero-right-label">Featured Image</span>
+    </div>
+
+  </div>
+
+  <!-- ─── CATEGORY TABS ──────────────────────────────────────────── -->
+  <div class="cat-tabs-wrap">
+    <div class="cat-tabs">
+      <a href="/blog" class="cat-tab active">All Posts</a>
+      <a href="/blog/category/fashion" class="cat-tab">Fashion</a>
+      <a href="/blog/category/motorcycles" class="cat-tab">Motorcycles</a>
+      <a href="/blog/category/film-series" class="cat-tab">Film & Series</a>
+      <a href="/blog/category/music" class="cat-tab">Music</a>
+      <a href="/blog/category/photography" class="cat-tab">Photography</a>
+      <a href="/blog/category/books" class="cat-tab">Books</a>
+      <a href="/blog/category/coffee-food" class="cat-tab">Coffee & Food</a>
+      <a href="/blog/category/travel" class="cat-tab">Travel</a>
+      <a href="/blog/category/watches" class="cat-tab">Watches</a>
+    </div>
+  </div>
+
+  <!-- ─── POSTS ──────────────────────────────────────────────────── -->
+  <div class="posts-wrap">
+
+    <div class="section-header">
+      <span class="section-label">TheStandard</span>
+      <div class="section-line"></div>
+    </div>
+
     <BlogSection
-      title="Latest Articles  ↓"
-      description="These are my notes and articles on design, development and life thinking."
-      showViewAllButton={true}
+      title=""
+      listPage={true}
+      pagination={{ enable: true, currentPage: currentPage }}
+      postsPerPage={POSTS_PER_PAGE}
     />
-  </section>
+
+  </div>
 
 </Layout>
+
+<style>
+  /* ── TICKER ────────────────────────────────────────────────────── */
+  .ticker-wrap {
+    background: #141412;
+    border-bottom: 0.5px solid #2a2a28;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 8px 0;
+  }
+  .ticker-inner {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    animation: ticker 32s linear infinite;
+    font-family: var(--font-sans, 'Helvetica Neue', sans-serif);
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #B8986A;
+  }
+  .ticker-inner .sep { color: #4a4840; }
+  .ticker-inner .gap { display: inline-block; width: 80px; }
+  @keyframes ticker {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  /* ── HERO ──────────────────────────────────────────────────────── */
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 480px;
+    border-bottom: 0.5px solid #2a2a28;
+  }
+  .hero-left {
+    padding: 5rem 3rem 5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 0.5px solid #2a2a28;
+  }
+  .hero-eyebrow {
+    font-family: var(--font-sans, 'Helvetica Neue', sans-serif);
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #555;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .eyebrow-year { color: #B8986A; }
+  .hero-h1 {
+    font-size: clamp(42px, 5vw, 60px);
+    line-height: 1.08;
+    font-weight: normal;
+    color: #E8E2D6;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.01em;
+  }
+  .hero-h1 em {
+    font-style: italic;
+    color: #B8986A;
+  }
+  .hero-desc {
+    font-family: var(--font-sans, 'Helvetica Neue', sans-serif);
+    font-size: 13px;
+    line-height: 1.9;
+    color: #777;
+    max-width: 380px;
+    margin-bottom: 2.5rem;
+  }
+  .hero-cta {
+    display: inline-block;
+    font-family: var(--font-sans, 'Helvetica Neue', sans-serif);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    border: 1px solid #3a3a38;
+    color: #E8E2D6;
+    padding: 13px 26px;
+    background: transparent;
+    text-decoration: none;
+    align-self: flex-start;
+    transition: border-color 0.2s, color 0.2s;
+  }
+  .hero-cta:hover {
+    border-color: #B8986A;
+    color: #B8986A;
+  }
+  .hero-right {
+    background: #161614;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 2rem;
+  }
+  .hero-logo-img {
+    max-width: 260px;
+    width: 100%;
+    opacity: 0.85;
+  }
+  .hero-right-label {
+    font-family: var(--font-sans, 'Helvetica Neue', sans-serif);
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #3a3a38;
+  }
+
+  /* ── CATEGORY TABS ─────────────────────────────────────────────── */
+  .cat-tabs-wrap {
+    border-bottom: 0.5px solid #2a2a28;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .cat-tabs-wrap::-webkit-scrollbar { display: none; }
+  .cat-tabs {
+    display: flex;
+    padding: 0 4rem;
+    min-width: max-content;
+  }
+  .cat-tab {
+    font-family: var(--font-sans, 'Helvetica Neue', sans-serif);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #555;
+    padding: 14px 18px 12px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    white-space: nowrap;
+    transition: color 0.15s;
+  }
+  .cat-tab:hover { color: #999; }
+  .cat-tab.active {
+    color: #E8E2D6;
+    border-bottom: 2px solid #B8986A;
+  }
+
+  /* ── POSTS SECTION ─────────────────────────────────────────────── */
+  .posts-wrap {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 3.5rem 4rem 5rem;
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 3rem;
+  }
+  .section-label {
+    font-family: var(--font-sans, 'Helvetica Neue', sans-serif);
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #444;
+    white-space: nowrap;
+  }
+  .section-line {
+    flex: 1;
+    height: 0.5px;
+    background: #2a2a28;
+  }
+
+  /* ── RESPONSIVE ────────────────────────────────────────────────── */
+  @media (max-width: 768px) {
+    .hero-grid {
+      grid-template-columns: 1fr;
+    }
+    .hero-right {
+      display: none;
+    }
+    .hero-left {
+      padding: 3rem 1.5rem;
+      border-right: none;
+    }
+    .cat-tabs {
+      padding: 0 1.5rem;
+    }
+    .posts-wrap {
+      padding: 2.5rem 1.5rem 4rem;
+    }
+  }
+</style>
