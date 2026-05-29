@@ -1,133 +1,252 @@
 ---
-import { Mail } from "@lucide/astro";
 import Layout from "@/layouts/Layout.astro";
-import Toc from "@/components/widgets/Toc.astro";
+import { getCollection } from "astro:content";
 
-// Minimal TOC
-const headings = [
-  { depth: 2, slug: "about-the-standard", text: "About The Standard" },
-];
-
-const filtered = headings.filter(h => h.depth <= 3);
+const allPosts = await getCollection("post");
+const postCount = allPosts.length;
+const categories = [...new Set(allPosts.flatMap(p => p.data.tags || []))];
 ---
 
-<Layout title="About The Standard">
+<Layout title="About — The Standard">
 
-  <!-- Mobile TOC -->
-  <div class="block lg:hidden px-7 pt-6">
-    <Toc headings={filtered} />
+  <!-- PAGE HEADER -->
+  <div class="about-header">
+    <div class="about-eyebrow">About</div>
+    <h1 class="about-title font-brand">The Standard</h1>
+    <p class="about-subtitle">A personal editorial journal. Pune, India.</p>
   </div>
 
-  <!-- Main container -->
-  <div class="relative site-container mx-auto my-8">
-    <div class="flex flex-col lg:flex-row gap-8 lg:gap-12 xl:gap-16">
+  <!-- MAIN CONTENT -->
+  <div class="about-body">
 
-      <!-- Left TOC -->
-      <aside class="relative hidden lg:block lg:w-40 xl:w-50 flex-shrink-0">
-        <div class="toc-sticky-wrapper">
-          <Toc headings={filtered} />
-        </div>
-      </aside>
+    <!-- LEFT COL -->
+    <div class="about-left">
 
-      <!-- Main Content -->
-      <main class="relative flex-1 min-w-0 w-full lg:max-w-none">
+      <div class="about-block">
+        <div class="block-label">What this is</div>
+        <p class="block-text">
+          A curated space for the things worth paying attention to — music, motorcycles, film, watches, books, coffee, photography, and travel. Posted when something is genuinely worth sharing, not on a schedule.
+        </p>
+      </div>
 
-        <!-- Heading -->
-        <div
-          class="w-full"
-          data-aos="fade-up-xs"
-          data-aos-duration="500"
-          data-aos-once="true"
-        >
-          <h2
-            id="about-the-standard"
-            class="text-2xl font-brand tracking-tight sm:text-3xl lg:text-4xl"
-          >
-            About The Standard
-          </h2>
+      <div class="about-block">
+        <div class="block-label">Why it exists</div>
+        <p class="block-text">
+          Most things I come across disappear into group chats or saved folders and are never revisited. The Standard is the opposite of that — a place where observations, recommendations and quiet discoveries get written down properly, so they last.
+        </p>
+      </div>
 
-          <div class="w-full border-b border-dashed border-b-gray-200 dark:border-b-neutral-700 mt-4 mb-10"></div>
-        </div>
+      <div class="about-block">
+        <div class="block-label">The name</div>
+        <p class="block-text">
+          Not a standard in the sense of average. A standard in the sense of a benchmark — a way of looking at things and asking whether they're genuinely good.
+        </p>
+      </div>
 
-        <!-- Logo -->
-        <div
-          class="flex items-center gap-4 mb-12"
-          data-aos="fade-up-xs"
-          data-aos-delay="100"
-          data-aos-duration="500"
-          data-aos-once="true"
-        >
-          <img
-            src="/assets/avatar.png"
-            alt="The Standard"
-            class="w-14 h-14 rounded-full"
-          />
+      <div class="about-block">
+        <div class="block-label">Get in touch</div>
+        <a href="mailto:thestandardblogpost@gmail.com" class="about-email">
+          thestandardblogpost@gmail.com →
+        </a>
+      </div>
 
-          <span class="font-brand text-[28px] text-neutral-800 dark:text-neutral-100">
-            The Standard
-          </span>
-        </div>
-
-        <!-- Intro -->
-        <div class="max-w-3xl">
-
-          <h3
-            class="text-2xl font-semibold mb-6 text-neutral-900 dark:text-neutral-100"
-            data-aos="fade-up-xs"
-            data-aos-delay="150"
-            data-aos-duration="500"
-            data-aos-once="true"
-          >
-            A personal editorial journal.
-          </h3>
-
-          <p
-            class="mb-6 text-lg leading-relaxed text-neutral-700 dark:text-neutral-300"
-            data-aos="fade-up-xs"
-            data-aos-delay="200"
-            data-aos-duration="500"
-            data-aos-once="true"
-          >
-            Built around music, motorcycles, film, watches, travel and everyday aesthetics — this is a curated space for observations, recommendations and stories collected along the way.
-          </p>
-
-          <p
-            class="mb-10 text-lg leading-relaxed text-neutral-700 dark:text-neutral-300"
-            data-aos="fade-up-xs"
-            data-aos-delay="250"
-            data-aos-duration="500"
-            data-aos-once="true"
-          >
-            Part publication, part archive and part notebook — created for people who appreciate thoughtful design, mechanical beauty and cinematic experiences.
-          </p>
-
-          <!-- Contact -->
-          <div
-            class="mt-10"
-            data-aos="fade-up-xs"
-            data-aos-delay="300"
-            data-aos-duration="500"
-            data-aos-once="true"
-          >
-            <a
-              href="mailto:thestandardblogpost@gmail.com"
-              class="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-neutral-300 dark:border-neutral-700 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition"
-            >
-              <Mail size={18} />
-              Get in touch
-            </a>
-          </div>
-
-        </div>
-
-      </main>
     </div>
+
+    <!-- RIGHT COL — stats + categories -->
+    <div class="about-right">
+
+      <div class="about-stat-block">
+        <div class="stat-row">
+          <span class="stat-num font-brand">{postCount}</span>
+          <span class="stat-label">Posts published</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-num font-brand">{categories.length}</span>
+          <span class="stat-label">Categories covered</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-num font-brand">2026</span>
+          <span class="stat-label">Est. Pune, India</span>
+        </div>
+      </div>
+
+      <div class="about-cats">
+        <div class="block-label">Topics</div>
+        <div class="cats-grid">
+          {["Music", "Motorcycles", "Film & Series", "Watches", "Books", "Photography", "Coffee & Food", "Travel", "Fashion"].map(cat => (
+            <a href={`/archive?category=${encodeURIComponent(cat)}`} class="cat-pill">{cat}</a>
+          ))}
+        </div>
+      </div>
+
+      <div class="about-logo-block">
+        <div class="about-logo-box">
+          <img src="/logo.png" alt="The Standard" class="about-logo-img" />
+        </div>
+        <span class="about-logo-label">© 2026 The Standard</span>
+      </div>
+
+    </div>
+
   </div>
+
 </Layout>
 
 <style>
-.toc-sticky-wrapper {
-  position: sticky;
-  top: 8rem;
-}
+  /* ── HEADER ───────────────────────────────────────────────────── */
+  .about-header {
+    padding: 5rem 4rem 4rem;
+    border-bottom: 0.5px solid #2a2a28;
+  }
+  .about-eyebrow {
+    font-family: var(--font-sans);
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #B8986A;
+    margin-bottom: 1.25rem;
+  }
+  .about-title {
+    font-size: clamp(44px, 5vw, 72px);
+    line-height: 1.0;
+    font-weight: normal;
+    color: #E8E2D6;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+  }
+  .about-subtitle {
+    font-family: var(--font-sans);
+    font-size: 13px;
+    color: #555;
+    letter-spacing: 0.06em;
+  }
+
+  /* ── BODY GRID ────────────────────────────────────────────────── */
+  .about-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 60vh;
+  }
+
+  /* ── LEFT ─────────────────────────────────────────────────────── */
+  .about-left {
+    padding: 4rem;
+    border-right: 0.5px solid #2a2a28;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .about-block { display: flex; flex-direction: column; gap: 10px; }
+  .block-label {
+    font-family: var(--font-sans);
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #555;
+  }
+  .block-text {
+    font-family: var(--font-sans);
+    font-size: 14px;
+    line-height: 1.85;
+    color: #888;
+    max-width: 480px;
+  }
+  .about-email {
+    font-family: var(--font-sans);
+    font-size: 13px;
+    color: #E8E2D6;
+    text-decoration: none;
+    border-bottom: 0.5px solid #B8986A;
+    padding-bottom: 2px;
+    display: inline-block;
+    transition: color 0.2s;
+  }
+  .about-email:hover { color: #B8986A; }
+
+  /* ── RIGHT ────────────────────────────────────────────────────── */
+  .about-right {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  /* Stats */
+  .about-stat-block {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-bottom: 3rem;
+    border-bottom: 0.5px solid #2a2a28;
+  }
+  .stat-row {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+  }
+  .stat-num {
+    font-size: 48px;
+    line-height: 1;
+    color: #E8E2D6;
+    font-weight: normal;
+    letter-spacing: -0.02em;
+  }
+  .stat-label {
+    font-family: var(--font-sans);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #444;
+  }
+
+  /* Categories */
+  .about-cats { display: flex; flex-direction: column; gap: 14px; }
+  .cats-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 4px;
+  }
+  .cat-pill {
+    font-family: var(--font-sans);
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #666;
+    border: 0.5px solid #2a2a28;
+    padding: 6px 12px;
+    text-decoration: none;
+    transition: border-color 0.2s, color 0.2s;
+  }
+  .cat-pill:hover { border-color: #B8986A; color: #B8986A; }
+
+  /* Logo block */
+  .about-logo-block {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .about-logo-box {
+    display: inline-block;
+    background: #E8E2D6;
+    padding: 8px 16px;
+    width: fit-content;
+  }
+  .about-logo-img { height: 28px; width: auto; display: block; }
+  .about-logo-label {
+    font-family: var(--font-sans);
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    color: #333;
+  }
+
+  /* ── RESPONSIVE ───────────────────────────────────────────────── */
+  @media (max-width: 768px) {
+    .about-header { padding: 3rem 1.5rem 2.5rem; }
+    .about-body { grid-template-columns: 1fr; }
+    .about-left { padding: 2.5rem 1.5rem; border-right: none; border-bottom: 0.5px solid #2a2a28; }
+    .about-right { padding: 2.5rem 1.5rem; }
+    .stat-num { font-size: 36px; }
+  }
 </style>
