@@ -1,74 +1,63 @@
----
 import Layout from "@/layouts/Layout.astro";
 import BlogSection from "@/components/sections/BlogSection.astro";
 
-const POSTS_PER_PAGE = 6;
-const currentPage = 1;
----
+<div class="max-w-7xl mx-auto px-8 py-24">
 
-<Layout title="The Standard">
+  <div class="grid lg:grid-cols-2 min-h-[550px]">
 
-  <!-- Editorial Intro -->
-  <section class="relative z-20 container mx-auto px-7 lg:px-0 mt-10 mb-14">
+    <div class="flex flex-col justify-center">
 
-    <div class="max-w-3xl mx-auto text-center">
+      <div class="uppercase tracking-[0.3em] text-xs text-[#C8B08A] mb-8">
+        Editorial Journal · 2026
+      </div>
 
-      <h1 class="font-brand text-6xl md:text-7xl mb-8">
+      <h1 class="font-brand text-6xl md:text-7xl leading-tight mb-8">
         The Standard
       </h1>
 
-      <p class="text-xl leading-relaxed text-neutral-600 dark:text-neutral-300 max-w-2xl mx-auto">
-        A personal editorial journal on music, motorcycles,
-        film, travel, watches and modern aesthetics.
-      </p>
-
-      <p class="mt-6 text-lg text-neutral-500 dark:text-neutral-400 max-w-2xl mx-auto">
-        Thoughtfully curated observations, recommendations
-        and stories collected along the way.
+      <p class="text-xl text-[#8F877B] max-w-xl leading-relaxed mb-10">
+        Motorcycles, film, music, watches, photography, books and travel.
+        Posted when something is genuinely worth sharing.
       </p>
 
     </div>
 
-  </section>
-
-  <!-- Categories -->
-  <section class="container mx-auto px-7 lg:px-0 mb-20">
-
-    <div class="flex flex-wrap justify-center gap-3">
-
-      <span class="px-4 py-2 border rounded-full">Music</span>
-      <span class="px-4 py-2 border rounded-full">Film & Series</span>
-      <span class="px-4 py-2 border rounded-full">Motorcycles</span>
-      <span class="px-4 py-2 border rounded-full">Watches</span>
-      <span class="px-4 py-2 border rounded-full">Travel</span>
-      <span class="px-4 py-2 border rounded-full">Books</span>
-      <span class="px-4 py-2 border rounded-full">Photography</span>
-
+    <div class="hidden lg:flex items-center justify-center border-l border-[#2A2A2A]">
+      <img
+        src="/logo.png"
+        alt="The Standard"
+        class="max-w-md opacity-90"
+      />
     </div>
 
-  </section>
+  </div>
 
-  <!-- Latest Writing -->
-  <section class="relative z-20 mx-auto my-12 lg:px-0">
+</div>
+<div class="max-w-7xl mx-auto px-8 py-5 flex flex-wrap gap-8 text-xs uppercase tracking-[0.25em] text-[#8F877B]">
 
-    <div class="container mx-auto px-7 lg:px-0">
+  <span>Music</span>
+  <span>Film & Series</span>
+  <span>Motorcycles</span>
+  <span>Photography</span>
+  <span>Books</span>
+  <span>Travel</span>
+  <span>Watches</span>
 
-      <h2 class="font-brand text-4xl mb-12">
-        Latest Writing
-      </h2>
+</div>
+<div class="max-w-7xl mx-auto px-8">
 
-    </div>
+  <h2 class="font-brand text-4xl mb-12 text-[#C8B08A]">
+    Latest Writing
+  </h2>
 
-    <BlogSection
-      title=""
-      listPage={true}
-      pagination={{
-        enable: true,
-        currentPage: currentPage
-      }}
-      postsPerPage={POSTS_PER_PAGE}
-    />
+</div>
 
-  </section>
-
-</Layout>
+<BlogSection
+  title=""
+  listPage={true}
+  pagination={{
+    enable: true,
+    currentPage: currentPage
+  }}
+  postsPerPage={POSTS_PER_PAGE}
+/>
