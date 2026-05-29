@@ -1,6 +1,17 @@
+---
+
 import Layout from "@/layouts/Layout.astro";
 import BlogSection from "@/components/sections/BlogSection.astro";
 
+const POSTS_PER_PAGE = 6;
+const currentPage = 1;
+----------------------
+
+<Layout title="The Standard">
+
+  <div class="max-w-7xl mx-auto px-8 py-24">
+
+```
 <div class="grid lg:grid-cols-2 min-h-[550px]">
 
   <div class="flex flex-col justify-center">
@@ -29,6 +40,13 @@ import BlogSection from "@/components/sections/BlogSection.astro";
   </div>
 
 </div>
+```
+
+  </div>
+
+  <div class="max-w-7xl mx-auto px-8 py-5 flex flex-wrap gap-8 text-xs uppercase tracking-[0.25em] text-[#8F877B]">
+
+```
 <span>Music</span>
 <span>Film & Series</span>
 <span>Motorcycles</span>
@@ -36,9 +54,19 @@ import BlogSection from "@/components/sections/BlogSection.astro";
 <span>Books</span>
 <span>Travel</span>
 <span>Watches</span>
+```
+
+  </div>
+
+  <div class="max-w-7xl mx-auto px-8">
+
+```
 <h2 class="font-brand text-4xl mb-12 text-[#C8B08A]">
   Latest Writing
 </h2>
+```
+
+  </div>
 
 <BlogSection
 title=""
@@ -49,3 +77,5 @@ currentPage: currentPage
 }}
 postsPerPage={POSTS_PER_PAGE}
 />
+
+</Layout>
