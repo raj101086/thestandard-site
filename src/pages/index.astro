@@ -66,19 +66,21 @@ const latestPosts = allPosts
 
     <!-- CAROUSEL -->
     <div class="hero-right">
-      <div class="carousel-track" id="carouselTrack">
+      <div class="carousel-viewport" id="carouselViewport">
         {latestPosts.map((post, i) => (
-          <a href={post.link} class="carousel-slide" data-index={i}>
-            {post.img ? (
-              <img src={post.img} alt={post.title} class="carousel-img" />
-            ) : (
-              <div class="carousel-placeholder"></div>
-            )}
-            <div class="carousel-overlay">
-              <span class="carousel-cat">{post.tags[0] || ""}</span>
-              <span class="carousel-title font-brand">{post.title}</span>
-            </div>
-          </a>
+          <div class={`carousel-slide ${i === 0 ? "active" : ""}`} data-index={i}>
+            <a href={post.link} class="carousel-link">
+              {post.img ? (
+                <img src={post.img} alt={post.title} class="carousel-img" />
+              ) : (
+                <div class="carousel-placeholder"></div>
+              )}
+              <div class="carousel-overlay">
+                <span class="carousel-cat">{post.tags[0] || ""}</span>
+                <span class="carousel-title font-brand">{post.title}</span>
+              </div>
+            </a>
+          </div>
         ))}
       </div>
 
@@ -217,21 +219,30 @@ const latestPosts = allPosts
   /* ── CAROUSEL ────────────────────────────────────────────────── */
   .hero-right {
     position: relative;
-    overflow: hidden;
     background: #141412;
   }
-  .carousel-track {
-    display: flex;
-    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  .carousel-viewport {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 3/2;
+    overflow: hidden;
   }
   .carousel-slide {
-    position: relative;
-    min-width: 100%;
-    flex-shrink: 0;
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    pointer-events: none;
+  }
+  .carousel-slide.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .carousel-link {
     display: block;
+    width: 100%;
+    height: 100%;
     text-decoration: none;
-    overflow: hidden;
-    aspect-ratio: 3/2;
   }
   .carousel-img {
     width: 100%;
@@ -241,10 +252,10 @@ const latestPosts = allPosts
     display: block;
     transition: transform 0.8s ease;
   }
-  .carousel-slide:hover .carousel-img { transform: scale(1.03); }
+  .carousel-slide.active:hover .carousel-img { transform: scale(1.03); }
   .carousel-placeholder {
     width: 100%;
-    aspect-ratio: 3/2;
+    height: 100%;
     background: #1a1a18;
   }
   .carousel-overlay {
@@ -351,20 +362,21 @@ const latestPosts = allPosts
 </style>
 
 <script>
-  const track = document.getElementById('carouselTrack') as HTMLElement | null;
+  const slides = document.querySelectorAll<HTMLElement>('.carousel-slide');
   const dots = document.querySelectorAll<HTMLButtonElement>('.carousel-dot');
   let current = 0;
   let timer: number;
 
   function goTo(index: number) {
-    if (!track) return;
+    slides[current]?.classList.remove('active');
+    dots[current]?.classList.remove('active');
     current = index;
-    track.style.transform = `translateX(-${current * 100}%)`;
-    dots.forEach((d, i) => d.classList.toggle('active', i === current));
+    slides[current]?.classList.add('active');
+    dots[current]?.classList.add('active');
   }
 
   function next() {
-    goTo((current + 1) % dots.length);
+    goTo((current + 1) % slides.length);
   }
 
   function startTimer() {
@@ -373,11 +385,11 @@ const latestPosts = allPosts
 
   dots.forEach((dot, i) => {
     dot.addEventListener('click', () => {
-      clearInterval(timer);
+      window.clearInterval(timer);
       goTo(i);
       startTimer();
     });
   });
 
-  if (dots.length > 1) startTimer();
+  if (slides.length > 1) startTimer();
 </script>
