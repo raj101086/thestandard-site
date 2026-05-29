@@ -1,63 +1,51 @@
 import Layout from "@/layouts/Layout.astro";
 import BlogSection from "@/components/sections/BlogSection.astro";
 
-<div class="max-w-7xl mx-auto px-8 py-24">
+<div class="grid lg:grid-cols-2 min-h-[550px]">
 
-  <div class="grid lg:grid-cols-2 min-h-[550px]">
+  <div class="flex flex-col justify-center">
 
-    <div class="flex flex-col justify-center">
-
-      <div class="uppercase tracking-[0.3em] text-xs text-[#C8B08A] mb-8">
-        Editorial Journal · 2026
-      </div>
-
-      <h1 class="font-brand text-6xl md:text-7xl leading-tight mb-8">
-        The Standard
-      </h1>
-
-      <p class="text-xl text-[#8F877B] max-w-xl leading-relaxed mb-10">
-        Motorcycles, film, music, watches, photography, books and travel.
-        Posted when something is genuinely worth sharing.
-      </p>
-
+    <div class="uppercase tracking-[0.3em] text-xs text-[#C8B08A] mb-8">
+      Editorial Journal · 2026
     </div>
 
-    <div class="hidden lg:flex items-center justify-center border-l border-[#2A2A2A]">
-      <img
-        src="/logo.png"
-        alt="The Standard"
-        class="max-w-md opacity-90"
-      />
-    </div>
+    <h1 class="font-brand text-6xl md:text-7xl leading-tight mb-8">
+      The Standard
+    </h1>
+
+    <p class="text-xl text-[#8F877B] max-w-xl leading-relaxed mb-10">
+      Motorcycles, film, music, watches, photography, books and travel.
+      Posted when something is genuinely worth sharing.
+    </p>
 
   </div>
 
-</div>
-<div class="max-w-7xl mx-auto px-8 py-5 flex flex-wrap gap-8 text-xs uppercase tracking-[0.25em] text-[#8F877B]">
-
-  <span>Music</span>
-  <span>Film & Series</span>
-  <span>Motorcycles</span>
-  <span>Photography</span>
-  <span>Books</span>
-  <span>Travel</span>
-  <span>Watches</span>
+  <div class="hidden lg:flex items-center justify-center border-l border-[#2A2A2A]">
+    <img
+      src="/logo.png"
+      alt="The Standard"
+      class="max-w-md opacity-90"
+    />
+  </div>
 
 </div>
-<div class="max-w-7xl mx-auto px-8">
-
-  <h2 class="font-brand text-4xl mb-12 text-[#C8B08A]">
-    Latest Writing
-  </h2>
-
-</div>
+<span>Music</span>
+<span>Film & Series</span>
+<span>Motorcycles</span>
+<span>Photography</span>
+<span>Books</span>
+<span>Travel</span>
+<span>Watches</span>
+<h2 class="font-brand text-4xl mb-12 text-[#C8B08A]">
+  Latest Writing
+</h2>
 
 <BlogSection
-  title=""
-  listPage={true}
-  pagination={{
-    enable: true,
-    currentPage: currentPage
-  }}
-  postsPerPage={POSTS_PER_PAGE}
+title=""
+listPage={true}
+pagination={{
+enable: true,
+currentPage: currentPage
+}}
+postsPerPage={POSTS_PER_PAGE}
 />
