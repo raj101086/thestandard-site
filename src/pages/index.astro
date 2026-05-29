@@ -1,9 +1,21 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import BlogSection from "@/components/sections/BlogSection.astro";
+import { getCollection } from "astro:content";
 
 const POSTS_PER_PAGE = 6;
 const currentPage = 1;
+
+const allPosts = await getCollection("post");
+const latestPosts = allPosts
+  .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
+  .slice(0, 5)
+  .map(post => ({
+    title: post.data.title,
+    tags: post.data.tags || [],
+    img: post.data.img || null,
+    link: `/blog/${post.id}`,
+  }));
 ---
 
 <Layout title="The Standard">
@@ -18,7 +30,6 @@ const currentPage = 1;
       <span>Categories: Fashion · Motorcycles · Film · Music · Photography · Books · Coffee · Travel · Watches</span>
       <span class="sep">·</span>
       <span>Status: First posts coming soon</span>
-      <!-- duplicate for seamless loop -->
       <span class="gap"></span>
       <span>Recently: Setting up TheStandard</span>
       <span class="sep">·</span>
@@ -35,13 +46,14 @@ const currentPage = 1;
 
     <div class="hero-left">
       <div class="hero-eyebrow">
-        Coming Soon
-        <span class="eyebrow-year">— 2026</span>
+        Est. 2026
+        <span class="eyebrow-divider">—</span>
+        <span class="eyebrow-location">Pune, India</span>
       </div>
 
       <h1 class="font-brand hero-h1">
-        Real posts are<br>
-        <em>on the way.</em>
+        Things worth<br>
+        <em>paying attention to.</em>
       </h1>
 
       <p class="hero-desc">
@@ -49,16 +61,35 @@ const currentPage = 1;
         and travel. Posted when something is genuinely worth sharing.
       </p>
 
-      <a href="/blog" class="hero-cta">Explore Categories →</a>
+      <a href="/archive" class="hero-cta">Browse the Archive →</a>
     </div>
 
+    <!-- CAROUSEL -->
     <div class="hero-right">
-      <img
-        src="/logo.png"
-        alt="The Standard"
-        class="hero-logo-img"
-      />
-      <span class="hero-right-label">Featured Image</span>
+      <div class="carousel-track" id="carouselTrack">
+        {latestPosts.map((post, i) => (
+          <a href={post.link} class="carousel-slide" data-index={i}>
+            {post.img ? (
+              <img src={post.img} alt={post.title} class="carousel-img" />
+            ) : (
+              <div class="carousel-placeholder"></div>
+            )}
+            <div class="carousel-overlay">
+              <span class="carousel-cat">{post.tags[0] || ""}</span>
+              <span class="carousel-title font-brand">{post.title}</span>
+            </div>
+          </a>
+        ))}
+      </div>
+
+      <!-- Dots -->
+      {latestPosts.length > 1 && (
+        <div class="carousel-dots" id="carouselDots">
+          {latestPosts.map((_, i) => (
+            <button class={`carousel-dot ${i === 0 ? "active" : ""}`} data-dot={i} aria-label={`Slide ${i + 1}`}></button>
+          ))}
+        </div>
+      )}
     </div>
 
   </div>
@@ -81,7 +112,6 @@ const currentPage = 1;
 
   <!-- ─── POSTS ──────────────────────────────────────────────────── -->
   <div class="posts-wrap">
-
     <div class="section-header">
       <span class="section-label">TheStandard</span>
       <div class="section-line"></div>
@@ -93,13 +123,12 @@ const currentPage = 1;
       pagination={{ enable: true, currentPage: currentPage }}
       postsPerPage={POSTS_PER_PAGE}
     />
-
   </div>
 
 </Layout>
 
 <style>
-  /* ── TICKER ────────────────────────────────────────────────────── */
+  /* ── TICKER ──────────────────────────────────────────────────── */
   .ticker-wrap {
     background: #141412;
     border-bottom: 0.5px solid #2a2a28;
@@ -112,7 +141,7 @@ const currentPage = 1;
     align-items: center;
     gap: 14px;
     animation: ticker 32s linear infinite;
-    font-family: var(--font-sans, 'Helvetica Neue', sans-serif);
+    font-family: var(--font-sans);
     font-size: 10px;
     letter-spacing: 0.15em;
     text-transform: uppercase;
@@ -125,11 +154,11 @@ const currentPage = 1;
     100% { transform: translateX(-50%); }
   }
 
-  /* ── HERO ──────────────────────────────────────────────────────── */
+  /* ── HERO ────────────────────────────────────────────────────── */
   .hero-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    min-height: 480px;
+    min-height: 500px;
     border-bottom: 0.5px solid #2a2a28;
   }
   .hero-left {
@@ -140,7 +169,7 @@ const currentPage = 1;
     border-right: 0.5px solid #2a2a28;
   }
   .hero-eyebrow {
-    font-family: var(--font-sans, 'Helvetica Neue', sans-serif);
+    font-family: var(--font-sans);
     font-size: 10px;
     letter-spacing: 0.22em;
     text-transform: uppercase;
@@ -148,32 +177,30 @@ const currentPage = 1;
     margin-bottom: 1.5rem;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
   }
-  .eyebrow-year { color: #B8986A; }
+  .eyebrow-divider { color: #333; }
+  .eyebrow-location { color: #B8986A; }
   .hero-h1 {
-    font-size: clamp(42px, 5vw, 60px);
+    font-size: clamp(38px, 4.5vw, 58px);
     line-height: 1.08;
     font-weight: normal;
     color: #E8E2D6;
     margin-bottom: 1.5rem;
     letter-spacing: -0.01em;
   }
-  .hero-h1 em {
-    font-style: italic;
-    color: #B8986A;
-  }
+  .hero-h1 em { font-style: italic; color: #B8986A; }
   .hero-desc {
-    font-family: var(--font-sans, 'Helvetica Neue', sans-serif);
+    font-family: var(--font-sans);
     font-size: 13px;
     line-height: 1.9;
-    color: #777;
+    color: #666;
     max-width: 380px;
     margin-bottom: 2.5rem;
   }
   .hero-cta {
     display: inline-block;
-    font-family: var(--font-sans, 'Helvetica Neue', sans-serif);
+    font-family: var(--font-sans);
     font-size: 11px;
     letter-spacing: 0.12em;
     text-transform: uppercase;
@@ -185,33 +212,90 @@ const currentPage = 1;
     align-self: flex-start;
     transition: border-color 0.2s, color 0.2s;
   }
-  .hero-cta:hover {
-    border-color: #B8986A;
-    color: #B8986A;
-  }
+  .hero-cta:hover { border-color: #B8986A; color: #B8986A; }
+
+  /* ── CAROUSEL ────────────────────────────────────────────────── */
   .hero-right {
-    background: #161614;
+    position: relative;
+    overflow: hidden;
+    background: #141412;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
-    padding: 2rem;
   }
-  .hero-logo-img {
-    max-width: 260px;
+  .carousel-track {
+    display: flex;
     width: 100%;
-    opacity: 0.85;
+    height: 100%;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .hero-right-label {
-    font-family: var(--font-sans, 'Helvetica Neue', sans-serif);
-    font-size: 9px;
-    letter-spacing: 0.2em;
+  .carousel-slide {
+    position: relative;
+    min-width: 100%;
+    height: 100%;
+    min-height: 500px;
+    display: block;
+    text-decoration: none;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .carousel-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.8s ease;
+  }
+  .carousel-slide:hover .carousel-img { transform: scale(1.03); }
+  .carousel-placeholder {
+    width: 100%;
+    height: 100%;
+    background: #1a1a18;
+  }
+  .carousel-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2.5rem 2rem 2rem;
+    background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.3) 60%, transparent 100%);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .carousel-cat {
+    font-family: var(--font-sans);
+    font-size: 10px;
+    letter-spacing: 0.18em;
     text-transform: uppercase;
-    color: #3a3a38;
+    color: #B8986A;
   }
+  .carousel-title {
+    font-size: 22px;
+    font-weight: normal;
+    color: #E8E2D6;
+    line-height: 1.2;
+  }
+  .carousel-dots {
+    position: absolute;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    display: flex;
+    gap: 6px;
+    z-index: 10;
+  }
+  .carousel-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #444;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: background 0.2s, transform 0.2s;
+  }
+  .carousel-dot.active { background: #B8986A; transform: scale(1.3); }
 
-  /* ── CATEGORY TABS ─────────────────────────────────────────────── */
+  /* ── CATEGORY TABS ───────────────────────────────────────────── */
   .cat-tabs-wrap {
     border-bottom: 0.5px solid #2a2a28;
     overflow-x: auto;
@@ -224,7 +308,7 @@ const currentPage = 1;
     min-width: max-content;
   }
   .cat-tab {
-    font-family: var(--font-sans, 'Helvetica Neue', sans-serif);
+    font-family: var(--font-sans);
     font-size: 10px;
     letter-spacing: 0.12em;
     text-transform: uppercase;
@@ -236,12 +320,9 @@ const currentPage = 1;
     transition: color 0.15s;
   }
   .cat-tab:hover { color: #999; }
-  .cat-tab.active {
-    color: #E8E2D6;
-    border-bottom: 2px solid #B8986A;
-  }
+  .cat-tab.active { color: #E8E2D6; border-bottom: 2px solid #B8986A; }
 
-  /* ── POSTS SECTION ─────────────────────────────────────────────── */
+  /* ── POSTS SECTION ───────────────────────────────────────────── */
   .posts-wrap {
     max-width: 1280px;
     margin: 0 auto;
@@ -254,36 +335,53 @@ const currentPage = 1;
     margin-bottom: 3rem;
   }
   .section-label {
-    font-family: var(--font-sans, 'Helvetica Neue', sans-serif);
+    font-family: var(--font-sans);
     font-size: 10px;
     letter-spacing: 0.22em;
     text-transform: uppercase;
     color: #444;
     white-space: nowrap;
   }
-  .section-line {
-    flex: 1;
-    height: 0.5px;
-    background: #2a2a28;
-  }
+  .section-line { flex: 1; height: 0.5px; background: #2a2a28; }
 
-  /* ── RESPONSIVE ────────────────────────────────────────────────── */
+  /* ── RESPONSIVE ──────────────────────────────────────────────── */
   @media (max-width: 768px) {
-    .hero-grid {
-      grid-template-columns: 1fr;
-    }
-    .hero-right {
-      display: none;
-    }
-    .hero-left {
-      padding: 3rem 1.5rem;
-      border-right: none;
-    }
-    .cat-tabs {
-      padding: 0 1.5rem;
-    }
-    .posts-wrap {
-      padding: 2.5rem 1.5rem 4rem;
-    }
+    .hero-grid { grid-template-columns: 1fr; }
+    .hero-right { display: none; }
+    .hero-left { padding: 3rem 1.5rem; border-right: none; }
+    .cat-tabs { padding: 0 1.5rem; }
+    .posts-wrap { padding: 2.5rem 1.5rem 4rem; }
   }
 </style>
+
+<script>
+  const track = document.getElementById('carouselTrack') as HTMLElement | null;
+  const dots = document.querySelectorAll<HTMLButtonElement>('.carousel-dot');
+  let current = 0;
+  let timer: ReturnType<typeof setInterval>;
+
+  function goTo(index: number) {
+    if (!track) return;
+    current = index;
+    track.style.transform = `translateX(-${current * 100}%)`;
+    dots.forEach((d, i) => d.classList.toggle('active', i === current));
+  }
+
+  function next() {
+    goTo((current + 1) % dots.length);
+  }
+
+  function startTimer() {
+    timer = setInterval(next, 4000);
+  }
+
+  dots.forEach((dot, i) => {
+    dot.addEventListener('click', () => {
+      clearInterval(timer);
+      goTo(i);
+      startTimer();
+    });
+  });
+
+  if (dots.length > 1) startTimer();
+</script>
