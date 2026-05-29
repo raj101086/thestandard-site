@@ -358,7 +358,7 @@ const latestPosts = allPosts
   const track = document.getElementById('carouselTrack') as HTMLElement | null;
   const dots = document.querySelectorAll<HTMLButtonElement>('.carousel-dot');
   let current = 0;
-  let timer: ReturnType<typeof setInterval>;
+  let timer: number;
 
   function goTo(index: number) {
     if (!track) return;
@@ -372,7 +372,7 @@ const latestPosts = allPosts
   }
 
   function startTimer() {
-    timer = setInterval(next, 4000);
+    timer = window.setInterval(next, 4000);
   }
 
   dots.forEach((dot, i) => {
