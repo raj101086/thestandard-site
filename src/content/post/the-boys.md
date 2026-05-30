@@ -12,11 +12,11 @@ The Boys ended last week and I genuinely don't know what to say.
 
 "Disappointed" doesn't even begin to cover it. I feel betrayed.
 
-When The Boys first came out, it was everything the safe, PG-13 superhero movies weren't. Sharp, brutal, unpredictable, and completely unafraid to offend. The first couple of seasons felt like a breath of fresh air — a show that actually had something to say.
+When The Boys first came out, it was everything the safe, PG-13 superhero movies weren't. Sharp, brutal, and genuinely unafraid to offend. The first couple of seasons felt like a breath of fresh air — a show that actually had something to say.
 
 Then it slowly started losing its way.
 
-The final season should have been Homelander unleashed. The most powerful and unstable man on the planet going scorched earth against Butcher. Instead, we got a supposedly godlike superhero on his knees, sobbing and begging for mercy. Completely disconnected from the character the show spent years building.
+The final season should have been Homelander unleashed. The most powerful and unstable man on the planet going scorched earth against Butcher. Instead, we got a supposedly godlike superhero on his knees, sobbing and begging for mercy. Disconnected from everything the show spent four seasons building.
 
 At this point, I honestly think even sticking closer to the comic book storyline would have been a better choice than whatever they ended up delivering.
 

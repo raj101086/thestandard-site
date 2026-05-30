@@ -10,10 +10,10 @@ img_alt: "Onitsuka Tiger Mexico 66 SD Vintage in cream and green"
 
 I bought my first pair of Onitsuka Tigers last week: the Mexico 66 SD Vintage.
 
-For years, friends kept telling me they were worth the price. I always liked the design but never quite understood the hype. Now I do.
+Friends had been telling me for years they were worth it. I believed them in theory but never enough to actually buy a pair. Now I get it.
 
-The first thing I noticed was how light they feel. The leather is soft right out of the box, the comfort is excellent, and they disappear on your feet in a way few sneakers do. That rare combination of being comfortable enough for all-day wear while still looking refined.
+They're light. Lighter than they look. The leather is soft from day one, no breaking-in period, and they sit on the foot in a way that just works. I wore them all day without thinking about them, which is about the best thing you can say about a shoe.
 
-And then there's the design. The Mexico 66 silhouette is one of those instantly recognisable shapes that has somehow remained stylish for decades. Simple, clean, and uniquely Onitsuka.
+The silhouette is from 1966 and it still looks right. Clean lines, the stripe, nothing extra. Some designs age because they chase trends. This one didn't bother.
 
-It's only been a week, but I can already tell these are going to get a lot of wear.
+It's been a week. They're already getting daily wear.
