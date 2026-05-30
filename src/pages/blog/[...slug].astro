@@ -2,116 +2,254 @@
 import { getCollection, render } from "astro:content";
 import PostLayout from "@/layouts/PostLayout.astro";
 
-// 根据 Astro v5/v6，对于 SSG 模式下的动态路由，需要使用 getStaticPaths()
-// 来告诉 Astro 在构建时生成哪些页面
 export async function getStaticPaths() {
-	const postEntries = await getCollection("post");
-	return postEntries.map((entry) => {
-		// 根据 Astro v5 官方文档，entry.id 就是条目的唯一标识符
-		// 对于 [...slug] 路由，需要将 entry.id 转换为 slug 数组
-		// entry.id 已经是相对于集合根目录的路径，例如 "dir/index" 或 "dir"
-		// 注意：对于 [...slug] 路由，params.slug 应该是字符串，Astro 会自动处理
-		const slugString = entry.id;
-		return {
-			params: { slug: slugString },
-			props: { entry },
-		};
-	});
+  const postEntries = await getCollection("post");
+  return postEntries.map((entry) => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }));
 }
 
-// 使用 [...slug] 路由来处理包含斜杠的路径（官方推荐）
-// slug 参数是数组格式，需要转换为字符串来匹配 entry.id
 const { slug } = Astro.params;
-const slugString = Array.isArray(slug) ? slug.join('/') : (slug || '');
-
-// 从 props 获取 entry（在 SSG 模式下通过 getStaticPaths 传递）
 const { entry } = Astro.props;
 
-// 如果找不到文章，返回 404
-if (!entry) {
-	return Astro.redirect("/404");
-}
+if (!entry) return Astro.redirect("/404");
 
-const { Content, headings } = await render(entry);
+const { Content } = await render(entry);
+
+const formattedDate = entry.data.publishDate.toLocaleDateString('en-US', {
+  year: 'numeric', month: 'long', day: 'numeric'
+});
 ---
 
 <PostLayout title={entry.data.title} description={entry.data.description}>
-	<!-- Reading progress bar -->
-	<div id="reading-progress" class="reading-progress" style="transform: scaleX(0);"></div>
 
-	<div class="post article">
-		<main class="relative site-container mx-auto my-8 md:my-12">
-			<!-- Article header -->
-			<header class="article-header">
-				<!-- Tags -->
-				<div class="article-tags">
-					{entry.data.tags && entry.data.tags.length > 0 ? (
-						entry.data.tags.map(tag => (
-							<span class="article-tag letter-spacing-wide text-xs">{tag}</span>
-						))
-					) : (
-						<span class="article-tag text-xs">Music</span>
-					)}
-				</div>
+  <!-- Reading progress bar -->
+  <div id="reading-progress" class="reading-progress"></div>
 
-				<!-- Title -->
-				<h1 class="article-title font-brand">
-					{entry.data.title}
-				</h1>
+  <article class="post-page">
 
-				<!-- Metadata -->
-				<div class="article-meta text-sm text-neutral-500 dark:text-neutral-400">
-					<time datetime={entry.data.publishDate.toISOString()}>
-						{entry.data.publishDate.toLocaleDateString('en-US', {
-							year: 'numeric',
-							month: 'long',
-							day: 'numeric'
-						})}
-					</time>
-					{entry.data.read && (
-						<>
-							<span class="article-meta-divider"></span>
-							<span>{entry.data.read} min read</span>
-						</>
-					)}
-				</div>
-			</header>
+    <!-- HERO IMAGE -->
+    {entry.data.img && (
+      <div class="post-hero">
+        <img
+          src={entry.data.img}
+          alt={entry.data.img_alt || entry.data.title}
+          class="post-hero-img"
+        />
+        <div class="post-hero-overlay"></div>
+      </div>
+    )}
 
-			<!-- Content area -->
-			<div class="relative flex justify-center">
+    <!-- HEADER -->
+    <header class="post-header">
+      <div class="post-header-inner">
+        {entry.data.tags && entry.data.tags.length > 0 && (
+          <div class="post-eyebrow">{entry.data.tags[0]}</div>
+        )}
+        <h1 class="post-title font-brand">{entry.data.title}</h1>
+        <div class="post-meta">
+          <time datetime={entry.data.publishDate.toISOString()}>{formattedDate}</time>
+        </div>
+      </div>
+    </header>
 
-				<!-- Article content -->
-				<div class="relative w-full max-w-3xl">
-					<article class="article-wrapper">
-						<div class="article-content">
-							<Content />
-						</div>
-					</article>
-				</div>
-			</div>
-		</main>
-	</div>
+    <!-- CONTENT -->
+    <div class="post-content-wrap">
+      <div class="post-content prose">
+        <Content />
+      </div>
+    </div>
+
+    <!-- BACK LINK -->
+    <div class="post-back">
+      <a href="/archive" class="post-back-link">← Back to Archive</a>
+    </div>
+
+  </article>
+
 </PostLayout>
 
+<style>
+  /* ── PROGRESS BAR ─────────────────────────────────────────────── */
+  .reading-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #B8986A;
+    transform: scaleX(0);
+    transform-origin: left;
+    z-index: 100;
+    transition: transform 0.1s linear;
+  }
+
+  /* ── HERO IMAGE ───────────────────────────────────────────────── */
+  .post-hero {
+    position: relative;
+    width: 100%;
+    max-height: 520px;
+    overflow: hidden;
+  }
+  .post-hero-img {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+  .post-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 40%, #1C1C1A 100%);
+  }
+
+  /* ── HEADER ───────────────────────────────────────────────────── */
+  .post-header {
+    padding: 3rem 2rem 2rem;
+    text-align: center;
+    border-bottom: 0.5px solid #2a2a28;
+  }
+  .post-header-inner { max-width: 720px; margin: 0 auto; }
+  .post-eyebrow {
+    font-family: var(--font-sans);
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #B8986A;
+    margin-bottom: 1rem;
+  }
+  .post-title {
+    font-size: clamp(32px, 5vw, 56px);
+    line-height: 1.1;
+    font-weight: normal;
+    color: #E8E2D6;
+    margin-bottom: 1.25rem;
+    letter-spacing: -0.01em;
+  }
+  .post-meta {
+    font-family: var(--font-sans);
+    font-size: 11px;
+    color: #555;
+    letter-spacing: 0.08em;
+  }
+
+  /* ── CONTENT ──────────────────────────────────────────────────── */
+  .post-content-wrap {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 3.5rem 2rem 4rem;
+  }
+  .post-content {
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: 1.9;
+    color: #888;
+  }
+
+  /* Prose overrides */
+  .post-content :global(p) {
+    color: #888;
+    margin-bottom: 1.5rem;
+    font-size: 15px;
+    line-height: 1.9;
+  }
+  .post-content :global(h2) {
+    font-family: var(--font-brand);
+    font-size: 24px;
+    font-weight: normal;
+    color: #E8E2D6;
+    margin: 2.5rem 0 1rem;
+  }
+  .post-content :global(h3) {
+    font-family: var(--font-brand);
+    font-size: 20px;
+    font-weight: normal;
+    color: #E8E2D6;
+    margin: 2rem 0 0.75rem;
+  }
+  .post-content :global(em) {
+    font-style: italic;
+    color: #A09890;
+  }
+  .post-content :global(strong) {
+    color: #E8E2D6;
+    font-weight: 500;
+  }
+  .post-content :global(a) {
+    color: #B8986A;
+    text-decoration: none;
+    border-bottom: 0.5px solid #B8986A40;
+    transition: border-color 0.2s;
+  }
+  .post-content :global(a:hover) {
+    border-color: #B8986A;
+  }
+  .post-content :global(blockquote) {
+    border-left: 2px solid #B8986A;
+    margin: 2rem 0;
+    padding: 1rem 1.5rem;
+    background: #1e1e1c;
+  }
+  .post-content :global(blockquote p) {
+    color: #B8986A;
+    font-style: italic;
+    font-size: 17px;
+    margin: 0;
+  }
+  .post-content :global(hr) {
+    border: none;
+    border-top: 0.5px solid #2a2a28;
+    margin: 2.5rem 0;
+  }
+  .post-content :global(iframe) {
+    width: 100%;
+    border: 0.5px solid #2a2a28;
+    margin: 1.5rem 0;
+  }
+  .post-content :global(img) {
+    width: 100%;
+    border-radius: 0;
+    margin: 1.5rem 0;
+  }
+
+  /* ── BACK LINK ────────────────────────────────────────────────── */
+  .post-back {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 2rem 4rem;
+    border-top: 0.5px solid #2a2a28;
+    padding-top: 2rem;
+  }
+  .post-back-link {
+    font-family: var(--font-sans);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #555;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .post-back-link:hover { color: #B8986A; }
+
+  /* ── RESPONSIVE ───────────────────────────────────────────────── */
+  @media (max-width: 640px) {
+    .post-hero-img { height: 280px; }
+    .post-header { padding: 2rem 1.5rem 1.5rem; }
+    .post-content-wrap { padding: 2.5rem 1.5rem 3rem; }
+    .post-back { padding: 1.5rem 1.5rem 3rem; }
+  }
+</style>
+
 <script>
-// Reading progress bar
-function updateReadingProgress() {
-  const progressBar = document.getElementById('reading-progress');
-  if (!progressBar) return;
-
-  const windowHeight = window.innerHeight;
-  const documentHeight = document.documentElement.scrollHeight;
-  const scrollTop = window.scrollY;
-  const scrollPercentage = (scrollTop / (documentHeight - windowHeight)) * 100;
-
-  progressBar.style.transform = `scaleX(${Math.min(scrollPercentage / 100, 1)})`;
-}
-
-// Event listener
-window.addEventListener('scroll', updateReadingProgress, { passive: true });
-
-// Initialize
-document.addEventListener('DOMContentLoaded', updateReadingProgress);
-updateReadingProgress();
+  function updateReadingProgress() {
+    const bar = document.getElementById('reading-progress');
+    if (!bar) return;
+    const scrolled = window.scrollY;
+    const total = document.documentElement.scrollHeight - window.innerHeight;
+    bar.style.transform = `scaleX(${Math.min(scrolled / total, 1)})`;
+  }
+  window.addEventListener('scroll', updateReadingProgress, { passive: true });
+  updateReadingProgress();
 </script>
-
