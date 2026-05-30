@@ -18,7 +18,7 @@ It's been on every playlist I've had since. Happy days, bad ones, long drives, l
 
 There's one couplet that's stuck with me for years — "you can't get what you want, but you can get me." Simple, sincere, and somehow more comforting than it has any right to be. The rest of the song earns those lines.
 
-Fifteen years later, the song still feels like drifting through a dream at sunset.
+I came to it late — sometime around 2018, 2019. The song was already a decade old. Didn't matter. It still felt like hearing something for the first time.
 
 ## Listen
 
