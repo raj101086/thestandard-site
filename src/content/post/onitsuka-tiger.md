@@ -1,7 +1,7 @@
 ---
 title: "Onitsuka Tiger Mexico 66 SD Vintage"
 description: "My first pair. I always liked the design but never quite understood the hype. Now I do."
-publishDate: "2026-05-30"
+publishDate: "2026-05-30T10:00:00"
 featured: false
 tags: ["Fashion"]
 img: "/assets/posts/Onitsuka_Tiger_.jpg"

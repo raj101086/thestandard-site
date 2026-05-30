@@ -1,7 +1,7 @@
 ---
 title: "The Boys — A Proper Ending Deserved"
 description: "Disappointed doesn't even begin to cover it. I feel betrayed."
-publishDate: "2026-05-30"
+publishDate: "2026-05-30T12:00:00"
 featured: false
 tags: ["Film & Series"]
 img: "/assets/posts/The_Boys_.jpg"
