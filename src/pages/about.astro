@@ -83,7 +83,7 @@ const categories = [...new Set(allPosts.flatMap(p => p.data.tags || []))];
         <div class="about-logo-box">
           <img src="/logo.png" alt="The Standard" class="about-logo-img" />
         </div>
-        <span class="about-logo-label">© 2026 The Standard</span>
+        <span class="about-logo-label">© 2026 The<em>Standard</em></span>
       </div>
 
     </div>
@@ -234,10 +234,14 @@ const categories = [...new Set(allPosts.flatMap(p => p.data.tags || []))];
   .about-logo-box {
     display: inline-block;
     background: #E8E2D6;
-    padding: 8px 16px;
+    padding: 4px 8px;
     width: fit-content;
   }
   .about-logo-img { height: 28px; width: auto; display: block; }
+  .about-logo-label em {
+    font-style: italic;
+    color: #B8986A;
+  }
   .about-logo-label {
     font-family: var(--font-sans);
     font-size: 10px;
