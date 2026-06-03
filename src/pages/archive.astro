@@ -20,20 +20,16 @@ const posts = allPosts
 
 const categories = [
   "Fashion", "Motorcycles", "Film & Series", "Music",
-  "Photography", "Books", "Coffee & Food", "Travel", "Watches"
+  "Books", "Coffee & Food", "Travel", "Watches"
 ];
 
-// Group posts by first tag
 const postsByCategory: Record<string, typeof posts> = {};
-const uncategorized: typeof posts = [];
 
 for (const post of posts) {
   if (post.tags.length > 0) {
     const cat = post.tags[0];
     if (!postsByCategory[cat]) postsByCategory[cat] = [];
     postsByCategory[cat].push(post);
-  } else {
-    uncategorized.push(post);
   }
 }
 
@@ -45,7 +41,6 @@ const formattedDate = (date: Date) =>
 
 <Layout title="Archive — The Standard">
 
-  <!-- PAGE HEADER -->
   <div class="archive-header">
     <div class="archive-header-inner">
       <div class="archive-eyebrow">Archive</div>
@@ -54,20 +49,18 @@ const formattedDate = (date: Date) =>
     </div>
   </div>
 
-  <!-- CATEGORY FILTER TABS -->
   <div class="filter-wrap">
     <div class="filter-tabs">
       <button class="filter-tab active" data-filter="all">All</button>
       {categories.map(cat => (
         <button class="filter-tab" data-filter={cat}>{cat}</button>
       ))}
+      <a href="/photography" class="filter-tab photo-link">Photography</a>
     </div>
   </div>
 
-  <!-- POST LIST -->
   <div class="archive-body">
 
-    <!-- ALL POSTS (flat list, shown when "All" active) -->
     <div class="post-list" id="list-all">
       {posts.length === 0 ? (
         <div class="empty-state">
@@ -87,7 +80,6 @@ const formattedDate = (date: Date) =>
       )}
     </div>
 
-    <!-- CATEGORY SECTIONS (shown when a specific category is active) -->
     {categories.map(cat => {
       const catPosts = postsByCategory[cat] || [];
       return (
@@ -122,7 +114,6 @@ const formattedDate = (date: Date) =>
 </Layout>
 
 <style>
-  /* ── PAGE HEADER ───────────────────────────────────────────────── */
   .archive-header {
     border-bottom: 0.5px solid #2a2a28;
     padding: 5rem 4rem 4rem;
@@ -150,7 +141,6 @@ const formattedDate = (date: Date) =>
     color: #666;
   }
 
-  /* ── FILTER TABS ───────────────────────────────────────────────── */
   .filter-wrap {
     border-bottom: 0.5px solid #2a2a28;
     overflow-x: auto;
@@ -175,21 +165,23 @@ const formattedDate = (date: Date) =>
     cursor: pointer;
     white-space: nowrap;
     transition: color 0.15s;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
   }
   .filter-tab:hover { color: #999; }
   .filter-tab.active {
     color: #E8E2D6;
     border-bottom: 2px solid #B8986A;
   }
+  .photo-link:hover { color: #B8986A; }
 
-  /* ── BODY ──────────────────────────────────────────────────────── */
   .archive-body {
     max-width: 1280px;
     margin: 0 auto;
     padding: 3rem 4rem 6rem;
   }
 
-  /* ── POST ROW ──────────────────────────────────────────────────── */
   .post-row {
     display: grid;
     grid-template-columns: 36px 120px 1fr auto 24px;
@@ -240,7 +232,6 @@ const formattedDate = (date: Date) =>
     transition: color 0.15s, opacity 0.15s;
   }
 
-  /* ── CATEGORY SECTION HEADER ───────────────────────────────────── */
   .cat-section-header {
     display: flex;
     align-items: center;
@@ -268,7 +259,6 @@ const formattedDate = (date: Date) =>
     letter-spacing: 0.08em;
   }
 
-  /* ── EMPTY STATE ───────────────────────────────────────────────── */
   .empty-state {
     padding: 3rem 0;
     border-top: 0.5px solid #222220;
@@ -288,7 +278,6 @@ const formattedDate = (date: Date) =>
 
   .hidden { display: none !important; }
 
-  /* ── RESPONSIVE ────────────────────────────────────────────────── */
   @media (max-width: 768px) {
     .archive-header { padding: 3rem 1.5rem 2.5rem; }
     .filter-tabs { padding: 0 1.5rem; }
@@ -304,7 +293,7 @@ const formattedDate = (date: Date) =>
 </style>
 
 <script>
-  const tabs = document.querySelectorAll<HTMLButtonElement>('.filter-tab');
+  const tabs = document.querySelectorAll<HTMLButtonElement>('.filter-tab:not(.photo-link)');
   const listAll = document.getElementById('list-all');
   const catSections = document.querySelectorAll<HTMLElement>('.category-section');
 
@@ -324,7 +313,6 @@ const formattedDate = (date: Date) =>
     }
   }
 
-  // Check URL query param on load
   const params = new URLSearchParams(window.location.search);
   const categoryParam = params.get('category');
   if (categoryParam) {
@@ -335,7 +323,6 @@ const formattedDate = (date: Date) =>
     tab.addEventListener('click', () => {
       const filter = tab.dataset.filter || 'all';
       activateFilter(filter);
-      // Update URL without reload
       const url = new URL(window.location.href);
       if (filter === 'all') {
         url.searchParams.delete('category');
