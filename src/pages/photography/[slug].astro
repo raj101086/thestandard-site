@@ -1,0 +1,329 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const series = await getCollection("photography");
+  return series.map(s => ({
+    params: { slug: s.id },
+    props: { series: s },
+  }));
+}
+
+const { series } = Astro.props;
+const { title, category, date, cover, photos, description } = series.data;
+
+const formattedDate = date.toLocaleDateString('en-US', {
+  year: 'numeric', month: 'long'
+});
+---
+
+<Layout title={`${title} — Photography — The Standard`}>
+
+  <!-- HERO -->
+  <div class="series-hero">
+    <img src={cover} alt={title} class="series-hero-img" />
+    <div class="series-hero-overlay"></div>
+    <div class="series-hero-content">
+      <span class="series-eyebrow">{category}</span>
+      <h1 class="series-title font-brand">{title}</h1>
+      <span class="series-meta">{formattedDate} · {photos.length} photographs</span>
+    </div>
+  </div>
+
+  <!-- DESCRIPTION -->
+  {description && (
+    <div class="series-desc-wrap">
+      <p class="series-desc">{description}</p>
+    </div>
+  )}
+
+  <!-- PHOTO GRID -->
+  <div class="gallery-wrap">
+    <div class="gallery-grid">
+      {photos.map((photo, i) => (
+        <button
+          class="gallery-item"
+          data-index={i}
+          aria-label={`View photo ${i + 1}`}
+        >
+          <img
+            src={photo.url}
+            alt={photo.caption || `${title} — photo ${i + 1}`}
+            class="gallery-img"
+            loading="lazy"
+          />
+          {photo.caption && (
+            <span class="gallery-caption">{photo.caption}</span>
+          )}
+        </button>
+      ))}
+    </div>
+  </div>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
+    <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous">‹</button>
+    <button class="lightbox-next" id="lightboxNext" aria-label="Next">›</button>
+    <div class="lightbox-img-wrap">
+      <img src="" alt="" class="lightbox-img" id="lightboxImg" />
+    </div>
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+    <div class="lightbox-counter" id="lightboxCounter"></div>
+  </div>
+
+  <!-- BACK -->
+  <div class="series-back">
+    <a href="/photography" class="back-link">← Back to Photography</a>
+  </div>
+
+</Layout>
+
+<style>
+  /* HERO */
+  .series-hero {
+    position: relative;
+    height: 60vh;
+    min-height: 400px;
+    overflow: hidden;
+  }
+  .series-hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+  .series-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 30%, #1C1C1A 100%);
+  }
+  .series-hero-content {
+    position: absolute;
+    bottom: 3rem;
+    left: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .series-eyebrow {
+    font-family: var(--font-sans);
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #B8986A;
+  }
+  .series-title {
+    font-size: clamp(32px, 5vw, 56px);
+    font-weight: normal;
+    color: #E8E2D6;
+    line-height: 1.1;
+  }
+  .series-meta {
+    font-family: var(--font-sans);
+    font-size: 11px;
+    color: #888;
+    letter-spacing: 0.06em;
+  }
+
+  /* DESCRIPTION */
+  .series-desc-wrap {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2.5rem 4rem;
+    border-bottom: 0.5px solid #2a2a28;
+  }
+  .series-desc {
+    font-family: var(--font-sans);
+    font-size: 14px;
+    line-height: 1.85;
+    color: #777;
+  }
+
+  /* GALLERY GRID */
+  .gallery-wrap {
+    padding: 3rem 4rem 5rem;
+  }
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4px;
+  }
+  .gallery-item {
+    position: relative;
+    aspect-ratio: 1;
+    overflow: hidden;
+    background: #1e1e1c;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  .gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease, opacity 0.3s;
+  }
+  .gallery-item:hover .gallery-img { transform: scale(1.04); opacity: 0.85; }
+  .gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.75rem;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    font-family: var(--font-sans);
+    font-size: 11px;
+    color: #E8E2D6;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .gallery-item:hover .gallery-caption { opacity: 1; }
+
+  /* LIGHTBOX */
+  .lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.95);
+    z-index: 200;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .lightbox.open { display: flex; }
+  .lightbox-img-wrap {
+    max-width: 90vw;
+    max-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .lightbox-img {
+    max-width: 90vw;
+    max-height: 80vh;
+    object-fit: contain;
+    display: block;
+  }
+  .lightbox-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: none;
+    border: none;
+    color: #888;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 8px;
+    transition: color 0.2s;
+  }
+  .lightbox-close:hover { color: #E8E2D6; }
+  .lightbox-prev, .lightbox-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #888;
+    font-size: 48px;
+    cursor: pointer;
+    padding: 1rem;
+    transition: color 0.2s;
+    line-height: 1;
+  }
+  .lightbox-prev { left: 1rem; }
+  .lightbox-next { right: 1rem; }
+  .lightbox-prev:hover, .lightbox-next:hover { color: #E8E2D6; }
+  .lightbox-caption {
+    font-family: var(--font-sans);
+    font-size: 12px;
+    color: #666;
+    margin-top: 1rem;
+    letter-spacing: 0.04em;
+    min-height: 18px;
+  }
+  .lightbox-counter {
+    font-family: var(--font-sans);
+    font-size: 10px;
+    color: #444;
+    letter-spacing: 0.12em;
+    margin-top: 6px;
+  }
+
+  /* BACK */
+  .series-back {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 4rem 4rem;
+  }
+  .back-link {
+    font-family: var(--font-sans);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #555;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .back-link:hover { color: #B8986A; }
+
+  @media (max-width: 768px) {
+    .series-hero-content { left: 1.5rem; bottom: 2rem; }
+    .series-desc-wrap { padding: 2rem 1.5rem; }
+    .gallery-wrap { padding: 2rem 1.5rem 4rem; }
+    .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+    .series-back { padding: 0 1.5rem 3rem; }
+  }
+</style>
+
+<script>
+  const photos = document.querySelectorAll<HTMLButtonElement>('.gallery-item');
+  const lightbox = document.getElementById('lightbox');
+  const lbImg = document.getElementById('lightboxImg') as HTMLImageElement;
+  const lbCaption = document.getElementById('lightboxCaption');
+  const lbCounter = document.getElementById('lightboxCounter');
+  const lbClose = document.getElementById('lightboxClose');
+  const lbPrev = document.getElementById('lightboxPrev');
+  const lbNext = document.getElementById('lightboxNext');
+
+  let current = 0;
+  const total = photos.length;
+
+  function open(index: number) {
+    current = index;
+    const img = photos[current].querySelector('img') as HTMLImageElement;
+    const cap = photos[current].querySelector('.gallery-caption');
+    lbImg!.src = img.src;
+    lbImg!.alt = img.alt;
+    lbCaption!.textContent = cap ? cap.textContent : '';
+    lbCounter!.textContent = `${current + 1} / ${total}`;
+    lightbox?.classList.add('open');
+    lightbox?.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function close() {
+    lightbox?.classList.remove('open');
+    lightbox?.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+
+  function prev() { open((current - 1 + total) % total); }
+  function next() { open((current + 1) % total); }
+
+  photos.forEach((btn, i) => btn.addEventListener('click', () => open(i)));
+  lbClose?.addEventListener('click', close);
+  lbPrev?.addEventListener('click', prev);
+  lbNext?.addEventListener('click', next);
+  lightbox?.addEventListener('click', (e) => { if (e.target === lightbox) close(); });
+
+  document.addEventListener('keydown', (e) => {
+    if (!lightbox?.classList.contains('open')) return;
+    if (e.key === 'Escape') close();
+    if (e.key === 'ArrowLeft') prev();
+    if (e.key === 'ArrowRight') next();
+  });
+</script>

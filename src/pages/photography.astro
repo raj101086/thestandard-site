@@ -1,0 +1,258 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { getCollection } from "astro:content";
+
+const allSeries = await getCollection("photography");
+
+const series = allSeries.sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+
+const categories = ["Street", "Landscape", "Travel", "Architecture", "Nature", "Black & White"];
+---
+
+<Layout title="Photography — The Standard">
+
+  <!-- HEADER -->
+  <div class="photo-header">
+    <div class="photo-eyebrow">Photography</div>
+    <h1 class="photo-title font-brand">Through the lens.</h1>
+    <p class="photo-desc">Street, landscape, travel, architecture, nature. Pune and beyond.</p>
+  </div>
+
+  <!-- FILTER TABS -->
+  <div class="filter-wrap">
+    <div class="filter-tabs">
+      <button class="filter-tab active" data-filter="all">All</button>
+      {categories.map(cat => (
+        <button class="filter-tab" data-filter={cat}>{cat}</button>
+      ))}
+    </div>
+  </div>
+
+  <!-- GRID -->
+  <div class="photo-grid-wrap">
+    {series.length === 0 ? (
+      <div class="empty-state">
+        <span class="empty-title font-brand">Coming soon.</span>
+        <p class="empty-desc">First series are being prepared.</p>
+      </div>
+    ) : (
+      <div class="photo-grid" id="photoGrid">
+        {series.map(s => (
+          <a
+            href={`/photography/${s.id}`}
+            class="series-card"
+            data-category={s.data.category}
+          >
+            <div class="series-img-wrap">
+              <img
+                src={s.data.cover}
+                alt={s.data.title}
+                class="series-img"
+                loading="lazy"
+              />
+              <div class="series-overlay">
+                <span class="series-count">{s.data.photos.length} photos</span>
+              </div>
+            </div>
+            <div class="series-info">
+              <span class="series-cat">{s.data.category}</span>
+              <h2 class="series-title font-brand">{s.data.title}</h2>
+              <span class="series-date">
+                {s.data.date.toLocaleDateString('en-US', { year: 'numeric', month: 'short' })}
+              </span>
+            </div>
+          </a>
+        ))}
+      </div>
+    )}
+  </div>
+
+</Layout>
+
+<style>
+  .photo-header {
+    padding: 5rem 4rem 4rem;
+    border-bottom: 0.5px solid #2a2a28;
+  }
+  .photo-eyebrow {
+    font-family: var(--font-sans);
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #B8986A;
+    margin-bottom: 1.25rem;
+  }
+  .photo-title {
+    font-size: clamp(40px, 5vw, 64px);
+    line-height: 1.0;
+    font-weight: normal;
+    color: #E8E2D6;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+  }
+  .photo-desc {
+    font-family: var(--font-sans);
+    font-size: 13px;
+    color: #555;
+    letter-spacing: 0.04em;
+  }
+
+  /* FILTER TABS */
+  .filter-wrap {
+    border-bottom: 0.5px solid #2a2a28;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .filter-wrap::-webkit-scrollbar { display: none; }
+  .filter-tabs {
+    display: flex;
+    padding: 0 4rem;
+    min-width: max-content;
+  }
+  .filter-tab {
+    font-family: var(--font-sans);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #555;
+    padding: 14px 18px 12px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: color 0.15s;
+  }
+  .filter-tab:hover { color: #999; }
+  .filter-tab.active {
+    color: #E8E2D6;
+    border-bottom: 2px solid #B8986A;
+  }
+
+  /* GRID */
+  .photo-grid-wrap {
+    padding: 3rem 4rem 5rem;
+  }
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  /* CARD */
+  .series-card {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .series-img-wrap {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 4/3;
+    background: #1e1e1c;
+  }
+  .series-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.7s ease;
+  }
+  .series-card:hover .series-img { transform: scale(1.04); }
+  .series-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+  }
+  .series-card:hover .series-overlay { opacity: 1; }
+  .series-count {
+    font-family: var(--font-sans);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #E8E2D6;
+  }
+  .series-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .series-cat {
+    font-family: var(--font-sans);
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #B8986A;
+  }
+  .series-title {
+    font-size: 18px;
+    font-weight: normal;
+    color: #E8E2D6;
+    line-height: 1.3;
+    transition: color 0.2s;
+  }
+  .series-card:hover .series-title { color: #B8986A; }
+  .series-date {
+    font-family: var(--font-sans);
+    font-size: 11px;
+    color: #444;
+  }
+
+  /* EMPTY */
+  .empty-state {
+    padding: 5rem 0;
+    text-align: center;
+  }
+  .empty-title {
+    font-size: 28px;
+    color: #333;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  .empty-desc {
+    font-family: var(--font-sans);
+    font-size: 13px;
+    color: #444;
+  }
+
+  /* HIDDEN */
+  .series-card.hidden { display: none; }
+
+  @media (max-width: 768px) {
+    .photo-header { padding: 3rem 1.5rem 2.5rem; }
+    .filter-tabs { padding: 0 1.5rem; }
+    .photo-grid-wrap { padding: 2rem 1.5rem 4rem; }
+    .photo-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+  }
+  @media (max-width: 480px) {
+    .photo-grid { grid-template-columns: 1fr; }
+  }
+</style>
+
+<script>
+  const tabs = document.querySelectorAll<HTMLButtonElement>('.filter-tab');
+  const cards = document.querySelectorAll<HTMLElement>('.series-card');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      const filter = tab.dataset.filter;
+      cards.forEach(card => {
+        if (filter === 'all' || card.dataset.category === filter) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    });
+  });
+</script>
