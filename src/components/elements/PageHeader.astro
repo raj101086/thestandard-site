@@ -1,0 +1,5 @@
+---
+const { title = "", description = "" } = Astro.props;
+---
+{title && <h1 class="font-brand text-4xl text-[#E8E2D6] mb-4">{title}</h1>}
+{description && <p class="text-[#888] text-sm">{description}</p>}
