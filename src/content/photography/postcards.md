@@ -11,8 +11,6 @@ photos:
     caption: "Tibetan prayer flags at Leh Main Market"
   - url: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1780470298/PSX_20220921_220114_bqyyyd.jpg"
     caption: "Zanskar Valley from top of Sirsir-la pass at 15700ft"
-  - url: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1780470301/PSX_20221015_210828_hannxo.jpg"
-    caption: "Street performer at Malacca, Malaysia." 
   - url: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1780470298/PSX_20220920_182304_o3xeyb.jpg"
     caption: "Leh Post office"
   - url: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1780470295/PSX_20221007_184419_yfdhqs.jpg"
