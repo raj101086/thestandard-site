@@ -2,7 +2,7 @@
 title: "The Boys — A Proper Ending Deserved"
 description: "Disappointed doesn't even begin to cover it. I feel betrayed."
 publishDate: "2026-05-30T12:00:00"
-featured: false
+featured: true
 tags: ["Film & Series"]
 img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1780458817/The_Boys__y1udyk.jpg"
 img_alt: "The Boys Final Season — Prime Video"
