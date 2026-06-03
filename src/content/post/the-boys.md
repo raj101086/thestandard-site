@@ -4,7 +4,7 @@ description: "Disappointed doesn't even begin to cover it. I feel betrayed."
 publishDate: "2026-05-30T12:00:00"
 featured: false
 tags: ["Film & Series"]
-img: "/assets/posts/The_Boys_.jpg"
+img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1780458817/The_Boys__y1udyk.jpg"
 img_alt: "The Boys Final Season — Prime Video"
 ---
 

@@ -4,7 +4,7 @@ description: "His films are not for everyone. Somehow you end up completely mesm
 publishDate: "2026-05-31T10:00:00"
 featured: false
 tags: ["Film & Series"]
-img: "/assets/posts/wongkar_wai.jpg"
+img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1780458821/wongkar_wai_kwnekh.jpg"
 img_alt: "Wong Kar-wai on set"
 ---
 

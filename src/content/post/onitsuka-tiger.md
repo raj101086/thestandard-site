@@ -4,7 +4,7 @@ description: "My first pair. I always liked the design but never quite understoo
 publishDate: "2026-05-30T10:00:00"
 featured: false
 tags: ["Fashion"]
-img: "/assets/posts/Onitsuka_Tiger_.jpg"
+img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1780458816/Onitsuka_Tiger__mm4vig.jpg"
 img_alt: "Onitsuka Tiger Mexico 66 SD Vintage in cream and green"
 ---
 

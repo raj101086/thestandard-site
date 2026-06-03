@@ -4,7 +4,7 @@ description: "I can't remember where I first heard it. I remember pulling out Sh
 publishDate: "2026-05-30T14:00:00"
 featured: false
 tags: ["Music"]
-img: "/assets/posts/gorillaz.jpg"
+img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1780458813/gorillaz_hs5rrv.jpg"
 img_alt: "Gorillaz — Plastic Beach"
 ---
 

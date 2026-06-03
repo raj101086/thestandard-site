@@ -4,7 +4,7 @@ description: "It started with a Timex my grandma gifted me. It hasn't stopped si
 publishDate: "2026-06-02T10:00:00"
 featured: false
 tags: ["Watches"]
-img: "/assets/posts/watches.jpg"
+img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1780458820/watches_jz5ris.jpg"
 img_alt: "Tissot Seastar, Mido Ocean Star, Zeppelin LZ129, Tissot chronograph"
 ---
 
