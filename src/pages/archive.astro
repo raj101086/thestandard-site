@@ -3,24 +3,34 @@ import Layout from "@/layouts/Layout.astro";
 import { getCollection } from "astro:content";
 
 const allPosts = await getCollection("post");
+const allPhoto = await getCollection("photography");
 
-const posts = allPosts
-  .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
-  .map(post => ({
+const posts = [
+  ...allPosts.map(post => ({
     id: post.id,
     title: post.data.title,
-    description: post.data.description,
+    description: post.data.description || "",
     publishDate: post.data.publishDate,
     tags: post.data.tags || [],
     img: post.data.img,
-    img_alt: post.data.img_alt,
     link: `/blog/${post.id}`,
-    featured: post.data.featured || false,
-  }));
+    type: "post",
+  })),
+  ...allPhoto.map(s => ({
+    id: s.id,
+    title: s.data.title,
+    description: s.data.description || "",
+    publishDate: s.data.date,
+    tags: ["Photography"],
+    img: s.data.cover,
+    link: `/photography/${s.id}`,
+    type: "photography",
+  })),
+].sort((a, b) => b.publishDate.valueOf() - a.publishDate.valueOf());
 
 const categories = [
   "Fashion", "Motorcycles", "Film & Series", "Music",
-  "Books", "Coffee & Food", "Travel", "Watches"
+  "Photography", "Books", "Coffee & Food", "Travel", "Watches"
 ];
 
 const postsByCategory: Record<string, typeof posts> = {};
@@ -55,7 +65,7 @@ const formattedDate = (date: Date) =>
       {categories.map(cat => (
         <button class="filter-tab" data-filter={cat}>{cat}</button>
       ))}
-      <a href="/photography" class="filter-tab photo-link">Photography</a>
+      <button class="filter-tab" data-filter="Photography">Photography</button>
     </div>
   </div>
 
@@ -174,7 +184,6 @@ const formattedDate = (date: Date) =>
     color: #E8E2D6;
     border-bottom: 2px solid #B8986A;
   }
-  .photo-link:hover { color: #B8986A; }
 
   .archive-body {
     max-width: 1280px;
@@ -293,7 +302,7 @@ const formattedDate = (date: Date) =>
 </style>
 
 <script>
-  const tabs = document.querySelectorAll<HTMLButtonElement>('.filter-tab:not(.photo-link)');
+  const tabs = document.querySelectorAll<HTMLButtonElement>('.filter-tab');
   const listAll = document.getElementById('list-all');
   const catSections = document.querySelectorAll<HTMLElement>('.category-section');
 
