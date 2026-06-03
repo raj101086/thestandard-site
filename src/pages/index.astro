@@ -7,15 +7,26 @@ const POSTS_PER_PAGE = 6;
 const currentPage = 1;
 
 const allPosts = await getCollection("post");
-const latestPosts = allPosts
-  .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
-  .slice(0, 5)
-  .map(post => ({
+const allPhoto = await getCollection("photography");
+
+const latestPosts = [
+  ...allPosts.map(post => ({
     title: post.data.title,
     tags: post.data.tags || [],
     img: post.data.img || null,
     link: `/blog/${post.id}`,
-  }));
+    date: post.data.publishDate,
+  })),
+  ...allPhoto.map(s => ({
+    title: s.data.title,
+    tags: ["Photography"],
+    img: s.data.cover || null,
+    link: `/photography/${s.id}`,
+    date: s.data.date,
+  })),
+]
+  .sort((a, b) => b.date.valueOf() - a.date.valueOf())
+  .slice(0, 5);
 ---
 
 <Layout title="The Standard">
@@ -110,7 +121,7 @@ const latestPosts = allPosts
       <a href="/archive?category=Motorcycles" class="cat-tab">Motorcycles</a>
       <a href="/archive?category=Film+%26+Series" class="cat-tab">Film & Series</a>
       <a href="/archive?category=Music" class="cat-tab">Music</a>
-      <a href="/photography" class="cat-tab">Photography</a>
+      <a href="/archive?category=Photography" class="cat-tab">Photography</a>
       <a href="/archive?category=Books" class="cat-tab">Books</a>
       <a href="/archive?category=Coffee+%26+Food" class="cat-tab">Coffee & Food</a>
       <a href="/archive?category=Travel" class="cat-tab">Travel</a>
