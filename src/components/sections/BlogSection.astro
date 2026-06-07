@@ -21,12 +21,6 @@ let posts = allPosts.sort(
   (a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
 );
 
-const featuredPost = posts.find((post) => post.data.featured);
-
-if (featuredPost && listPage) {
-  posts = posts.filter((post) => post.data.featured !== true);
-}
-
 const totalPages = Math.ceil(posts.length / postsPerPage);
 
 if (pagination.enable) {
@@ -41,25 +35,9 @@ const postsWithLinks = posts.map(post => ({
   ...post,
   data: { ...post.data, link: `/blog/${post.id}` }
 }));
-
-const featuredPostWithLink = featuredPost ? {
-  ...featuredPost,
-  data: { ...featuredPost.data, link: `/blog/${featuredPost.id}` }
-} : null;
 ---
 
 {/* Featured post — list page, first page only */}
-{listPage && featuredPostWithLink && pagination.currentPage === 1 && (
-  <section class="mb-16">
-    <div class="site-container">
-      <h2 class="featured-heading">Featured</h2>
-      <BlogCard
-        layout="horizontal"
-        content={{ ...featuredPostWithLink.data, ...featuredPostWithLink }}
-      />
-    </div>
-  </section>
-)}
 
 <section>
   <div class="site-container space-y-10 md:space-y-16">
