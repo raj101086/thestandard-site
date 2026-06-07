@@ -22,11 +22,12 @@ let posts = allPosts.sort(
 );
 
 const featuredPost = posts.find((post) => post.data.featured);
-const totalPages = Math.ceil(posts.length / postsPerPage);
 
-if (featuredPost && listPage && pagination.currentPage === 1) {
+if (featuredPost && listPage) {
   posts = posts.filter((post) => post.data.featured !== true);
 }
+
+const totalPages = Math.ceil(posts.length / postsPerPage);
 
 if (pagination.enable) {
   const indexOfLastPost = pagination.currentPage * postsPerPage;
