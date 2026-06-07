@@ -1,0 +1,155 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import BlogCard from "@/components/cards/BlogCard.astro";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const allPosts = await getCollection("post");
+
+  const categories = [
+    "Fashion", "Motorcycles", "Film & Series", "Music",
+    "Photography", "Books", "Coffee & Food", "Travel", "Watches"
+  ];
+
+  return categories.map(category => {
+    const slug = category.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+    const filtered = allPosts.filter(post =>
+      post.data.tags?.includes(category)
+    ).sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
+
+    return {
+      params: { category: slug },
+      props: { category, posts: filtered }
+    };
+  });
+}
+
+const { category, posts } = Astro.props;
+
+const postsWithLinks = posts.map(post => ({
+  ...post,
+  data: { ...post.data, link: `/blog/${post.id}` }
+}));
+---
+
+<Layout title={`${category} — The Standard`}>
+
+  <div class="cat-tabs-wrap">
+    <div class="cat-tabs">
+      <a href="/blog" class="cat-tab">All Posts</a>
+      <a href="/blog/category/fashion" class:list={["cat-tab", { active: category === "Fashion" }]}>Fashion</a>
+      <a href="/blog/category/motorcycles" class:list={["cat-tab", { active: category === "Motorcycles" }]}>Motorcycles</a>
+      <a href="/blog/category/film-series" class:list={["cat-tab", { active: category === "Film & Series" }]}>Film & Series</a>
+      <a href="/blog/category/music" class:list={["cat-tab", { active: category === "Music" }]}>Music</a>
+      <a href="/blog/category/photography" class:list={["cat-tab", { active: category === "Photography" }]}>Photography</a>
+      <a href="/blog/category/books" class:list={["cat-tab", { active: category === "Books" }]}>Books</a>
+      <a href="/blog/category/coffee-food" class:list={["cat-tab", { active: category === "Coffee & Food" }]}>Coffee & Food</a>
+      <a href="/blog/category/travel" class:list={["cat-tab", { active: category === "Travel" }]}>Travel</a>
+      <a href="/blog/category/watches" class:list={["cat-tab", { active: category === "Watches" }]}>Watches</a>
+    </div>
+  </div>
+
+  <div class="posts-wrap">
+    <div class="section-header">
+      <span class="section-label">{category}</span>
+      <div class="section-line"></div>
+      <span class="section-count">{posts.length} {posts.length === 1 ? 'post' : 'posts'}</span>
+    </div>
+
+    {posts.length === 0 ? (
+      <div class="empty-state">
+        <p>No posts in this category yet.</p>
+      </div>
+    ) : (
+      <div class="grid">
+        {postsWithLinks.map(post => (
+          <BlogCard content={{ ...post.data, ...post }} />
+        ))}
+      </div>
+    )}
+  </div>
+
+</Layout>
+
+<style>
+  .cat-tabs-wrap {
+    border-bottom: 0.5px solid #2a2a28;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .cat-tabs-wrap::-webkit-scrollbar { display: none; }
+  .cat-tabs {
+    display: flex;
+    padding: 0 4rem;
+    min-width: max-content;
+  }
+  .cat-tab {
+    font-family: var(--font-sans, 'Helvetica Neue', sans-serif);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #555;
+    padding: 14px 18px 12px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    white-space: nowrap;
+    transition: color 0.15s;
+  }
+  .cat-tab:hover { color: #999; }
+  .cat-tab.active {
+    color: #E8E2D6;
+    border-bottom: 2px solid #B8986A;
+  }
+
+  .posts-wrap {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 3.5rem 4rem 5rem;
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 3rem;
+  }
+  .section-label {
+    font-family: var(--font-sans, 'Helvetica Neue', sans-serif);
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #444;
+    white-space: nowrap;
+  }
+  .section-line {
+    flex: 1;
+    height: 0.5px;
+    background: #2a2a28;
+  }
+  .section-count {
+    font-family: var(--font-sans, 'Helvetica Neue', sans-serif);
+    font-size: 10px;
+    color: #444;
+    letter-spacing: 0.08em;
+    white-space: nowrap;
+  }
+  .grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .empty-state {
+    font-family: var(--font-sans, 'Helvetica Neue', sans-serif);
+    font-size: 13px;
+    color: #555;
+    padding: 4rem 0;
+  }
+
+  @media (max-width: 1024px) {
+    .grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 768px) {
+    .cat-tabs { padding: 0 1.5rem; }
+    .posts-wrap { padding: 2.5rem 1.5rem 4rem; }
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>
