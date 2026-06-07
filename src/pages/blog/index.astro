@@ -8,7 +8,6 @@ const currentPage = 1;
 
 <Layout title="The Standard">
 
-  <!-- ─── TICKER ─────────────────────────────────────────────────── -->
   <div class="ticker-wrap">
     <div class="ticker-inner">
       <span>Recently: Setting up TheStandard</span>
@@ -18,7 +17,6 @@ const currentPage = 1;
       <span>Categories: Fashion · Motorcycles · Film · Music · Photography · Books · Coffee · Travel · Watches</span>
       <span class="sep">·</span>
       <span>Status: First posts coming soon</span>
-      <!-- duplicate for seamless loop -->
       <span class="gap"></span>
       <span>Recently: Setting up TheStandard</span>
       <span class="sep">·</span>
@@ -30,40 +28,6 @@ const currentPage = 1;
     </div>
   </div>
 
-  <!-- ─── HERO ───────────────────────────────────────────────────── -->
-  <div class="hero-grid">
-
-    <div class="hero-left">
-      <div class="hero-eyebrow">
-        Coming Soon
-        <span class="eyebrow-year">— 2026</span>
-      </div>
-
-      <h1 class="font-brand hero-h1">
-        Real posts are<br>
-        <em>on the way.</em>
-      </h1>
-
-      <p class="hero-desc">
-        Motorcycles, fashion, film, music, photography, books, coffee,
-        and travel. Posted when something is genuinely worth sharing.
-      </p>
-
-      <a href="/blog" class="hero-cta">Explore Categories →</a>
-    </div>
-
-    <div class="hero-right">
-      <img
-        src="/logo.png"
-        alt="The Standard"
-        class="hero-logo-img"
-      />
-      <span class="hero-right-label">Featured Image</span>
-    </div>
-
-  </div>
-
-  <!-- ─── CATEGORY TABS ──────────────────────────────────────────── -->
   <div class="cat-tabs-wrap">
     <div class="cat-tabs">
       <a href="/blog" class="cat-tab active">All Posts</a>
@@ -79,27 +43,23 @@ const currentPage = 1;
     </div>
   </div>
 
-  <!-- ─── POSTS ──────────────────────────────────────────────────── -->
   <div class="posts-wrap">
-
     <div class="section-header">
       <span class="section-label">TheStandard</span>
       <div class="section-line"></div>
     </div>
 
     <BlogSection
-      title=""
+      title="All Articles"
       listPage={true}
       pagination={{ enable: true, currentPage: currentPage }}
       postsPerPage={POSTS_PER_PAGE}
     />
-
   </div>
 
 </Layout>
 
 <style>
-  /* ── TICKER ────────────────────────────────────────────────────── */
   .ticker-wrap {
     background: #141412;
     border-bottom: 0.5px solid #2a2a28;
@@ -125,93 +85,6 @@ const currentPage = 1;
     100% { transform: translateX(-50%); }
   }
 
-  /* ── HERO ──────────────────────────────────────────────────────── */
-  .hero-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    min-height: 480px;
-    border-bottom: 0.5px solid #2a2a28;
-  }
-  .hero-left {
-    padding: 5rem 3rem 5rem 4rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-right: 0.5px solid #2a2a28;
-  }
-  .hero-eyebrow {
-    font-family: var(--font-sans, 'Helvetica Neue', sans-serif);
-    font-size: 10px;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-    color: #555;
-    margin-bottom: 1.5rem;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  .eyebrow-year { color: #B8986A; }
-  .hero-h1 {
-    font-size: clamp(42px, 5vw, 60px);
-    line-height: 1.08;
-    font-weight: normal;
-    color: #E8E2D6;
-    margin-bottom: 1.5rem;
-    letter-spacing: -0.01em;
-  }
-  .hero-h1 em {
-    font-style: italic;
-    color: #B8986A;
-  }
-  .hero-desc {
-    font-family: var(--font-sans, 'Helvetica Neue', sans-serif);
-    font-size: 13px;
-    line-height: 1.9;
-    color: #777;
-    max-width: 380px;
-    margin-bottom: 2.5rem;
-  }
-  .hero-cta {
-    display: inline-block;
-    font-family: var(--font-sans, 'Helvetica Neue', sans-serif);
-    font-size: 11px;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    border: 1px solid #3a3a38;
-    color: #E8E2D6;
-    padding: 13px 26px;
-    background: transparent;
-    text-decoration: none;
-    align-self: flex-start;
-    transition: border-color 0.2s, color 0.2s;
-  }
-  .hero-cta:hover {
-    border-color: #B8986A;
-    color: #B8986A;
-  }
-  .hero-right {
-    background: #161614;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
-    padding: 2rem;
-  }
-  .hero-logo-img {
-    max-width: 260px;
-    width: 100%;
-    opacity: 0.85;
-  }
-  .hero-right-label {
-    font-family: var(--font-sans, 'Helvetica Neue', sans-serif);
-    font-size: 9px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: #3a3a38;
-  }
-
-  /* ── CATEGORY TABS ─────────────────────────────────────────────── */
   .cat-tabs-wrap {
     border-bottom: 0.5px solid #2a2a28;
     overflow-x: auto;
@@ -241,7 +114,6 @@ const currentPage = 1;
     border-bottom: 2px solid #B8986A;
   }
 
-  /* ── POSTS SECTION ─────────────────────────────────────────────── */
   .posts-wrap {
     max-width: 1280px;
     margin: 0 auto;
@@ -267,23 +139,8 @@ const currentPage = 1;
     background: #2a2a28;
   }
 
-  /* ── RESPONSIVE ────────────────────────────────────────────────── */
   @media (max-width: 768px) {
-    .hero-grid {
-      grid-template-columns: 1fr;
-    }
-    .hero-right {
-      display: none;
-    }
-    .hero-left {
-      padding: 3rem 1.5rem;
-      border-right: none;
-    }
-    .cat-tabs {
-      padding: 0 1.5rem;
-    }
-    .posts-wrap {
-      padding: 2.5rem 1.5rem 4rem;
-    }
+    .cat-tabs { padding: 0 1.5rem; }
+    .posts-wrap { padding: 2.5rem 1.5rem 4rem; }
   }
 </style>
