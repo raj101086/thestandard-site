@@ -3,6 +3,7 @@ import Layout from "@/layouts/Layout.astro";
 import BlogCard from "@/components/cards/BlogCard.astro";
 import Pagination from "@/components/widgets/Pagination.astro";
 import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
 
 const POSTS_PER_PAGE = 6;
 
@@ -14,9 +15,7 @@ export async function getStaticPaths() {
     "Photography", "Books", "Coffee & Food", "Travel", "Watches"
   ];
 
-  const paths: { params: Record<string, string>; props: Record<string, unknown> }[] = [];
-
-  for (const category of categories) {
+  return categories.flatMap(category => {
     const slug = category.toLowerCase().replace(/[^a-z0-9]+/g, '-');
     const filtered = allPosts
       .filter(post => post.data.tags?.includes(category))
@@ -24,15 +23,18 @@ export async function getStaticPaths() {
 
     const totalPages = Math.max(1, Math.ceil(filtered.length / POSTS_PER_PAGE));
 
-    for (let page = 1; page <= totalPages; page++) {
-      paths.push({
-        params: { category: slug },
-        props: { category, allPosts: filtered, currentPage: page, totalPages }
-      });
-    }
-  }
+    return Array.from({ length: totalPages }, (_, i) => ({
+      params: { category: slug },
+      props: { category, allPosts: filtered, currentPage: i + 1, totalPages }
+    }));
+  });
+}
 
-  return paths;
+interface Props {
+  category: string;
+  allPosts: CollectionEntry<"post">[];
+  currentPage: number;
+  totalPages: number;
 }
 
 const { category, allPosts, currentPage, totalPages } = Astro.props;
