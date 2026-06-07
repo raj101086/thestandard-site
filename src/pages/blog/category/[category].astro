@@ -14,7 +14,7 @@ export async function getStaticPaths() {
     "Photography", "Books", "Coffee & Food", "Travel", "Watches"
   ];
 
-  const paths = [];
+  const paths: { params: Record<string, string>; props: Record<string, unknown> }[] = [];
 
   for (const category of categories) {
     const slug = category.toLowerCase().replace(/[^a-z0-9]+/g, '-');
