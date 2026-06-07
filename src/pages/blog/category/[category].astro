@@ -8,6 +8,7 @@ import type { CollectionEntry } from "astro:content";
 const POSTS_PER_PAGE = 6;
 
 export async function getStaticPaths() {
+  const POSTS_PER_PAGE = 6;
   const allPosts = await getCollection("post");
 
   const categories = [
