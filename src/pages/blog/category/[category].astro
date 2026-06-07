@@ -1,7 +1,10 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import BlogCard from "@/components/cards/BlogCard.astro";
+import Pagination from "@/components/widgets/Pagination.astro";
 import { getCollection } from "astro:content";
+
+const POSTS_PER_PAGE = 6;
 
 export async function getStaticPaths() {
   const allPosts = await getCollection("post");
@@ -11,25 +14,38 @@ export async function getStaticPaths() {
     "Photography", "Books", "Coffee & Food", "Travel", "Watches"
   ];
 
-  return categories.map(category => {
-    const slug = category.toLowerCase().replace(/[^a-z0-9]+/g, '-');
-    const filtered = allPosts.filter(post =>
-      post.data.tags?.includes(category)
-    ).sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
+  const paths = [];
 
-    return {
-      params: { category: slug },
-      props: { category, posts: filtered }
-    };
-  });
+  for (const category of categories) {
+    const slug = category.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+    const filtered = allPosts
+      .filter(post => post.data.tags?.includes(category))
+      .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
+
+    const totalPages = Math.max(1, Math.ceil(filtered.length / POSTS_PER_PAGE));
+
+    for (let page = 1; page <= totalPages; page++) {
+      paths.push({
+        params: { category: slug },
+        props: { category, allPosts: filtered, currentPage: page, totalPages }
+      });
+    }
+  }
+
+  return paths;
 }
 
-const { category, posts } = Astro.props;
+const { category, allPosts, currentPage, totalPages } = Astro.props;
+
+const indexOfFirstPost = (currentPage - 1) * POSTS_PER_PAGE;
+const posts = allPosts.slice(indexOfFirstPost, indexOfFirstPost + POSTS_PER_PAGE);
 
 const postsWithLinks = posts.map(post => ({
   ...post,
   data: { ...post.data, link: `/blog/${post.id}` }
 }));
+
+const categorySlug = category.toLowerCase().replace(/[^a-z0-9]+/g, '-');
 ---
 
 <Layout title={`${category} — The Standard`}>
@@ -53,7 +69,7 @@ const postsWithLinks = posts.map(post => ({
     <div class="section-header">
       <span class="section-label">{category}</span>
       <div class="section-line"></div>
-      <span class="section-count">{posts.length} {posts.length === 1 ? 'post' : 'posts'}</span>
+      <span class="section-count">{allPosts.length} {allPosts.length === 1 ? 'post' : 'posts'}</span>
     </div>
 
     {posts.length === 0 ? (
@@ -66,6 +82,14 @@ const postsWithLinks = posts.map(post => ({
           <BlogCard content={{ ...post.data, ...post }} />
         ))}
       </div>
+    )}
+
+    {totalPages > 1 && (
+      <Pagination
+        collection={`blog/category/${categorySlug}`}
+        currentPage={currentPage}
+        totalPages={totalPages}
+      />
     )}
   </div>
 
