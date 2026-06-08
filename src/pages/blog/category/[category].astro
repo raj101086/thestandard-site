@@ -10,6 +10,7 @@ const POSTS_PER_PAGE = 6;
 export async function getStaticPaths() {
   const POSTS_PER_PAGE = 6;
   const allPosts = await getCollection("post");
+  const allPhoto = await getCollection("photography");
 
   const categories = [
     "Fashion", "Motorcycles", "Film & Series", "Music",
@@ -18,9 +19,35 @@ export async function getStaticPaths() {
 
   return categories.flatMap(category => {
     const slug = category.toLowerCase().replace(/[^a-z0-9]+/g, '-');
-    const filtered = allPosts
-      .filter(post => post.data.tags?.includes(category))
-      .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
+
+    let filtered: { id: string; title: string; description: string; publishDate: Date; img: any; link: string; tags: string[] }[] = [];
+
+    if (category === "Photography") {
+      filtered = allPhoto
+        .map(s => ({
+          id: s.id,
+          title: s.data.title,
+          description: s.data.description || "",
+          publishDate: s.data.date,
+          img: s.data.cover,
+          link: `/photography/${s.id}`,
+          tags: ["Photography"],
+        }))
+        .sort((a, b) => b.publishDate.valueOf() - a.publishDate.valueOf());
+    } else {
+      filtered = allPosts
+        .filter(post => post.data.tags?.includes(category))
+        .map(post => ({
+          id: post.id,
+          title: post.data.title,
+          description: post.data.description || "",
+          publishDate: post.data.publishDate,
+          img: post.data.img,
+          link: `/blog/${post.id}`,
+          tags: post.data.tags || [],
+        }))
+        .sort((a, b) => b.publishDate.valueOf() - a.publishDate.valueOf());
+    }
 
     const totalPages = Math.max(1, Math.ceil(filtered.length / POSTS_PER_PAGE));
 
@@ -31,9 +58,19 @@ export async function getStaticPaths() {
   });
 }
 
+interface PostItem {
+  id: string;
+  title: string;
+  description: string;
+  publishDate: Date;
+  img: any;
+  link: string;
+  tags: string[];
+}
+
 interface Props {
   category: string;
-  allPosts: CollectionEntry<"post">[];
+  allPosts: PostItem[];
   currentPage: number;
   totalPages: number;
 }
@@ -42,11 +79,6 @@ const { category, allPosts, currentPage, totalPages } = Astro.props;
 
 const indexOfFirstPost = (currentPage - 1) * POSTS_PER_PAGE;
 const posts = allPosts.slice(indexOfFirstPost, indexOfFirstPost + POSTS_PER_PAGE);
-
-const postsWithLinks = posts.map(post => ({
-  ...post,
-  data: { ...post.data, link: `/blog/${post.id}` }
-}));
 
 const categorySlug = category.toLowerCase().replace(/[^a-z0-9]+/g, '-');
 ---
@@ -81,8 +113,8 @@ const categorySlug = category.toLowerCase().replace(/[^a-z0-9]+/g, '-');
       </div>
     ) : (
       <div class="grid">
-        {postsWithLinks.map(post => (
-          <BlogCard content={{ ...post.data, ...post }} />
+        {posts.map(post => (
+          <BlogCard content={{ ...post, data: post }} />
         ))}
       </div>
     )}
