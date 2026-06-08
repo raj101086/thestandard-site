@@ -2,6 +2,7 @@
 import Layout from "@/layouts/Layout.astro";
 import { getCollection } from "astro:content";
 import BlogSection from "@/components/sections/BlogSection.astro";
+import Ticker from "@/components/elements/Ticker.astro";
 
 export const POSTS_PER_PAGE = 6;
 
@@ -23,25 +24,7 @@ const currentPage = parseInt(page);
 
 <Layout title="The Standard">
 
-  <div class="ticker-wrap">
-    <div class="ticker-inner">
-      <span>Recently: Setting up TheStandard</span>
-      <span class="sep">·</span>
-      <span>Location: Pune, India</span>
-      <span class="sep">·</span>
-      <span>Categories: Fashion · Motorcycles · Film · Music · Photography · Books · Coffee · Travel · Watches</span>
-      <span class="sep">·</span>
-      <span>Status: Active</span>
-      <span class="gap"></span>
-      <span>Recently: Setting up TheStandard</span>
-      <span class="sep">·</span>
-      <span>Location: Pune, India</span>
-      <span class="sep">·</span>
-      <span>Categories: Fashion · Motorcycles · Film · Music · Photography · Books · Coffee · Travel · Watches</span>
-      <span class="sep">·</span>
-      <span>Status: Active</span>
-    </div>
-  </div>
+  <Ticker />
 
   <div class="cat-tabs-wrap">
     <div class="cat-tabs">
