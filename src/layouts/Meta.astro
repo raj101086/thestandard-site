@@ -1,11 +1,13 @@
 ---
 import { siteConfig } from '@/config/site.js';
+
 export interface Props {
   title?: string;
   description?: string;
   keywords?: string;
   url?: string;
   ogImage?: string;
+  ogType?: string;
   twitterHandle?: string;
 }
 
@@ -13,33 +15,36 @@ const {
   title,
   description,
   keywords = "",
-  url = siteConfig.url, //
+  url = siteConfig.url,
   ogImage = "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1780458816/og_ba4v2a.png",
+  ogType = "website",
   twitterHandle = siteConfig.social.twitterName || '',
 } = Astro.props;
+
+const fullTitle = title ? `${title} — The Standard` : "The Standard";
 ---
 
-<!-- Meta Tags -->
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="icon" type="image/svg+xml" href="/favicon.png" />
-<title>{title}</title>
+<title>{fullTitle}</title>
 <meta name="description" content={description} />
 <meta name="keywords" content={keywords} />
 <meta name="author" content={siteConfig.author} />
 <meta name="google-site-verification" content="Wh63YhSHaNVgZbEiq6c3hG-BV2FCY4GtI1wTT8n6NSc" />
+<link rel="canonical" href={url} />
 
-<!-- Open Graph Tags -->
-<meta property="og:type" content="website" />
-<meta property="og:title" content={title} />
+<!-- Open Graph -->
+<meta property="og:type" content={ogType} />
+<meta property="og:title" content={fullTitle} />
 <meta property="og:description" content={description} />
 <meta property="og:url" content={url} />
 <meta property="og:image" content={ogImage} />
-<meta property="og:site_name" content={title} />
+<meta property="og:site_name" content="The Standard" />
 
-<!-- Twitter Meta Tags -->
+<!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content={title} />
+<meta name="twitter:title" content={fullTitle} />
 <meta name="twitter:description" content={description} />
 <meta name="twitter:image" content={ogImage} />
 <meta name="twitter:site" content={twitterHandle} />

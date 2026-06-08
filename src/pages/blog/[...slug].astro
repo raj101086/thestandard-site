@@ -22,7 +22,13 @@ const formattedDate = entry.data.publishDate.toLocaleDateString('en-US', {
 });
 ---
 
-<PostLayout title={entry.data.title} description={entry.data.description}>
+<PostLayout
+  title={entry.data.title}
+  description={entry.data.description}
+  ogImage={entry.data.img}
+  ogType="article"
+  url={`https://thestandard.co.in/blog/${entry.id}`}
+>
 
   <!-- Reading progress bar -->
   <div id="reading-progress" class="reading-progress"></div>
