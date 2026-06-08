@@ -1,6 +1,6 @@
 ---
 title: "Every Watch I've Ever Owned"
-description: "It started with a Timex my grandma gifted me. It hasn't stopped since."
+description: "A personal history of every watch I've owned — from a gifted Timex to a Tissot, Zeppelin, and Mido Ocean Star. How a hobby becomes an obsession."
 publishDate: "2026-06-02T10:00:00"
 featured: false
 tags: ["Watches"]

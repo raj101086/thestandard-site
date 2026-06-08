@@ -1,6 +1,6 @@
 ---
 title: "The Boys — A Proper Ending Deserved"
-description: "Disappointed doesn't even begin to cover it. I feel betrayed."
+description: "The Boys final season review — why one of the most daring shows on television fumbled its ending and left its best ideas unfinished."
 publishDate: "2026-05-30T12:00:00"
 featured: true
 tags: ["Film & Series"]

@@ -1,6 +1,6 @@
 ---
 title: "Stoner — John Williams"
-description: "A novel about an unremarkable life that somehow gets to you anyway."
+description: "Stoner by John Williams is a novel about an ordinary academic life — quietly devastating and one of the most affecting books I've read."
 publishDate: 2026-06-08
 tags: ["Books"]
 img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1780901606/stoner_zpaots.jpg"

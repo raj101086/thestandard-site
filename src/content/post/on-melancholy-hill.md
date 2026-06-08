@@ -1,6 +1,6 @@
 ---
 title: "On Melancholy Hill — Gorillaz"
-description: "I can't remember where I first heard it. I remember pulling out Shazam immediately."
+description: "On Melancholy Hill from Gorillaz's Plastic Beach is one of those songs that stops you cold. What makes it so hard to shake."
 publishDate: "2026-05-30T14:00:00"
 featured: false
 tags: ["Music"]

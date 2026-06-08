@@ -1,6 +1,6 @@
 ---
 title: "The Gold Standard"
-description: "My grandmother made spice laddus every summer. I didn't understand why until she was gone."
+description: "On South Indian home cooking, spice laddus, and what food means when the person who made it is no longer around."
 publishDate: "2026-06-05T10:00:00"
 featured: false
 tags: ["Coffee & Food"]

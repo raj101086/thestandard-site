@@ -1,6 +1,6 @@
 ---
 title: "Onitsuka Tiger Mexico 66 SD Vintage"
-description: "My first pair. I always liked the design but never quite understood the hype. Now I do."
+description: "A closer look at the Onitsuka Tiger Mexico 66 SD Vintage — why this Japanese sneaker earned its reputation and why I finally get the hype."
 publishDate: "2026-05-30T10:00:00"
 featured: false
 tags: ["Fashion"]
