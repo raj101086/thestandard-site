@@ -3,7 +3,8 @@ import Layout from "@/layouts/Layout.astro";
 import { getCollection } from "astro:content";
 
 const allPosts = await getCollection("post");
-const postCount = allPosts.length;
+const allPhoto = await getCollection("photography");
+const postCount = allPosts.length + allPhoto.length;
 const categories = [...new Set(allPosts.flatMap(p => p.data.tags || []))];
 ---
 
