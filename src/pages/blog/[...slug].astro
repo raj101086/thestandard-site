@@ -74,6 +74,27 @@ const formattedDate = entry.data.publishDate.toLocaleDateString('en-US', {
 
   </article>
 
+  <!-- Article Structured Data -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": entry.data.title,
+    "description": entry.data.description,
+    "image": entry.data.img,
+    "datePublished": entry.data.publishDate.toISOString(),
+    "author": {
+      "@type": "Person",
+      "name": "Raj Pillay",
+      "url": "https://thestandard.co.in/about"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "The Standard",
+      "url": "https://thestandard.co.in"
+    },
+    "url": `https://thestandard.co.in/blog/${entry.id}`
+  })} />
+
 </PostLayout>
 
 <style>
