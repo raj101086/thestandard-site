@@ -18,7 +18,7 @@ My first real bike was a Kawasaki Caliber 115, the Hoodibaba, launched around th
 
 Then came the Interceptor.
 
-My friend had asked what I'd name the bike. I thought about it and landed on Mashooqa — she's that beautiful, the kind of motorcycle you find yourself staring at in the garage for no reason. What I didn't know then was how fitting the name would turn out to be. A Mashooqa is gorgeous, knows it, and will leave you the moment things get difficult.
+My friend had asked what I'd name the bike. I thought about it and landed on Mashooqa — she's that beautiful, the kind of motorcycle you find yourself staring at in the garage for no reason. What I didn't know then was how fitting the name would turn out to be. 
 
 Five years in, the honest verdict: ride quality is average, RE's service is pathetic, the parts are middling, the stock tyres are wrong for a bike this heavy. And the brakes, in a genuine emergency, prayer is about as effective. That combination of mediocre tyres and uninspiring brakes on a motorcycle this heavy is not something you want to discover at speed.
 
