@@ -20,8 +20,6 @@ My favourite moment on the album comes at the start of Ode to the Mets.
 
 "Drums please, Fab."
 
-According to the band, there wasn't some elaborate plan behind it. Julian sat at a keyboard, felt something, and said those words. Fabrizio Moretti then improvised the drum part in a single take. No rehearsal, no endless revisions. Just musicians trusting the moment.
-
 <div class="lyrics">
 Easy to say, easy to do<br>
 But it's not easy, well, maybe for you<br>
@@ -32,6 +30,8 @@ Sizes you up, plans his attack<br>
 Ah-da-da<br>
 Drums please, Fab.
 </div>
+
+According to the band, there wasn't some elaborate plan behind it. Julian sat at a keyboard, felt something, and said those words. Fabrizio Moretti then improvised the drum part in a single take. No rehearsal, no endless revisions. Just musicians trusting the moment.
 
 There's another layer to Ode to the Mets that I love. The title came from a baseball game where the New York Mets were eliminated, but the song isn't really about baseball. The Mets become a symbol for that person, dream, or ambition that never quite lived up to expectations, yet you keep rooting for anyway. 
 
