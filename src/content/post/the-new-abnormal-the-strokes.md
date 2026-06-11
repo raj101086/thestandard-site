@@ -12,7 +12,7 @@ Music reviews make most sense right after release — first impressions, immedia
 
 Ode to the Mets, The Adults Are Talking, and Bad Decisions are still among my most played tracks — not just from this album, but from everything I've listened to over the last few years. That doesn't happen by accident.
 
-What keeps bringing me back to this album is the sincerity. It's a rough diamond, deliberately unpolished. Julian Casablancas singing about friendship, regret, growing older, missed connections, people drifting in and out of our lives. Familiar territory, delivered with a vulnerability that feels earned rather than performed. The best way I can put it is that the album is nostalgic without sounding trapped in the past, modern while carrying the emotional weight of a memory.
+What keeps bringing me back to this album is the sincerity. It's a rough diamond, deliberately unpolished. Julian Casablancas singing about friendship, regret, growing older, missed connections, people drifting in and out of our lives. Familiar territory, delivered with a vulnerability that feels earned rather than performed. The best way I can put it is that the album is nostalgic without sounding trapped in the past.
 
 My introduction to Julian wasn't through The Strokes. It was through Instant Crush on Daft Punk's Random Access Memories. Loved the song, never followed through. Then came 2020. Lockdowns, empty streets, endless uncertainty. Right in the middle of all that, The New Abnormal arrived. Looking back it feels like the soundtrack to those strange months, a silver lining during an otherwise gloomy time.
 
@@ -22,9 +22,9 @@ My favourite moment on the album comes at the start of Ode to the Mets.
 
 According to the band, there wasn't some elaborate plan behind it. Julian sat at a keyboard, felt something, and said those words. Fabrizio Moretti then improvised the drum part in a single take. No rehearsal, no endless revisions. Just musicians trusting the moment.
 
-*Easy to say, easy to do / But it's not easy, well, maybe for you / Hope that you find it, hope that it's good / Hope that you read it, think that you should / Cuts you some slack as he sits back / Sizes you up, plans his attack / Ah-da-da / Drums please, Fab.*
+> Easy to say, easy to do / But it's not easy, well, maybe for you / Hope that you find it, hope that it's good / Hope that you read it, think that you should / Cuts you some slack as he sits back / Sizes you up, plans his attack / Ah-da-da / Drums please, Fab.
 
-There's another layer to Ode to the Mets that I love. The title came from a baseball game where the New York Mets were eliminated, but the song isn't really about baseball. The Mets become a symbol for that person, dream, or ambition that never quite lived up to expectations, yet you keep rooting for anyway. An elegy for disappointment, the endless longing for what never arrives, and a nostalgia twisted with persistence.
+There's another layer to Ode to the Mets that I love. The title came from a baseball game where the New York Mets were eliminated, but the song isn't really about baseball. The Mets become a symbol for that person, dream, or ambition that never quite lived up to expectations, yet you keep rooting for anyway. 
 
 Speaking of baseball — if you're anxious about AI and what it means for the future, watch the music video for The Adults Are Talking. Humans go up against robots in everything from boxing to cooking to baseball. The robots are faster, stronger, and better in every conceivable way, obliterating the humans completely. Then a single raindrop lands on the pitcher robot's vision sensor. The pitch goes wide. The humans score and completely lose their minds over that one moment of chance. One tiny imperfection is all it takes.
 
