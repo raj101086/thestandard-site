@@ -26,4 +26,4 @@ Crystal White. July 2024. A constant smile.
 
 Some machines are just transportation. Others become the reason you go.
 
-*See also: [Snowpiercer — The Photographs](/photography/snowpiercer)*
+*See also: [Snowpiercer — The Photographs](/photography/snowpiercer-triumph-street-triple)*
