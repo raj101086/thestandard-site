@@ -1,6 +1,6 @@
 ---
 title: "Postcards"
-category: "Street"
+category: "Travel"
 date: "2026-06-03"
 cover: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1780470298/PSX_20220921_220114_bqyyyd.jpg"
 description: "Narrow lanes, fading paint, afternoon light cutting through gaps in the buildings."
