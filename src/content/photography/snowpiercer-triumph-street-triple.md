@@ -2,7 +2,7 @@
 title: "Snowpiercer"
 category: "Motorcycles"
 date: "2026-06-12"
-cover: https://res.cloudinary.com/dpsbm1jkq/image/upload/v1781253705/DSCF9227_1_gt9xdi.jpg"
+cover: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1781253705/DSCF9227_1_gt9xdi.jpg"
 description: "Two years, 25,000 kilometres, and a Triumph Street Triple R that doesn't want to stop."
 photos:
   - url: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1781253707/20260221_103528_1_pkwh9b.jpg"
