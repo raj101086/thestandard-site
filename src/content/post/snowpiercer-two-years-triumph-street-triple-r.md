@@ -3,7 +3,7 @@ title: "Snowpiercer — Two Years with the Triumph Street Triple R"
 description: "Two years, 25,000 kilometres, and one ride I'll never forget."
 publishDate: 2026-06-12
 tags: ["Motorcycles"]
-img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1781253705/DSCF9227_1_gt9xdi.jpg"
+img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1781256284/DSCF9364_p9tslk.jpg"
 img_alt: "Triumph Street Triple R, Crystal White"
 featured: false
 ---
