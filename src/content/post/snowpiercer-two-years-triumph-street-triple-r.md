@@ -25,3 +25,5 @@ I named it Snowpiercer after the Bong Joon Ho film — the train carrying the la
 Crystal White. July 2024. A constant smile.
 
 Some machines are just transportation. Others become the reason you go.
+
+*See also: [Snowpiercer — The Photographs](/photography/snowpiercer)*
