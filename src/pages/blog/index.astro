@@ -28,7 +28,10 @@ const startHerePosts = START_HERE_IDS
 <Layout title="The Standard">
 
   <Ticker />
-
+<!-- DEBUG — remove after checking -->
+<div style="color: white; padding: 2rem;">
+  {allPosts.map(p => <div>{p.id}</div>)}
+</div>
   <!-- START HERE -->
   {startHerePosts.length > 0 && (
     <div class="start-here-wrap">
