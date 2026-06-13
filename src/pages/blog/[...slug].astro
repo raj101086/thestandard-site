@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from "astro:content";
 import PostLayout from "@/layouts/PostLayout.astro";
+import BlogCard from "@/components/cards/BlogCard.astro";
 
 export async function getStaticPaths() {
   const postEntries = await getCollection("post");
@@ -23,6 +24,22 @@ const formattedDate = entry.data.publishDate.toLocaleDateString('en-US', {
 
 const wordCount = entry.body?.split(/\s+/).length || 0;
 const readingTime = Math.max(1, Math.round(wordCount / 200));
+
+const allPosts = await getCollection("post");
+const relatedPosts = allPosts
+  .filter(p => p.id !== entry.id)
+  .sort((a, b) => {
+    const sameCategory = a.data.tags?.[0] === entry.data.tags?.[0];
+    const bSameCategory = b.data.tags?.[0] === entry.data.tags?.[0];
+    if (sameCategory && !bSameCategory) return -1;
+    if (!sameCategory && bSameCategory) return 1;
+    return b.data.publishDate.valueOf() - a.data.publishDate.valueOf();
+  })
+  .slice(0, 3)
+  .map(p => ({
+    ...p,
+    data: { ...p.data, link: `/blog/${p.id}` }
+  }));
 ---
 
 <PostLayout
@@ -86,6 +103,21 @@ const readingTime = Math.max(1, Math.round(wordCount / 200));
     </div>
 
   </article>
+
+  <!-- RELATED POSTS -->
+  {relatedPosts.length > 0 && (
+    <div class="post-related">
+      <div class="post-related-header">
+        <span class="post-related-label">Continue Reading</span>
+        <div class="post-related-line"></div>
+      </div>
+      <div class="post-related-grid">
+        {relatedPosts.map(post => (
+          <BlogCard content={{ ...post.data, ...post }} />
+        ))}
+      </div>
+    </div>
+  )}
 
   <!-- Article Structured Data -->
   <script type="application/ld+json" set:html={JSON.stringify({
@@ -304,12 +336,49 @@ const readingTime = Math.max(1, Math.round(wordCount / 200));
   }
   .post-back-link:hover { color: #B8986A; }
 
+  /* ── RELATED POSTS ────────────────────────────────────────────── */
+  .post-related {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    border-top: 0.5px solid #2a2a28;
+  }
+  .post-related-header {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  .post-related-label {
+    font-family: var(--font-sans);
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #444;
+    white-space: nowrap;
+  }
+  .post-related-line {
+    flex: 1;
+    height: 0.5px;
+    background: #2a2a28;
+  }
+  .post-related-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
   /* ── RESPONSIVE ───────────────────────────────────────────────── */
+  @media (max-width: 1024px) {
+    .post-related-grid { grid-template-columns: repeat(2, 1fr); }
+  }
   @media (max-width: 640px) {
     .post-hero-img { height: 280px; }
     .post-header { padding: 2rem 1.5rem 1.5rem; }
     .post-content-wrap { padding: 2.5rem 1.5rem 3rem; }
     .post-back { padding: 1.5rem 1.5rem 3rem; }
+    .post-related-grid { grid-template-columns: 1fr; }
+    .post-related { padding: 2rem 1.5rem; }
   }
 </style>
 
