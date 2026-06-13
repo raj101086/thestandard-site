@@ -1,15 +1,48 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import BlogSection from "@/components/sections/BlogSection.astro";
+import BlogCard from "@/components/cards/BlogCard.astro";
 import Ticker from "@/components/elements/Ticker.astro";
+import { getCollection } from "astro:content";
 
 const POSTS_PER_PAGE = 6;
 const currentPage = 1;
+
+// Start Here — manually chosen post IDs
+const START_HERE_IDS = [
+  "sambar",
+  "the-new-abnormal-the-strokes",
+  "mashooqa-royal-enfield-interceptor",
+];
+
+const allPosts = await getCollection("post");
+const startHerePosts = START_HERE_IDS
+  .map(id => allPosts.find(p => p.id === id))
+  .filter(Boolean)
+  .map(p => ({
+    ...p,
+    data: { ...p.data, link: `/blog/${p.id}` }
+  }));
 ---
 
 <Layout title="The Standard">
 
   <Ticker />
+
+  <!-- START HERE -->
+  {startHerePosts.length > 0 && (
+    <div class="start-here-wrap">
+      <div class="start-here-header">
+        <span class="start-here-label">Start Here</span>
+        <div class="start-here-line"></div>
+      </div>
+      <div class="start-here-grid">
+        {startHerePosts.map(post => (
+          <BlogCard content={{ ...post.data, ...post }} />
+        ))}
+      </div>
+    </div>
+  )}
 
   <div class="cat-tabs-wrap">
     <div class="cat-tabs">
@@ -43,31 +76,6 @@ const currentPage = 1;
 </Layout>
 
 <style>
-  .ticker-wrap {
-    background: #141412;
-    border-bottom: 0.5px solid #2a2a28;
-    overflow: hidden;
-    white-space: nowrap;
-    padding: 8px 0;
-  }
-  .ticker-inner {
-    display: inline-flex;
-    align-items: center;
-    gap: 14px;
-    animation: ticker 32s linear infinite;
-    font-family: var(--font-sans, 'Helvetica Neue', sans-serif);
-    font-size: 10px;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: #B8986A;
-  }
-  .ticker-inner .sep { color: #4a4840; }
-  .ticker-inner .gap { display: inline-block; width: 80px; }
-  @keyframes ticker {
-    0%   { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-  }
-
   .cat-tabs-wrap {
     border-bottom: 0.5px solid #2a2a28;
     overflow-x: auto;
@@ -97,6 +105,38 @@ const currentPage = 1;
     border-bottom: 2px solid #B8986A;
   }
 
+  /* START HERE */
+  .start-here-wrap {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 3rem 4rem;
+    border-bottom: 0.5px solid #2a2a28;
+  }
+  .start-here-header {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  .start-here-label {
+    font-family: var(--font-sans, 'Helvetica Neue', sans-serif);
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #444;
+    white-space: nowrap;
+  }
+  .start-here-line {
+    flex: 1;
+    height: 0.5px;
+    background: #2a2a28;
+  }
+  .start-here-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
   .posts-wrap {
     max-width: 1280px;
     margin: 0 auto;
@@ -122,8 +162,13 @@ const currentPage = 1;
     background: #2a2a28;
   }
 
+  @media (max-width: 1024px) {
+    .start-here-grid { grid-template-columns: repeat(2, 1fr); }
+  }
   @media (max-width: 768px) {
     .cat-tabs { padding: 0 1.5rem; }
     .posts-wrap { padding: 2.5rem 1.5rem 4rem; }
+    .start-here-wrap { padding: 2rem 1.5rem; }
+    .start-here-grid { grid-template-columns: 1fr; }
   }
 </style>
