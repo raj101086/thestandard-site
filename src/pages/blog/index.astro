@@ -18,7 +18,7 @@ const START_HERE_IDS = [
 const allPosts = await getCollection("post");
 const startHerePosts = START_HERE_IDS
   .map(id => allPosts.find(p => p.id === id))
-  .filter(Boolean)
+  .filter((p): p is NonNullable<typeof p> => p !== undefined)
   .map(p => ({
     ...p,
     data: { ...p.data, link: `/blog/${p.id}` }
