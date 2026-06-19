@@ -7,7 +7,6 @@ img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1781851359/IMG_2211_mex
 img_alt: "Spiti Valley, mountain road"
 featured: false
 ---
-
 There's a lot written about Spiti now. Travel vlogs, drone footage, the same ten viewpoints shot from the same ten angles. None of that is what I think about when I think about Spiti.
 
 I think about a rainy night in 2015.
@@ -24,23 +23,23 @@ That folded map was our lifeline. For three days it guided us through winding mo
 
 <img src="https://res.cloudinary.com/dpsbm1jkq/image/upload/v1781851357/IMG_2204_jzmb8n.jpg" alt="The road through Spiti Valley" />
 
-From then on we navigated the oldest way there is — stopping anyone we passed and asking which way to Kaza.
+From then on we navigated the oldest way there is, stopping anyone we passed and asking which way to Kaza.
 
 That method had its flaws. On one occasion, a couple of wrong turns led us up some genuinely bad roads, only to arrive at an army camp on top of a mountain that had nothing to do with our route. An Indian army officer stopped us, mostly confused. "You can't be here." Fair enough. He pointed us back the way we'd come.
 
-The road from Shimla to Tabo is one of the most beautiful stretches I've ridden — a river running alongside on one side, mountains rising on the other, the kind of landscape I'd only seen in photographs and movies until then. First time up north for me, and it showed why people ride to the mountains year after year.
+The road from Shimla to Tabo is one of the most beautiful stretches I've ridden. A river running alongside on one side, mountains rising on the other, the kind of landscape I'd only seen in photographs and movies until then. First time up north for me, and it showed why people ride to the mountains year after year.
 
-We'd decided on one rule: start early, ride until it got close to dark, then find a stay wherever we'd landed for the day. I wasn't entirely sold on the plan, but went along with it. My friend was the salt-of-the-earth type, the kind who believed in living in the moment, at least back then. This plan worked better than it should have. Until Kaza we mostly stayed in government circuit houses and guest houses — usually empty, meant for visiting officials, but a quiet word with the caretaker got us a room, hot food, and a fraction of what a hotel would have charged. Not something I'd necessarily recommend now. At the time, it felt like exactly the right way to be doing it.
+We'd decided on one rule: start early, ride until it got close to dark, then find a stay wherever we'd landed for the day. I wasn't entirely sold on the plan, but went along with it. My friend was the salt-of-the-earth type, the kind who believed in living in the moment, at least back then. This plan worked better than it should have. Until Kaza we mostly stayed in government circuit houses and guest houses, usually empty, meant for visiting officials, but a quiet word with the caretaker got us a room, hot food, and a fraction of what a hotel would have charged. Not something I'd necessarily recommend now. At the time, it felt like exactly the right way to be doing it.
 
 We reached Tabo around 4 PM. The town is built around its monastery — founded in 996 CE, the oldest continuously operating Buddhist site in India, sometimes called the Ajanta of the Himalayas for the murals and frescoes inside. Mud-brick walls, over a thousand years old, still standing in one of the harshest stretches of land in the country. We didn't stay long enough to take it in properly. That's still something I regret.
 
-We'd planned to stay the night. Then we ran into a motovlogger who told us Kaza was another sixty, maybe seventy kilometres, and that pushing on would save us a full day — more time to explore once we got there. Sounded reasonable. What he didn't mention was that the road from Tabo to Kaza barely qualified as a road. Loose rock, a cliff on one side, mountain on the other, and the light fading fast.
+We'd planned to stay the night. Then we ran into a motovlogger who told us Kaza was another sixty, maybe seventy kilometres, and that pushing on would save us a full day. More time to explore once we got there, he said. Sounded reasonable. What he didn't mention was that the road from Tabo to Kaza barely qualified as a road. Loose rock, a cliff on one side, mountain on the other, and the light fading fast.
 
 <img src="https://res.cloudinary.com/dpsbm1jkq/image/upload/v1781851357/IMG_2200_dphjfi.jpg" alt="World's most treacherous road sign, NH-05" />
 
-Tabo to Kaza is fifty kilometres. Today Google Maps puts that at an hour and forty minutes. Back then, in the dark, on that road, it took us most of the evening — and at no point did it feel like we were making good time.
+Tabo to Kaza is fifty kilometres. Today Google Maps puts that at an hour and forty minutes. Back then, in the dark, on that road, it took us most of the evening, and at no point did it feel like we were making good time.
 
-An hour into that stretch, a driver coming the other way flagged us down. Shooting stones, he said — rocks that come loose and fall without warning. I asked how exactly we were meant to watch for that in the dark. He just smiled and drove on.
+An hour into that stretch, a driver coming the other way flagged us down. Shooting stones, he said, rocks that come loose and fall without warning. I asked how exactly we were meant to watch for that in the dark. He just smiled and drove on.
 
 Nothing around us after that except the dug-dug-dug of the Bullet, the roar of the river somewhere far below, and darkness stretching endlessly into the mountains.
 
