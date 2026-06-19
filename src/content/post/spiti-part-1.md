@@ -18,9 +18,11 @@ That was the start of twelve days through Spiti Valley.
 
 We flew Raipur to Delhi, took an overnight bus from Delhi to Shimla, and in Shimla rented a silver Royal Enfield Bullet 500 from a shop near the bus stand. Not the fastest bike, not the smoothest either, but it was built to carry two grown men, our bags, and whatever bad decisions lay ahead. We strapped the luggage to the rear rack, had a quick breakfast, and left.
 
-Before we rode out of Shimla I stopped at a local travel store and bought a proper paper road map of Himachal Pradesh. That was still a normal thing to do in 2015. Mobile networks in the mountains were patchy, data was expensive, and Google Maps wasn't the dependable crutch it is now.
+Before we rode out of Shimla I stopped at a local travel store and bought a proper paper road map of Himachal Pradesh. Mobile networks in the mountains were patchy, data was expensive, and Google Maps wasn't the dependable crutch it is now.
 
 That folded map was our lifeline. For three days it guided us through winding mountain roads, river valleys, and villages that looked untouched by time. On the fourth, it slipped out of my pocket somewhere on the road and was gone.
+
+<img src="https://res.cloudinary.com/dpsbm1jkq/image/upload/v1781851357/IMG_2204_jzmb8n.jpg" alt="The road through Spiti Valley" />
 
 From then on we navigated the oldest way there is — stopping anyone we passed and asking which way to Kaza.
 
@@ -32,11 +34,11 @@ We'd decided on one rule: start early, ride until it got close to dark, then fin
 
 We reached Tabo around 4 PM. The town is built around its monastery — founded in 996 CE, the oldest continuously operating Buddhist site in India, sometimes called the Ajanta of the Himalayas for the murals and frescoes inside. Mud-brick walls, over a thousand years old, still standing in one of the harshest stretches of land in the country. We didn't stay long enough to take it in properly. That's still something I regret.
 
-We'd planned to stay the night. Then we ran into a motovlogger who told us Kaza was only another hundred kilometres, and that pushing on would save us a full day — more time to explore once we got there. Sounded reasonable. What he didn't mention was that the road from Tabo to Kaza barely qualified as a road. Loose rock, a cliff on one side, mountain on the other, and the light fading fast.
+We'd planned to stay the night. Then we ran into a motovlogger who told us Kaza was another sixty, maybe seventy kilometres, and that pushing on would save us a full day — more time to explore once we got there. Sounded reasonable. What he didn't mention was that the road from Tabo to Kaza barely qualified as a road. Loose rock, a cliff on one side, mountain on the other, and the light fading fast.
+
+<img src="https://res.cloudinary.com/dpsbm1jkq/image/upload/v1781851357/IMG_2200_dphjfi.jpg" alt="World's most treacherous road sign, NH-05" />
 
 Tabo to Kaza is fifty kilometres. Today Google Maps puts that at an hour and forty minutes. Back then, in the dark, on that road, it took us most of the evening — and at no point did it feel like we were making good time.
-
-<img src="https://res.cloudinary.com/dpsbm1jkq/image/upload/v1781851357/IMG_2204_jzmb8n.jpg" alt="The road from Tabo to Kaza" />
 
 An hour into that stretch, a driver coming the other way flagged us down. Shooting stones, he said — rocks that come loose and fall without warning. I asked how exactly we were meant to watch for that in the dark. He just smiled and drove on.
 
