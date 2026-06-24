@@ -60,4 +60,4 @@ One of the trekkers noticed our empty bottle and poured us some Old Monk. That w
 
 At around nine we stepped outside to walk back to our tent. The sky stopped us.
 
-Stars covering every inch of the sky, packed so tightly it looked like something out of a book rather than something real. I had seen clear skies in Kaza too, but this was different. It was too cold to stand there long. We took one last look, ran back to the tent, pulled the woollen blankets over ourselves, and fell asleep somewhere between exhaustion and something that felt a great deal like contentment.
+Stars covering every inch of the sky, packed so tightly it looked like something out of a painting rather than something real. I had seen clear skies in Kaza too, but this was different. It was too cold to stand there long. We took one last look, ran back to the tent, pulled the woollen blankets over ourselves, and fell asleep somewhere between exhaustion and something that felt a great deal like contentment.
