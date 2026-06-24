@@ -16,7 +16,7 @@ This one had everything. Broken patches, loose gravel, water crossings, shooting
 
 Looking back now, I would never attempt that ride without proper planning and preparation. But young men do stupid things and live to tell the story. That's exactly what this is.
 
-The rough terrain kept us at 30 to 40 kilometres an hour, which turned out to be the right speed. It forced us to actually look at what was around us. Barren landscapes, distant glaciers, rivers cutting through rock, mountains so vast they made the idea of being in a hurry seem absurd.
+The rough terrain kept us at 30 to 40 kilometres an hour, which turned out to be the right speed. It forced us to actually look at what was around us. Barren landscapes, distant glaciers, rivers cutting through rock, mountains so vast they made the idea of being in a hurry seem absurd. The excitement of getting to the lake kept us going. After nine days on the road, that was enough.
 
 <iframe width="315" height="560" src="https://www.youtube.com/embed/ZJBucIC4v8s" title="The road to Chandratal" allowfullscreen></iframe>
 
@@ -26,13 +26,13 @@ We reached the campsite around 2 in the afternoon with the cold already setting 
 
 My friend wanted to save money and suggested sleeping bags instead. I told him I wasn't dying out here to save a thousand rupees. By the middle of that night, he agreed with me completely. It was brutally cold.
 
-We had a quick bowl of piping hot Maggi and rode the ten minutes to Chandratal Lake. From the parking point there's a short walk to the lake, around twenty minutes. Those twenty minutes were the most physically difficult of the entire trip. The altitude, the cold, and my poor stamina all arrived at once. I basically crawled the last stretch.
+We had a quick bowl of piping hot Maggi and rode the ten minutes to Chandratal Lake. From the parking point there's a short walk to the lake, around twenty minutes. Those twenty minutes were the most physically difficult of the entire trip. The altitude, the cold, and my poor stamina all arrived at once. I basically crawled the last stretch. Giving up never crossed my mind. Not after nine days. Not when we were this close. My friend, being the athlete he is, had no such problem and was waiting for me at the top with an irritating amount of energy to spare.
 
 <img src="https://res.cloudinary.com/dpsbm1jkq/image/upload/v1782282438/IMG_2202_grbrrn.png" alt="Taking a break on the walk to Chandratal Lake" />
 
-The moment I saw the lake, all of it disappeared.
+When I saw the lake, the ache in my body left as quickly as it had arrived.
 
-Blue-green water lying still in the middle of mountains, like it had no business being there but had always been there. The shadows shifted across the surface as the light changed, moving the colour from one shade to another. A sharp, clean wind came in from the far side. I took my shoes off, put my feet in the water, and sat down.
+Blue-green water lying still in the middle of mountains, patient and ancient. The shadows shifted across the surface as the light changed, moving the colour from one shade to another. A sharp, clean wind came in from the far side. I took my shoes off, put my feet in the water, and sat down. What I felt wasn't joy exactly, or excitement. It was the specific feeling of having earned something. Nine days ago we were sitting in Bhilai wondering whether to call the whole thing off. Now we were here.
 
 <img src="https://res.cloudinary.com/dpsbm1jkq/image/upload/v1782282817/Chandratal_lake_yyy4po.jpg" alt="Chandratal Lake, Spiti Valley" />
 
