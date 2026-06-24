@@ -16,6 +16,10 @@ Looking back now, I would never attempt that ride without proper planning and pr
 
 The rough terrain kept us at 30 to 40 kilometres an hour, which turned out to be the right speed. It forced us to actually look at what was around us. Barren landscapes, distant glaciers, rivers cutting through rock, mountains so vast they made the idea of being in a hurry seem absurd.
 
+<iframe width="315" height="560" src="https://www.youtube.com/embed/ZJBucIC4v8s" title="The road to Chandratal" allowfullscreen></iframe>
+
+<iframe width="315" height="560" src="https://www.youtube.com/embed/34tZAyEwA9w" title="Water crossing, road to Chandratal" allowfullscreen></iframe>
+
 We reached the campsite around 2 in the afternoon with the cold already setting in. As had been our approach since Shimla, we hadn't booked anything in advance. We scanned the options from the road and picked the camp with the most tents and the largest central tent. The manager gave us a fair deal on a twin-sharing tent with wooden cots.
 
 <img src="https://res.cloudinary.com/dpsbm1jkq/image/upload/v1782282775/Tents_mmzx6j.jpg" alt="Our tent at Chandratal campsite" />
@@ -31,7 +35,6 @@ The moment I saw the lake, all of it disappeared.
 Blue-green water lying still in the middle of mountains, like it had no business being there but had always been there. The shadows shifted across the surface as the light changed, moving the colour from one shade to another. A sharp, clean wind came in from the far side. I took my shoes off, put my feet in the water, and sat down.
 
 <img src="https://res.cloudinary.com/dpsbm1jkq/image/upload/v1782282817/Chandratal_lake_yyy4po.jpg" alt="Chandratal Lake, Spiti Valley" />
-
 
 The silence at Chandratal is something I have not found anywhere since. Not in temples, not in the mountains before or after. I am still searching for it.
 
