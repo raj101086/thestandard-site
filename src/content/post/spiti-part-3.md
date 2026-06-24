@@ -12,13 +12,13 @@ The left turn toward Chandratal, just after Kunzum Pass, was the worst road we h
 
 This one had everything. Broken patches, loose gravel, water crossings, shooting stones, and drops on one side that left no room for error. The distance from Kaza to Chandratal is around 100 kilometres, but the terrain made every one of them feel earned. If the Tabo to Kaza night ride had been an adventure, this was something closer to a test. Two wandering souls far from home, a rented Bullet, a spare can of petrol strapped to the rack, and nothing in between for as far as we could see. No dhabas, no mechanics, no network. If something went wrong out there, we'd be figuring it out on our own.
 
+<iframe width="315" height="560" src="https://www.youtube.com/embed/34tZAyEwA9w" title="Water crossing, road to Chandratal" allowfullscreen></iframe>
+
 Looking back now, I would never attempt that ride without proper planning and preparation. But young men do stupid things and live to tell the story. That's exactly what this is.
 
 The rough terrain kept us at 30 to 40 kilometres an hour, which turned out to be the right speed. It forced us to actually look at what was around us. Barren landscapes, distant glaciers, rivers cutting through rock, mountains so vast they made the idea of being in a hurry seem absurd.
 
 <iframe width="315" height="560" src="https://www.youtube.com/embed/ZJBucIC4v8s" title="The road to Chandratal" allowfullscreen></iframe>
-
-<iframe width="315" height="560" src="https://www.youtube.com/embed/34tZAyEwA9w" title="Water crossing, road to Chandratal" allowfullscreen></iframe>
 
 We reached the campsite around 2 in the afternoon with the cold already setting in. As had been our approach since Shimla, we hadn't booked anything in advance. We scanned the options from the road and picked the camp with the most tents and the largest central tent. The manager gave us a fair deal on a twin-sharing tent with wooden cots.
 
