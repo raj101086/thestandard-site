@@ -7,11 +7,14 @@ img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1781851359/IMG_2211_mex
 img_alt: "Spiti Valley, mountain road"
 featured: false
 ---
+
 There's a lot written about Spiti now. Travel vlogs, drone footage, the same ten viewpoints shot from the same ten angles. None of that is what I think about when I think about Spiti.
 
 I think about a rainy night in 2015.
 
 A few of us were drinking beers when a friend mentioned a place in Himachal he'd read about. Beautiful, remote, hard on the body to get to. "Only adventurous souls welcome," he said, half joking. Everyone agreed, a few beers in. Two months later, on the morning we were supposed to leave, only the two of us showed up at the airport.
+
+When the others started dropping out, three days before we were supposed to fly, my friend and I met for a beer to figure out what to do. Just the two of us now, no group, no backup. We sat with that for a while. Then we had a second beer and decided we were going anyway. Something in me knew I'd regret cancelling more than anything that could go wrong on the road.
 
 That was the start of twelve days through Spiti Valley.
 
@@ -19,21 +22,21 @@ We flew Raipur to Delhi, took an overnight bus from Delhi to Shimla, and in Shim
 
 Before we rode out of Shimla I stopped at a local travel store and bought a proper paper road map of Himachal Pradesh. Mobile networks in the mountains were patchy, data was expensive, and Google Maps wasn't the dependable crutch it is now.
 
-That folded map was our lifeline. For three days it guided us through winding mountain roads, river valleys, and villages that looked untouched by time. On the fourth, it slipped out of my pocket somewhere on the road and was gone.
+That folded map was our lifeline. For three days it guided us through winding mountain roads, river valleys, and villages that looked untouched by time. On the fourth, we stopped at a junction to figure out which way to go. I reached into my pocket for the map. It wasn't there. We looked at each other, said something unprintable, and then laughed. We'd figure it out.
 
 <img src="https://res.cloudinary.com/dpsbm1jkq/image/upload/v1781851357/IMG_2204_jzmb8n.jpg" alt="The road through Spiti Valley" />
 
 From then on we navigated the oldest way there is, stopping anyone we passed and asking which way to Kaza.
 
-That method had its flaws. On one occasion, a couple of wrong turns led us up some genuinely bad roads, only to arrive at an army camp on top of a mountain that had nothing to do with our route. An Indian army officer stopped us, mostly confused. "You can't be here." Fair enough. He pointed us back the way we'd come.
+That method had its flaws. On one occasion, a couple of wrong turns led us up some genuinely bad roads, only to arrive at an army camp on top of a mountain that had nothing to do with our route. An Indian army officer stopped us, mostly confused. "You can't be here." Fair enough. He pointed us back the way we'd come. We were embarrassed, a little annoyed at the lost time, and then almost immediately found it funny. That seemed to be the pattern of this trip.
 
 The road from Shimla to Tabo is one of the most beautiful stretches I've ridden. A river running alongside on one side, mountains rising on the other, the kind of landscape I'd only seen in photographs and movies until then. First time up north for me, and it showed why people ride to the mountains year after year.
 
 We'd decided on one rule: start early, ride until it got close to dark, then find a stay wherever we'd landed for the day. I wasn't entirely sold on the plan, but went along with it. My friend was the salt-of-the-earth type, the kind who believed in living in the moment, at least back then. This plan worked better than it should have. Until Kaza we mostly stayed in government circuit houses and guest houses, usually empty, meant for visiting officials, but a quiet word with the caretaker got us a room, hot food, and a fraction of what a hotel would have charged. Not something I'd necessarily recommend now. At the time, it felt like exactly the right way to be doing it.
 
-We reached Tabo around 4 PM. The town is built around its monastery — founded in 996 CE, the oldest continuously operating Buddhist site in India, sometimes called the Ajanta of the Himalayas for the murals and frescoes inside. Mud-brick walls, over a thousand years old, still standing in one of the harshest stretches of land in the country. We didn't stay long enough to take it in properly. That's still something I regret.
+We reached Tabo around 4 PM. The town is built around its monastery, founded in 996 CE, the oldest continuously operating Buddhist site in India, sometimes called the Ajanta of the Himalayas for the murals and frescoes inside. Mud-brick walls, over a thousand years old, still standing in one of the harshest stretches of land in the country. We didn't stay long enough to take it in properly. That's still something I regret.
 
-We'd planned to stay the night. Then we ran into a motovlogger who told us Kaza was another sixty, maybe seventy kilometres, and that pushing on would save us a full day. More time to explore once we got there, he said. Sounded reasonable. What he didn't mention was that the road from Tabo to Kaza barely qualified as a road. Loose rock, a cliff on one side, mountain on the other, and the light fading fast.
+We'd planned to stay the night. Then we ran into a motovlogger who told us Kaza was another sixty, maybe seventy kilometres, and that pushing on would save us a full day. More time to explore once we got there, he said. It sounded reasonable. What he didn't mention was that the road from Tabo to Kaza barely qualified as a road. Loose rock, a cliff on one side, mountain on the other, and the light fading fast.
 
 <img src="https://res.cloudinary.com/dpsbm1jkq/image/upload/v1781851357/IMG_2200_dphjfi.jpg" alt="World's most treacherous road sign, NH-05" />
 
@@ -43,7 +46,7 @@ An hour into that stretch, a driver coming the other way flagged us down. Shooti
 
 Nothing around us after that except the dug-dug-dug of the Bullet, the roar of the river somewhere far below, and darkness stretching endlessly into the mountains.
 
-At some point on that ride we passed a fire off to one side, a group of people moving around it in a way that looked deliberate, almost ritual. We didn't stop. Maybe it was a harvest festival, maybe something older. It was cold, we were hungry, and whatever it was, it felt like something we weren't meant to interrupt. We kept riding.
+At some point on that ride we passed a fire off to one side, a group of people moving around it in a way that looked deliberate, almost ritual. We didn't stop. It was past 8, we were hungry, we had no idea how much road was left, and finding a room was the only thing on my mind. Whatever was happening around that fire, it wasn't for us. We kept riding.
 
 By the time the lights of Kaza showed up ahead, neither of us had said much in a while. Neither of us had much money back then, just enough spirit to keep going, and that's what decided what happened next. My friend wanted to check a few hotels first, see if we could find something cheaper. I'd had enough for the night and told him I didn't care, I was stopping at the first place I saw. That happened to be Sakya Abode, one of the best hotels in Kaza. Pure luck that we stopped there first. Even better luck that someone had cancelled that evening, which meant there was a room.
 
