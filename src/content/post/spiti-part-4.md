@@ -3,8 +3,8 @@ title: "Spiti — Part Four"
 description: "The morning after Chandratal, the road back, and everything the mountains left behind."
 publishDate: 2026-06-28
 tags: ["Travel"]
-img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1781851359/IMG_2211_mexfyh.jpg"
-img_alt: "Spiti Valley, mountain road"
+img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1782730709/1000288220_wfki20.jpg"
+img_alt: "Manikaran Gurudwara, Parvati Valley"
 featured: false
 ---
 
