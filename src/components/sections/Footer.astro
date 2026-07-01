@@ -21,7 +21,7 @@
     <div class="footer-right">
       <span class="footer-location">Pune, India</span>
       <span class="footer-sep">·</span>
-      <span class="footer-copy">© 2026 The<em>Standard</em></span>
+      <span class="footer-copy">© 2026 <span class="footer-copy-brand">The<em>Standard</em></span></span>
     </div>
 
   </div>
@@ -93,9 +93,12 @@
     font-size: 11px;
   }
   .footer-copy em {
-    font-style: italic;
-    color: #B8986A;
-  }
+  font-style: italic;
+  color: #B8986A;
+}
+.footer-copy-brand {
+  font-family: var(--font-brand);
+}
   .footer-copy {
     font-family: var(--font-sans);
     font-size: 11px;
