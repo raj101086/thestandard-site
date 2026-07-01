@@ -20,6 +20,6 @@ Chuck Taylors have never been known for comfort. The OrthoLite cushioning in the
 
 There are two things worth knowing before you buy. First, they run slightly heavier than canvas Chucks, not uncomfortable, just something you notice. Second, and this is the more persistent irritation, the top eyelets are a fraction too tight. Pull the laces hard enough, regularly enough, and they start to wear through where the lace meets the metal. It's a small flaw in an otherwise well-built shoe, but it's worth being aware of.
 
-My brother is a sneaker head and he approved, which is not something that happens easily. I've recommended these to a couple of friends since. Both bought them.
+My brother is a sneaker head and he approved, which is not something that happens easily. I've since recommended these to a couple of friends who were looking for a good everyday sneaker.
 
 I'd buy these again without hesitation. Two years of regular use, one formal dinner, countless rides and rainy evenings, and they still look like shoes someone actually takes care of. Best purchase I've made in recent memory, and yes, that includes the Triumph 765. Make of that what you will.
