@@ -31,7 +31,7 @@ We got the car running well enough for the event the next day. We didn't win. Fi
 
 A friend and I were riding to Lavasa on a rainy weekend. Lavasa is a ghost town near Pune, a privately planned hill city that stalled after environmental clearances were revoked and the finances fell apart. Empty buildings, unfinished condos, streets with nobody on them. There's something fascinating about a city that was supposed to house hundreds of thousands of people and ended up housing almost none. I've seen similar places in China through videos, but Lavasa is right on our doorstep. The roads getting there are good for riding, and the city itself is good for photography.
 
-We had stopped at a village shop on the way for water and wafers. I was talking to my friend when I heard it, a low growl building around the corner, getting sharper with each bend down the winding road. I'd heard sportsbikes before. Plenty of times. But something about that particular sound, on that particular afternoon, pulled up a memory from sixteen years ago without asking permission. A cool February night outside a hostel at IIT Bombay. Grease on my hands. A sound I'd never heard in real life before that moment, until now.
+We had stopped at a village shop on the way for water and wafers. I was talking to my friend when I heard it, a low growl building around the corner, getting sharper with each bend down the winding road. I'd heard sportsbikes before. Plenty of times. But something about that particular sound, on that particular afternoon, pulled up a memory from sixteen years ago without asking permission. A cool February night outside a hostel at IIT Bombay. Grease on my hands, a small engine that wouldn't run, and somewhere in the dark, a motorcycle screaming past that I never even saw.
 
 The roar snapped me out of it. A Triumph Street Triple RS came around the bend and into view.
 
@@ -43,6 +43,8 @@ I was standing next to my Interceptor when it passed. I gave the rider a nod. He
 
 *July 2024.*
 
-The college student sitting outside a hostel at IIT Bombay, covered in grease, listening to a motorcycle he couldn't see, and the guy standing next to his Interceptor on a rainy afternoon watching the Street Triple disappear around the corner — the same person, sixteen years apart, tied together by a sound. The sound of freedom, of the world flying by at breakneck speed, of a dream finally answered. Two years after Lavasa, in July 2024, I brought that sound home.
+Two years after Lavasa, I brought home my own Street Triple 765 R.
+
+The college student sitting outside a hostel at IIT Bombay, covered in grease, listening to a motorcycle he couldn't see, and the guy standing next to his Interceptor on a rainy afternoon watching a Triple disappear around the corner — the same person, sixteen years apart, tied together by a sound. The sound of freedom. The world flying by at breakneck speed. A dream, finally answered.
 
 Twenty years since IIT Bombay. Sometimes when I'm out riding, I think about that February night and the sound that swept past before I could even see it. Somewhere out there, on some road, there's probably an eighteen-year-old hearing a sportsbike go past for the first time. I hope that sound lodges somewhere in them the way it did in me all those years ago.
