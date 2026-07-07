@@ -48,3 +48,5 @@ Two years after Lavasa, I brought home my own Street Triple 765 R.
 The college student sitting outside a hostel at IIT Bombay, covered in grease, listening to a motorcycle he couldn't see, and the guy standing next to his Interceptor on a rainy afternoon watching a Triple disappear around the corner — the same person, sixteen years apart, tied together by a sound. The sound of freedom, of the world flying by at breakneck speed, of a dream finally answered.
 
 Twenty years since IIT Bombay. Sometimes when I'm out riding, I think about that February night and the sound that swept past before I could even see it. Somewhere out there, on some road, there's probably an eighteen-year-old hearing a sportsbike go past for the first time. I hope that sound lodges somewhere in them the way it did in me all those years ago.
+
+*See also: [Snowpiercer — The Photographs](/photography/snowpiercer-triumph-street-triple)*
