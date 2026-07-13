@@ -20,7 +20,7 @@ What Daniel Keyes does with those entries is extraordinary. The early pages are 
 
 As Charlie's intelligence grows, something else happens. He begins to understand how the world has always treated him. The people he thought were laughing with him had often been laughing at him. The cruelty that was invisible to him before is suddenly visible.
 
-The experiment started to fail.
+And then, just as he begins to see the world clearly for the first time, the experiment starts to fail.
 
 The writing begins to slip back. Slowly at first, then faster. You notice it before Charlie does. A word misspelled here, a sentence that doesn't quite hold together there. The deterioration is happening on the page in front of you, not just in the story. By the end, you are reading the same kind of entries you read at the beginning, and the weight of that is almost unbearable.
 
