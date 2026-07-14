@@ -1,6 +1,6 @@
 ---
 title: "The Russian Welcome"
-description: "Moscow, 2018. A World Cup semifinal, an immigration room, and a taxi driver who played Jimmy Jimmy."
+description: "Moscow, 2018. One ticket, one immigration room, and one taxi driver."
 publishDate: 2026-07-14
 tags: ["Travel"]
 img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1784011765/pexels-raj-pillay-272302-1257061_z0fuyh.jpg"
@@ -14,13 +14,13 @@ Every four years the world's collective energy goes up a notch. Conversations sh
 
 I was one of those people, once.
 
-My introduction to football came in 1998 when France hosted the World Cup. Growing up in India in the nineties meant life was cricket. We had Sachin, which meant cricket wasn't just a sport, it was a religion. Then one evening my father came home with a World Cup wall chart and pinned it to the wall. He told me to track the results. I took the job seriously, copying scores from the newspaper every morning. But the newspaper was always a day late, and because of the time difference with France, the evening match scores weren't in until the next morning. I got impatient. So instead of waiting, I started watching.
+My introduction to football came in 1998 when France hosted the World Cup. Growing up in India in the nineties meant life was cricket. We had Sachin, which meant cricket wasn't just a sport, it was a religion. Then one evening my father came home with a football World Cup wall chart and pinned it to the wall. He told me to track the results. I took the job seriously, copying scores from the newspaper every morning. But the newspaper was always a day late, and because of the time difference with France, the evening match scores weren't in until the next morning. I got impatient. So instead of waiting, I started watching.
 
 What I wasn't prepared for was the sport itself. Thirty-two nations, cultures and colours from every corner of the world packed into one tournament, fans who had travelled thousands of miles filling the stands, a relentless pace that kept you on the edge of your seat for the full ninety minutes. Cricket had taught me to love sport but nothing had prepared me for this scale.
 
 The first match I can fully recall is the 1998 final. Brazil were the holders and the favourites. France dismantled them 3-0. Nobody saw it coming, and neither did I — a cricket loving kid who had just found his second sport, though I had no idea yet that it would become a lifelong affair.
 
-Twenty years later, the cricket kid from Bhilai would find himself flying to Moscow to watch a World Cup semifinal.
+Twenty years later, the cricket kid from Bhilai would find himself flying to Moscow to watch a FIFA World Cup semifinal.
 
 ---
 
