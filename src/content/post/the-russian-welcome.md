@@ -86,7 +86,7 @@ A familiar tune filled the car.
 
 A Mithun Chakraborty song, playing in a taxi in Moscow at 8:30 in the evening.
 
-I started laughing and couldn't stop. An hour in that room, a passport full of questions, a beard that had apparently caused a small international incident, and here was this man playing Jimmy Jimmy like it was the most natural thing in the world. Only football can put you in situations like this.
+I started laughing and couldn't stop. The beard that had apparently caused a small international incident, the hour of questions, all of it — undone by a Mithun Chakraborty song. Only football can put you in situations like this.
 
 The immigration officer had said welcome to Russia.
 
