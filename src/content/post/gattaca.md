@@ -3,7 +3,7 @@ title: "Gattaca — There Is No Gene for the Human Spirit"
 description: "Gattaca predicted the world we're walking into — and why it still lands nearly thirty years on."
 publishDate: 2026-07-19
 tags: ["Film & Series"]
-img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1784523381/2239015_m2ztkb.jpg"
+img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1784534974/2239005_sbnrea.png"
 img_alt: "Gattaca — Vincent Freeman"
 featured: false
 ---
