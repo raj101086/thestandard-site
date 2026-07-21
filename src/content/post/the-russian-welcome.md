@@ -88,6 +88,4 @@ A Mithun Chakraborty song, playing in a taxi in Moscow at 8:30 in the evening.
 
 I started laughing and couldn't stop. The beard that had apparently caused a small international incident, the hour of questions, all of it — undone by a Mithun Chakraborty song. Only football can put you in situations like this.
 
-The immigration officer had said welcome to Russia.
-
-But the taxi driver was the one who meant it.
+The immigration officer had said welcome to Russia, but the taxi driver was the one who meant it.
