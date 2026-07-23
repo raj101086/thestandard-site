@@ -1,5 +1,5 @@
 ---
-title: "Onitsuka Tiger Mexico 66 SD Vintage"
+title: "Onitsuka Tiger Mexico 66 SD Vintage — My First Pair"
 description: "My first pair of Onitsuka Tiger Mexico 66 SD Vintage — why I finally stopped hesitating and what happened when I tried them on."
 publishDate: "2026-05-30T10:00:00"
 featured: false
