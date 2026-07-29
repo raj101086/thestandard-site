@@ -1,7 +1,7 @@
 ---
 title: "Masters of the Universe — Nostalgia Is a Hell of a Drug"
 description: "The new Masters of the Universe isn't a masterpiece, but it dug up a childhood memory I'd forgotten: a He-Man figure, a motorcycle burn, and a saddlebag."
-publishDate: 2026-07-28
+publishDate: 2026-07-29
 tags: ["Film & Series"]
 img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1785302352/masters-of-the-universe-2026-oy_wq8uue.jpg"
 img_alt: "Masters of the Universe (2026)"
