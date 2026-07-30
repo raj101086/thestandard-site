@@ -1,6 +1,6 @@
 ---
 title: "Ray-Ban Original Wayfarer Classic — The Only Pair I've Ever Needed"
-description: "Fifteen years, one frame, and the one piece of fashion advice I'd give without hesitation."
+description: "Fifteen years with the Ray-Ban Original Wayfarer Classic — why it's the one pair of sunglasses worth owning, and the only frame I've ever needed."
 publishDate: 2026-06-16
 tags: ["Fashion"]
 img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1781603087/wayfarer_jlo9yt.jpg"
