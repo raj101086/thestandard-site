@@ -1,6 +1,6 @@
 ---
 title: "Flowers for Algernon — Daniel Keyes"
-description: "The book that made me feel a character's decline before I even understood what was happening."
+description: "Flowers for Algernon by Daniel Keyes is a quietly devastating novel — a review of the book that makes you feel a man's decline before you understand what's happening."
 publishDate: 2026-07-13
 tags: ["Books"]
 img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1783922606/pexels-hatice-uyar-460317377-38208779_wtjqnq.jpg"
