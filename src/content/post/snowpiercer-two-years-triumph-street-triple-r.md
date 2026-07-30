@@ -1,6 +1,6 @@
 ---
 title: "Snowpiercer — Two Years with the Triumph Street Triple R"
-description: "Two years, 25,000 kilometres, and one ride I'll never forget."
+description: "Two years and 25,000 kilometres on the Triumph Street Triple 765 R — a long-term ownership review, and the ride I'll never forget."
 publishDate: 2026-06-12
 tags: ["Motorcycles"]
 img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1781256284/DSCF9364_p9tslk.jpg"
