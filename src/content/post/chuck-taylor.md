@@ -1,6 +1,6 @@
 ---
-title: "One Chuck to Rule Them All"
-description: "Two years with the Chuck Taylor All Star Equip WP Counter Climate. An honest verdict on the only pair of shoes you might ever need."
+title: "One Chuck to Rule Them All — Converse Chuck Taylor All Star Equip WP"
+description: "Two years with the Converse Chuck Taylor All Star Equip WP — a waterproof, weatherproof take on the classic. An honest verdict on whether it's worth it."
 publishDate: 2026-07-01
 tags: ["Fashion"]
 img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1782899097/IMG_2246_xmo7v6.jpg"
