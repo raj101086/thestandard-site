@@ -3,7 +3,7 @@ title: "Postcards"
 category: "Travel"
 date: "2026-06-03"
 cover: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1780470298/PSX_20220921_220114_bqyyyd.jpg"
-description: "Narrow lanes, fading paint, afternoon light cutting through gaps in the buildings."
+description: "Postcards from the road — Himalayan passes, prayer flags in Leh, and a ghost ship in Malacca."
 photos:
   - url: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1780469037/PSX_20220924_162315_ifxmev.jpg"
     caption: "Zanskar Valley from top of Sirsir-la pass at 15700ft"
