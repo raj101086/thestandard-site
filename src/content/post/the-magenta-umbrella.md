@@ -1,6 +1,6 @@
 ---
 title: "The Magenta Umbrella"
-description: "Some photographs you miss once and spend two days waiting to take again."
+description: "Sometimes the universe gives you second chances."
 publishDate: 2026-08-06
 tags: ["Photography"]
 img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1786013289/IMG_3293_qsegyi.jpg"
@@ -12,7 +12,7 @@ An umbrella shot from above is not a new idea. You've seen it in films, in digit
  
 Two days ago I was standing on my balcony at around 2 PM. My cook arrives around that time and I step out of my work room to give instructions, then stay for a few minutes. Looking at the Dive Ghat pass and the Sahyadri range behind it, watching the rain, listening to the birds in the trees below. And if I am honest, checking that both motorcycles are still where I parked them. A small pocket of nothing in the middle of a working afternoon.
  
-That day it was drizzling. Walking along the wet road below was a woman with a magenta umbrella, moving briskly. Dark wet pavement, one burst of colour, the angle already perfect from where I was standing. I saw the photograph before I pressed anything. My phone was inside on my desk. By the time I thought about running in to get it, she was gone.
+That day it was drizzling. Walking along the wet road below was a woman with a magenta umbrella, moving briskly. Dark wet pavement, one burst of colour, the angle already perfect from where I was standing. My phone was inside on my desk. By the time I thought about running in to get it, she was gone.
  
 A missed chance, like so many other shots I have waited to go back for and never did in the end.
  
