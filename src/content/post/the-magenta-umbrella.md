@@ -18,7 +18,7 @@ A missed chance, like so many other shots I have waited to go back for and never
  
 Today, at around the same time, I was standing in the same spot when I caught a flash of magenta in the corner of my eye. Same umbrella. Same brisk walk. Same road.
  
-I ran inside, grabbed my phone, leaned out over the balcony railing and pressed the shutter.
+I ran inside, grabbed my iPhone 17 Pro, leaned out over the balcony railing and pressed the shutter at 4x zoom.
  
 She was slightly off the third but Lightroom sorted that. What I couldn't have planned was the grid of the pavement tiles in the upper frame, or the way the wet concrete makes the colour pop harder than it would on a dry day.
  
