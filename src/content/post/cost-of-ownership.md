@@ -5,6 +5,7 @@ publishDate: 2026-08-10
 tags: ["Motorcycles"]
 img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1786350338/IMG_3423_wvfpre.jpg"
 img_alt: "The Cost of Ownership"
+img_position: "center bottom"
 featured: false
 ---
 
