@@ -1,6 +1,6 @@
 ---
 title: "The Cost of Ownership"
-description: "From a Caliber 115 with glowing brake lights to two big bikes in Pune — what owning machines has really cost me, and what it has given back."
+description: "What it actually costs to own a Royal Enfield Interceptor and Triumph Street Triple 765 in India, and why none of it is rational."
 publishDate: 2026-08-10
 tags: ["Motorcycles"]
 img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1786352848/copy_of_img_3423_wvfpre.jpg"
