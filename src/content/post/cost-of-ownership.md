@@ -34,7 +34,7 @@ I owned a Fiat Punto Evo for ten years, from September 2014. For much of that ti
 
 The cars and motorcycles have almost never been rational decisions. The Punto instead of a Maruti because my mother felt more comfortable in the backseat, that was enough reason. The Interceptor still in the garage because my brother and I had wanted that motorcycle since it launched, and when we could finally afford one we bought it, and despite the after sales service and mediocre performance and everything else I still can't quite let it go. Because some things aren't purchased with logic.
 
-The Street Triple makes even less sense. On Indian roads where a pothole can turn a Sunday ride into an expensive afternoon, yet every time I come back from a ride on it I'm grinning like an idiot — and that's when I realise I probably am an imposter among career-driven people, and I've made my peace with it.
+The Street Triple makes even less sense. On Indian roads where a pothole can turn a Sunday ride into an expensive afternoon, yet every time I come back from a ride on it I'm grinning like an idiot.
 
 <img src="https://res.cloudinary.com/dpsbm1jkq/image/upload/v1786350534/Interceptor_pic_s9oyai.jpg" alt="Royal Enfield Interceptor 650" />
 
