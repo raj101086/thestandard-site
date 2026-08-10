@@ -3,9 +3,8 @@ title: "The Cost of Ownership"
 description: "From a Caliber 115 with glowing brake lights to two big bikes in Pune — what owning machines has really cost me, and what it has given back."
 publishDate: 2026-08-10
 tags: ["Motorcycles"]
-img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1786350338/IMG_3423_wvfpre.jpg"
+img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1786352848/copy_of_img_3423_wvfpre.jpg"
 img_alt: "The Cost of Ownership"
-img_position: "center bottom"
 featured: false
 ---
 
