@@ -1,6 +1,6 @@
 ---
 title: "Onitsuka Tiger Mexico 66 SD Vintage — My First Pair"
-ddescription: "Onitsuka Tiger Mexico 66 SD Vintage — a shoe from 1966 that still stops people on the street. A first pair, an honest take."
+description: "Onitsuka Tiger Mexico 66 SD Vintage — a shoe from 1966 that still stops people on the street. A first pair, an honest take."
 publishDate: "2026-05-30T10:00:00"
 featured: false
 tags: ["Fashion"]
