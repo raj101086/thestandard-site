@@ -1,6 +1,6 @@
 ---
 title: "Gattaca — There Is No Gene for the Human Spirit"
-description: "Gattaca predicted the world we're walking into — and why it still lands nearly thirty years on."
+description: "Gattaca turns thirty next year. Its version of the future feels less like fiction now than it did then — and it's still the most human science fiction film ever made."
 publishDate: 2026-07-19
 tags: ["Film & Series"]
 img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1784534974/2239005_sbnrea.png"
