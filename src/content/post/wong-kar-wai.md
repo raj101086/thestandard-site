@@ -1,6 +1,6 @@
 ---
 title: "Wong Kar-wai — Chungking Express and In the Mood for Love"
-description: "Why Wong Kar-wai's Chungking Express and In the Mood for Love are essential cinema — mood, memory, and longing rendered better than almost anything else."
+description: "Chungking Express and In the Mood for Love — two films by Wong Kar-wai that are less about story and more about what doesn't happen. Start with Chungking. See where it takes you."
 publishDate: "2026-05-31T10:00:00"
 featured: false
 tags: ["Film & Series"]
