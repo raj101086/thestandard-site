@@ -10,7 +10,9 @@ featured: false
 
 I got these boots in November 2023, just before a work trip to Xuzhou, China. I had lived in China before, in Dalian, but this was my first time in Xuzhou and Shanghai. It had been five years since I'd been back to China at all, and I was more excited about the trip than the work.
 
-Before the Marton, I had owned boots from Red Chief, Woodland, and Royal Enfield. None of them worked for me. The weight was always the issue — every step felt like an effort, like something tied to your legs that you had to drag along with you. So when I ordered these from the Birkenstock India website for around ₹13,000, I wasn't expecting much. I liked how they looked, brown oiled nubuck leather, yellow laces, that slightly rugged silhouette, but I assumed they'd be like everything else.
+Since starting my current job, which is fully remote with a relaxed dress code, I hadn't needed proper footwear for two years. My shoe rack was sneakers and riding boots and nothing in between. I had been quietly browsing for something that could cover all of it, a casual dinner, an occasional formal setting, a ride, but never pulled the trigger. When my manager asked me to travel to China, that was the push I needed.
+
+Before the Marton, I had owned boots from Red Chief, Woodland, and Royal Enfield, and none of them had worked for me. The weight was always the issue — every step felt like an effort, like something tied to your legs that you had to drag along with you. So when I ordered these from the Birkenstock India website for around ₹13,000, I wasn't expecting much. I liked how they looked, brown oiled nubuck leather, yellow laces, that slightly rugged silhouette, but I assumed they'd be like everything else.
 
 The box arrived a couple of days later. I opened it and picked the boots up.
 
@@ -20,7 +22,7 @@ They weren't just light in the hand. Once I put them on, they were light on the 
 
 I took them to China and wore nothing else for the entire seven days. Xuzhou, then Shanghai, walking around both cities in cold weather and snow, dinner out, everything. By the end of the trip I had my answer: you can wear these all day and barely notice them. For a pair of leather boots, that's the highest compliment I can give.
 
-The design holds up in more situations than you'd expect. Jeans and a t-shirt works. Slacks for a semi-formal dinner works. Walking around a cold Chinese city all day, apparently that works too. The high top, seven-hole lacing and oiled nubuck leather make it look like a boot that can handle anything. The cork sole keeps it light but this isn't footwear for heavy duty work or trekking — it's a lifestyle boot that happens to be very well made. Know what you're buying and it won't disappoint.
+The design holds up in more situations than you'd expect. Jeans and a t-shirt works. Slacks for a semi-formal dinner works. Walking around a cold Chinese city all day, apparently that works too. The high top, seven-hole lacing and oiled nubuck leather make it look like a boot that can handle anything. The cork sole keeps it light but this isn't footwear for heavy duty work or trekking, it's a lifestyle boot that happens to be very well made. Know what you're buying and it won't disappoint.
 
 The shade of brown is worth mentioning separately. It's not dark enough to look formal and not light enough to look casual, it sits somewhere in between, which is exactly what makes it work across so many contexts. Pair it with the yellow laces it comes with or swap to red and you get two completely different looks from the same boot.
 
