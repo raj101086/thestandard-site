@@ -3,7 +3,7 @@ title: "Chinese Hot Pot — My Last Meal"
 description: "My first Sichuan hot pot in Dalian, China, in 2017 — a fiery Chinese hot pot experience in minus-20°C winter, and why it remains my choice for a last meal."
 publishDate: 2026-08-14
 tags: ["Coffee & Food"]
-img: https://res.cloudinary.com/dpsbm1jkq/image/upload/v1786699335/hotpot_vcu1yk.jpg
+img: https://res.cloudinary.com/dpsbm1jkq/image/upload/v1786699799/hotpot123_d6ahwj.jpg
 img_alt: "Sichuan hot pot in Dalian, China, with a yin-yang split broth, dipping sauce and chopsticks"
 featured: false
 ---
