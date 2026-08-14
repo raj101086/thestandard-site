@@ -26,7 +26,7 @@ Then came the two broths. One was clear and almost yellowish, the other was a de
 
 Soon after, a huge tray arrived carrying everything Sarath had ordered. Everything was raw. Thinly sliced beef and lamb, prawns, fish balls, vegetables, tofu, mushrooms and a few things I couldn't identify. I was already hungry, and the smell coming from that red broth was making things considerably worse.
 
-![Fresh meat and other ingredients](/images/pexels-dauphotographer-30882910.jpg)
+![Fresh meat and other ingredients](https://res.cloudinary.com/dpsbm1jkq/image/upload/v1786700529/pexels-dauphotographer-30882910_cewoyi.jpg)
 
 Sarath gave me a quick lesson on how to eat it. Thin slices of meat needed only a few seconds in the boiling broth. Vegetables took longer. Some things went in towards the end. He explained the dipping sauce as well, which was another thing I had never encountered before. Instead of one sauce being served with the meal, you built your own from the ingredients at the condiment station.
 
