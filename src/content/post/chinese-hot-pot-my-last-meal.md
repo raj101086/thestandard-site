@@ -3,8 +3,8 @@ title: "Chinese Hot Pot — My Last Meal"
 description: "My first Sichuan hot pot in Dalian, China, in 2017 — a fiery Chinese hot pot experience in minus-20°C winter, and why it remains my choice for a last meal."
 publishDate: 2026-08-14
 tags: ["Coffee & Food"]
-img: https://res.cloudinary.com/dpsbm1jkq/image/upload/v1786699799/hotpot123_d6ahwj.jpg
-img_alt: "Sichuan hot pot in Dalian, China, with a yin-yang split broth, dipping sauce and chopsticks"
+img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1786700528/pexels-sophie-otto-774988927-20344536_woejjz.jpg"
+img_alt: "Chinese hot pot with a divided yin-yang broth surrounded by fresh ingredients"
 featured: false
 ---
 
@@ -25,6 +25,8 @@ Once we sat down, I noticed the table had a circular opening in the middle. I ha
 Then came the two broths. One was clear and almost yellowish, the other was a deep, almost violently red colour. If you've eaten Maharashtrian food, you might recognise the resemblance to pandhra rassa and tambda rassa. The difference was that instead of two small bowls sitting alongside a thali, here they were bubbling away together in this huge steel pot, each half heated from underneath. I had no idea what was actually in either broth. I hadn't yet learned about Sichuan peppercorns, fermented bean paste or any of the other ingredients that went into it. All I knew was that one was clear, the other was bright red, and just looking at that red broth I could already imagine what it was going to taste like. They were poured into the two halves of the pot and suddenly it clicked. Yin and yang. The whole thing was shaped like the symbol.
 
 Soon after, a huge tray arrived carrying everything Sarath had ordered. Everything was raw. Thinly sliced beef and lamb, prawns, fish balls, vegetables, tofu, mushrooms and a few things I couldn't identify. I was already hungry, and the smell coming from that red broth was making things considerably worse.
+
+![Fresh meat and other ingredients](/images/pexels-dauphotographer-30882910.jpg)
 
 Sarath gave me a quick lesson on how to eat it. Thin slices of meat needed only a few seconds in the boiling broth. Vegetables took longer. Some things went in towards the end. He explained the dipping sauce as well, which was another thing I had never encountered before. Instead of one sauce being served with the meal, you built your own from the ingredients at the condiment station.
 
