@@ -8,7 +8,7 @@ img_alt: "A city street at night, lit blue"
 featured: false
 ---
 
-I bought the X-T30 without ever having held one. September 2020, ₹84,500 on Flipkart, the most expensive thing I'd ever bought online, and the decision came down to YouTube videos and the look of the silver body. I'd never seen anyone using a Fuji either. Everybody I knew with a camera had a Canon or a Nikon, and anyone moving to mirrorless was buying Sony.
+In September 2020, somewhere in the middle of the pandemic, I finally bought a proper camera. I'd been thinking about it for years. The X-T30 cost ₹84,500 on Flipkart, which made it the most expensive thing I'd ever bought online, and I ordered it without ever having held one. I'd never even seen anyone using a Fuji. Everybody I knew with a camera had a Canon or a Nikon, and anyone moving to mirrorless was buying Sony.
 
 Before that, photography was mostly a reason to choose my phones. The Sony Xperia Arc in 2011, then the HTC One, then the Google Nexus 6. None of them made much sense for someone living in Bhilai, where the service networks were practically nonexistent. But the cameras were good and the phones looked good. The Xperia had that curved back and the HTC One had those enormous speaker grilles. The Nexus had a silver-and-black finish I still think looks better than most phones since. I've always had a slightly vain requirement from the things I buy. They should stand out.
 
@@ -54,4 +54,4 @@ Photography is one of those hobbies where quality tracks fairly closely with wha
 
 My X-T30 has taken a beating. It's slowly falling apart and I'm fairly certain I'll be replacing it within a year. This is the camera that got me started, and it has been strapped to motorcycles across most of the places I've photographed without once failing me when it mattered. If Fuji took this body, kept everything I love about it and dropped in the newer 40MP sensor, I'd use it forever.
 
-I'm too far into the system to switch now. Some of the newer Sonys look good and I'd still buy the X-T5. When this one finally goes, that's what I'll order, and I'll probably order it without holding it first.
+I'm too far into the system to switch now. Some of the newer Sonys look good but I'd still buy the X-T5. When this one finally goes, that's what I'll order, and I'll probably order it without holding it first.
