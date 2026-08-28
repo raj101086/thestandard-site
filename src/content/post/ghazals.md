@@ -1,0 +1,36 @@
+---
+title: "Awargi — How Ghazals Found Me"
+description: "Ghazals found me in Jamshedpur, ten years after I'd asked my mama to play anything else — Jagjit Singh, Ghulam Ali, and one sher I still can't get past."
+publishDate: 2026-08-28
+tags: ["Music"]
+img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1787916817/a_minimal_graphic_typographic_image_on_a_dark_char_raofea.png"
+img_alt: "The Urdu word awargi, meaning wandering, in Nastaliq"
+featured: false
+---
+
+My dad and my mama both loved ghazals. There was a Jagjit Singh cassette in my mama's car stereo that seemed to be stuck in there permanently, and there was almost always one playing at his house as well. Jagjit and Chitra Singh had put out The Unforgettables in 1976, the album usually credited with moving ghazals out of the connoisseurs' corner and into ordinary houses, and by the 90s they had reached ours. I was a teenager by then and had no use for any of it. I kept asking him to buy new film-song cassettes instead, and I've wondered since what he made of those requests. Probably that I was a child, and that I'd come round to it eventually.
+
+The first ghazal I can actually remember liking was Pankaj Udhas singing Chandi Jaisa Rang Hai Tera. I'd have been nine or ten, and I heard it on one of the music channels that were everywhere in the 90s. Countdown shows, channels that just played music, hardly any advertisements and nothing to subscribe to. The only catch was that you couldn't choose. You sat in front of the television and waited for somebody else to decide what you were going to hear next. A nine-year-old was never going to follow what makes a ghazal a ghazal, and I didn't know that's what I was listening to, but it was clearly not the same thing as everything else on that channel. Then I forgot about it.
+
+They came back when I moved to Jamshedpur and started living on my own. Everything there was a struggle. I hated the job, my love life was a mess, I wasn't earning what I thought I was worth, and the ordinary parts of the day took more out of me than they should have. The commute was a shared auto, which meant eight or nine people in something built for half that, and on some days I'd be in the front seat with three others arranged around me in ways I still can't reconstruct. Then work, where my boss was usually waiting to shout at somebody. Then a horrible lunch of things I'd never eaten at home in my life. Then the fight to find an auto back, and dinner scavenged off whichever food stall looked least dangerous, and then the same thing again the next morning.
+
+Music was the only part of it I chose. Between 2010 and 2012 my taste spread out in three directions at once. Mornings were Lady Gaga, because I needed every bit of manufactured energy I could get before walking into that office. The evening commute was Eminem, which was the only thing that took the edge off the day. And at night, before sleeping, ghazals. Jagjit Singh and Ghulam Ali. The day would finally close properly after a few of them and I could sleep without dragging the job into bed with me. The music my mama had been playing in his car, the music I'd wanted replaced with film cassettes, had found its way back on its own.
+
+My favourite in those years was Jagjit Singh's Koi Fariyaad, from Tum Bin. The title is roughly a plea buried somewhere in your heart, and the song is about wanting something that's right in front of you and being unable to do a thing about it. That was close enough to where I was standing. It was the situation first, then the lyrics, then his voice, in that order. It's still one of the songs I hold closest.
+
+The other two didn't survive Jamshedpur. Once I stopped needing manufactured energy in the morning and something to soak up the rage in the evening, Lady Gaga and Eminem fell away on their own. The ghazals didn't. I moved back to Bhilai for a project in 2012, bought a car in 2014, and they were on the drive to the office and the drive back, not every day but a few days a week. They were also what went on when a few of us sat around with a drink. They're slow burners, and a single ghazal will have two or three couplets in it, so everyone in the room finds a different one to hang their own life on. Somewhere in those drives it occurred to me that this was exactly what my mama had been doing, and that I'd sat in his car and asked him to put something else on. He took it better than I would have. If anybody had asked me to change it while Ghulam Ali was halfway through Hungama Hai Kyun Barpa, I wouldn't have been anywhere near as kind about it.
+
+The more I listened, the more it was the poetry I was listening to rather than the music. A lot of what I hear now moves too fast, or has too much going on around the vocals, and the words end up somewhere behind everything else. Ghazals put them first. Poetry, then the vocals, then the music holding both up without stealing the thunder from either. The music in a ghazal works the way bass works in a rock song. It's doing a great deal and you're not meant to notice it doing anything. If somebody wanted a place to start I'd point them at Tum Ko Dekha To Yeh Khayal Aaya and Chupke Chupke Raat Din first, then Ranjish Hi Sahi. And then there's the older poetry, the kind that gets recited more than sung, Ghalib's Dil-e-Nadan Tujhe Hua Kya Hai and Iqbal's Sitaron Se Aage Jahan Aur Bhi Hain.
+
+What surprised me was how much of myself I kept finding in poetry written before I was born. One sher I keep going back to is from Ghulam Ali's Yeh Dil Yeh Pagal Dil, written by Mohsin Naqvi in 1977. 
+
+<div class="lyrics">
+इक अजनबी झोंके ने जब पूछा मिरे ग़म का सबब<br>
+सहरा की भीगी रेत पर मैं ने लिखा आवारगी
+</div>
+
+A stray breeze asks the poet why he's grieving, and on wet desert sand he writes one word: awargi. Wandering. I feel close to those lines because there's nobody else to hold responsible for where I've ended up. I chose it, at every step, usually because some part of me wanted to wander in that direction and was willing to pay for it afterwards. That's what awargi means to me. Not being lost so much as deciding to wander and accepting whatever comes with it. Naqvi wrote it almost fifty years ago and it still describes something I recognise in myself. The circumstances change and so does the language, but people go on wanting what they can't have and missing what's gone.
+
+I never went looking for where the form came from. I'm happy enough enjoying something without tracing it. Only later did I find out the ghazal started in Arabic poetry, grew up in Persia, and arrived in the subcontinent to pick up new languages and poets and ways of being sung. Centuries of moving between courts and literary circles and performance traditions before recordings and cinema handed it to everybody. Quite a distance to travel to reach a pair of headphones in a rented room in Jamshedpur.
+
+I don't know whether ghazals are dying. I don't hear them around me the way I hear other things, and somebody growing up now is far more likely to be handed music by an algorithm than by a television channel that made the decision for them. But I don't listen because the form is old or because it's part of anybody's heritage. I listen because the words usually turn out to be about something I recognise, and that doesn't seem to be running out.
