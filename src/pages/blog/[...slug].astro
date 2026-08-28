@@ -52,7 +52,7 @@ const relatedPosts = allPosts
   description={entry.data.description}
   ogImage={entry.data.img}
   ogType="article"
-  url={`https://thestandard.co.in/blog/${entry.id}`}
+  url={`https://www.thestandard.co.in/blog/${entry.id}`}
 >
 
   <div id="reading-progress" class="reading-progress"></div>
@@ -134,16 +134,16 @@ const relatedPosts = allPosts
     "image": entry.data.img,
     "datePublished": entry.data.publishDate.toISOString(),
     "author": {
-      "@type": "Person",
+     "@type": "Person",
       "name": "Raj Pillay",
-      "url": "https://thestandard.co.in/about"
+      "url": "https://www.thestandard.co.in/about"
     },
-    "publisher": {
-      "@type": "Organization",
+      "publisher": {
+     "@type": "Organization",
       "name": "The Standard",
-      "url": "https://thestandard.co.in"
+     "url": "https://www.thestandard.co.in"
     },
-    "url": `https://thestandard.co.in/blog/${entry.id}`
+    "url": `https://www.thestandard.co.in/blog/${entry.id}`
   })} />
 
 </PostLayout>
