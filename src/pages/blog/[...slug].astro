@@ -22,7 +22,12 @@ const formattedDate = entry.data.publishDate.toLocaleDateString('en-US', {
   year: 'numeric', month: 'long', day: 'numeric'
 });
 
-const wordCount = entry.body?.split(/\s+/).length || 0;
+const wordCount = (entry.body || "")
+  .replace(/<[^>]*>/g, " ")
+  .replace(/https?:\/\/\S+/g, " ")
+  .replace(/^---[\s\S]*?---/, " ")
+  .split(/\s+/)
+  .filter(Boolean).length;
 const readingTime = Math.max(1, Math.round(wordCount / 200));
 
 const allPosts = await getCollection("post");
