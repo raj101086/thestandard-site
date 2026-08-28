@@ -1,6 +1,6 @@
 ---
 title: "Awargi — How Ghazals Found Me"
-description: "Ghazals found me in Jamshedpur, ten years after I'd asked my mama to play anything else — Jagjit Singh, Ghulam Ali, and one sher I still can't get past."
+description: "A personal look at ghazals, Jagjit Singh, Ghulam Ali and Urdu poetry, and how songs like Koi Fariyaad and Yeh Dil Yeh Pagal Dil made the timeless beauty of ghazals part of my life."
 publishDate: 2026-08-28
 tags: ["Music"]
 img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1787916817/a_minimal_graphic_typographic_image_on_a_dark_char_raofea.png"
