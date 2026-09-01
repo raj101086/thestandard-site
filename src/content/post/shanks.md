@@ -1,0 +1,28 @@
+---
+title: "Red-Haired Shanks — Nine Years With a Happy Meal Toy"
+description: "A drunken McDonald's purchase in Dalian, a ninja who turned out to be Red-Haired Shanks, and nine years of him riding in my backpack."
+publishDate: 2026-08-28
+tags: ["Travel"]
+img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1788255565/Shanks_uojhy5.jpg"
+img_alt: "Red-Haired Shanks figure beside a stack of unread books"
+img_position: "left"
+featured: false
+---
+
+I bought him in Dalian on what was probably a Saturday night, after Sarath and I had had too much to drink and gone to the McDonald's opposite our hotel looking for a midnight meal. It was slow enough that I had time to wander around while we waited, and there were a few toys sitting near the counter. One of them had red hair, a black coat, three scars down one eye and a small sword, standing in front of a treasure chest. I had no idea who he was. I decided he was a ninja, told Sarath I wanted the ninja, and bought him. That's the entire story of how Red-Haired Shanks came into my life.
+
+He ended up in the luggage almost immediately. The China project ran on two-month visas, so I'd work, fly back to India, apply again and fly out again. Every time I checked out of that hotel I packed everything I owned, and I was in a PG in Pune between trips, which meant the things that mattered travelled with me rather than staying anywhere. Shanks was in that pile from the start. Somewhere in the cycle of packing and unpacking him he stopped being a toy I'd bought and became a thing I carried.
+
+I'd never had a lucky charm before, nothing I took everywhere and no object with a job. He filled a gap I didn't know was there. And looking at the timeline now, I can't entirely dismiss it. Shanks arrived before the Fuji, before the watches, before the tablet and the Sony headphones, all of which are now what I pack first. Life before him was average, which is easy enough to say because it doesn't cost me anything to admit, but it's improved fairly steadily since. That isn't how luck works, or at least I don't think it is, but I'm willing to give him some of the credit.
+
+For years I never looked him up. I owned the thing and never once wondered where he came from. What ended that was an Instagram photo. A pile of unread books had built up on my bedside table, I took a picture of it, and I photographed Shanks sitting next to them because I liked how it looked. A friend's brother commented underneath: bhai, red haired shanks. That's how I learned his name. I still didn't watch One Piece until 2022, when a friend talked me into it, and only then did I find out what had been sitting on my bedside table since Dalian. Serendipity is the only word for it. In my defence as a man who credits a toy with his luck, Shanks does have master-level Haki.
+
+Then I read about him properly and started recognising myself in a cartoon pirate. Shanks takes his time. He'd rather travel around with his crew and enjoy the trip than get anywhere in particular, which is roughly how I've gone about most things. His crew spends most of its time drinking and hosting parties, which is precisely the state I was in when I bought him. He has almost no interest in power or wealth. He's been everywhere and still believes the best sake comes from his hometown, and I've never found a sambar to beat my grandmother's.
+
+Since 2017 he's crossed a few seas. He's seen the Atlantic from Guinea, been to Rwanda and Malaysia and Dubai, and come to Moscow for the World Cup. Mashooqa and Snowpiercer have both carried him. Somewhere in there a relationship became a good one and a job became a stable one, and he was around for the flat years in between as well. He travels in the backpack, on top of the camera and whatever book I've packed, and he's the first thing out when I get to a room and the last thing back in, so nothing ends up stacked on him.
+
+These days he sits on my work table and has picked up a second job. Every time I buy a lens or a camera, or start pushing settings around to see what happens, he's the first thing I point it at. He's been photographed in every kind of light I can produce in one room and at every focal length I've owned. I know a great deal more about photography than I did when I bought him, but the subject hasn't changed.
+
+Somewhere along the way he stopped being a toy. If I lost him now I'd be properly upset, not because a Happy Meal figure is worth anything but because I can't recreate what he's attached to. He reminds me of China, and of Dalian, and of the nights when Sarath and I drank too much and ended up at that McDonald's looking for food at midnight. He reminds me of everything that came after it, the countries and the trips and the motorcycles, the relationship, the job, the things I bought along the way, and the distance between the man who picked him off that counter and the one writing this. That's a lot of history for a toy I thought was a ninja.
+
+Which has created a problem. I've stopped taking him on domestic work trips because he's become too precious, and the thing that made him precious was that he travelled. If I lose him somewhere there's no getting him back. I could buy another Shanks but it wouldn't be this Shanks. It wouldn't have spent years in my luggage or sat in that hotel room in Dalian or been the first thing I pointed a new lens at. I'm going to Australia at the end of the year and he's coming with me. I might get him an AirTag so I don't leave him somewhere. There's something wrong with keeping a pirate who has spent nine years crossing borders locked safely on a desk. He is the great Emperor Red-Haired Shanks. What kind of pirate would he be if he didn't travel the seven seas?
