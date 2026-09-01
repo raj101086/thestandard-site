@@ -1,7 +1,7 @@
 ---
 title: "Red-Haired Shanks — Nine Years With a Happy Meal Toy"
 description: "A drunken McDonald's purchase in Dalian, a ninja who turned out to be Red-Haired Shanks, and nine years of him riding in my backpack."
-publishDate: 2026-08-28
+publishDate: 2026-09-01
 tags: ["Travel"]
 img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1788255565/Shanks_uojhy5.jpg"
 img_alt: "Red-Haired Shanks figure beside a stack of unread books"
