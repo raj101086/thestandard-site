@@ -1,5 +1,5 @@
 ---
-title: "Gattaca — There Is No Gene for the Human Spirit"
+title: "Gattaca"
 description: "Gattaca turns thirty next year. Its version of the future feels less like fiction now than it did then — and it's still the most human science fiction film ever made."
 publishDate: 2026-07-19
 tags: ["Film & Series"]

@@ -1,5 +1,5 @@
 ---
-title: "Mashooqa's Day Out — 160 Kilometres Without a Plan"
+title: "160 Kilometres Without a Plan"
 description: "A forced holiday turned into 160 kilometres through Saswad and Panvadi Ghat on the Royal Enfield Interceptor 650, and an answer to a question I'd been asking for years."
 publishDate: 2026-09-05
 tags: ["Motorcycles"]

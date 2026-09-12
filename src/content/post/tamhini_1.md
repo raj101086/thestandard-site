@@ -1,5 +1,5 @@
 ---
-title: "Tamhini — Five Years on the Same Road"
+title: "Five Years on the Same Road"
 description: Tamhini Ghat on a Royal Enfield Interceptor 650 and a Triumph Street Triple 765 R — five years on the 47km between Paradise Café and Orchard Café.
 publishDate: 2026-08-24
 tags: ["Motorcycles"]

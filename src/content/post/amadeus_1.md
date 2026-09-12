@@ -1,5 +1,5 @@
 ---
-title: "Amadeus — F. Murray Abraham and Antonio Salieri"
+title: "Amadeus"
 description: "Amadeus and F. Murray Abraham as Antonio Salieri — the 1984 film I found alone in Bhilai in 2013, and what it understands about jealousy."
 publishDate: 2026-08-27
 tags: ["Film & Series"]

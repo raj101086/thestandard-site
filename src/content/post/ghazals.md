@@ -1,5 +1,5 @@
 ---
-title: "Awargi — How Ghazals Found Me"
+title: "Awargi"
 description: "A personal look at ghazals, Jagjit Singh, Ghulam Ali and Urdu poetry, and how songs like Koi Fariyaad and Yeh Dil Yeh Pagal Dil made the timeless beauty of ghazals part of my life."
 publishDate: 2026-08-28
 tags: ["Music"]

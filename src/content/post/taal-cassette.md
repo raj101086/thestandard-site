@@ -1,5 +1,5 @@
 ---
-title: "The Last Cassette I Remember — Taal, 1999"
+title: "The Last Cassette I Remember"
 description: "Taal, A.R. Rahman and a white Ambassador in Hyderabad in the winter of 1999. The last cassette I remember, and it wasn't even ours."
 publishDate: 2026-09-08
 tags: ["Music"]
