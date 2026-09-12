@@ -1,5 +1,5 @@
 ---
-title: "Mashooqa — Five Years with the Royal Enfield Interceptor"
+title: "Mashooqa"
 description: "Five years with the Royal Enfield Interceptor 650 — why I still own a motorcycle I have every reason to sell."
 publishDate: 2026-06-10
 tags: ["Motorcycles"]
