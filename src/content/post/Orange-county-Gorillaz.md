@@ -1,6 +1,6 @@
 ---
-title: "Orange County — The Happiest Sad Song Gorillaz Have Made"
-description: "Orange County is the best thing on Gorillaz' new album The Mountain. Anoushka Shankar's sitar, a whistle you can't shake, and a vocal from Damon Albarn that sounds like it's coming from another room."
+title: "Orange County"
+description: "Orange County is the happiest sad song Gorillaz have made, with a Damon Albarn vocal that sounds like it's coming from another room."
 publishDate: 2026-09-22
 tags: ["Music"]
 img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1789898657/IMG_0003_c46wly.jpg"
