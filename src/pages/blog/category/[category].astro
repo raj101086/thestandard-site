@@ -23,16 +23,29 @@ export async function getStaticPaths() {
     let filtered: { id: string; title: string; description: string; publishDate: Date; img: any; link: string; tags: string[] }[] = [];
 
     if (category === "Photography") {
-      filtered = allPhoto
-        .map(s => ({
-          id: s.id,
-          title: s.data.title,
-          description: s.data.description || "",
-          publishDate: s.data.date,
-          img: s.data.cover,
-          link: `/photography/${s.id}`,
-          tags: ["Photography"],
-        }))
+      const photoEssays = allPhoto.map(s => ({
+        id: s.id,
+        title: s.data.title,
+        description: s.data.description || "",
+        publishDate: s.data.date,
+        img: s.data.cover,
+        link: `/photography/${s.id}`,
+        tags: ["Photography"],
+      }));
+
+      const photoArticles = allPosts
+        .filter(post => post.data.tags?.includes("Photography"))
+        .map(post => ({
+          id: post.id,
+          title: post.data.title,
+          description: post.data.description || "",
+          publishDate: post.data.publishDate,
+          img: post.data.img,
+          link: `/blog/${post.id}`,
+          tags: post.data.tags || [],
+        }));
+
+      filtered = [...photoEssays, ...photoArticles]
         .sort((a, b) => b.publishDate.valueOf() - a.publishDate.valueOf());
     } else {
       filtered = allPosts
@@ -52,10 +65,10 @@ export async function getStaticPaths() {
     const totalPages = Math.max(1, Math.ceil(filtered.length / POSTS_PER_PAGE));
 
     return {
-    params: { category: slug },
-    props: { category, allPosts: filtered, currentPage: 1, totalPages }
-  };
-});
+      params: { category: slug },
+      props: { category, allPosts: filtered, currentPage: 1, totalPages }
+    };
+  });
 }
 
 interface PostItem {
