@@ -17,7 +17,7 @@ export async function getStaticPaths() {
     "Photography", "Books", "Coffee & Food", "Travel", "Watches"
   ];
 
-  return categories.flatMap(category => {
+  return categories.map(category => {
     const slug = category.toLowerCase().replace(/[^a-z0-9]+/g, '-');
 
     let filtered: { id: string; title: string; description: string; publishDate: Date; img: any; link: string; tags: string[] }[] = [];
@@ -51,11 +51,11 @@ export async function getStaticPaths() {
 
     const totalPages = Math.max(1, Math.ceil(filtered.length / POSTS_PER_PAGE));
 
-    return Array.from({ length: totalPages }, (_, i) => ({
-      params: { category: slug },
-      props: { category, allPosts: filtered, currentPage: i + 1, totalPages }
-    }));
-  });
+    return {
+    params: { category: slug },
+    props: { category, allPosts: filtered, currentPage: 1, totalPages }
+  };
+});
 }
 
 interface PostItem {
