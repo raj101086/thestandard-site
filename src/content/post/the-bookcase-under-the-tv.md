@@ -5,7 +5,7 @@ publishDate: 2026-09-30
 tags: ["Books"]
 img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1790761193/7e8fc52d-5ef2-4986-8423-798bd79732d0_nirrxt.jpg"
 img_alt: "The glass-fronted bookcase under the TV at home in Bhilai, still full of paperbacks"
-img_position: "50% 65%"
+img_position: "50% 17%"
 featured: false
 ---
  
