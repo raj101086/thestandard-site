@@ -1,6 +1,6 @@
 ---
-title: "Longines Avigation BigEye — The Watch I Keep Not Buying"
-description: "The Longines Avigation BigEye has been on my list since a GQ page in 2022, and three days before I turn forty, I still can't talk myself into buying it."
+title: "The BigEye"
+description: "I've wanted the Longines Avigation BigEye since 2022. I turn forty this week, and I still haven't bought it."
 publishDate: 2026-10-07
 tags: ["Watches"]
 img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1791371797/longines-avigation-bigeye-l2-816-4-53-2-detailed-view-2000x2000-1-d3a737_rz9vfv.avif"
