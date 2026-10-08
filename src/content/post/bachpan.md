@@ -8,9 +8,7 @@ img_alt: "Three friends silhouette"
 featured: false
 ---
 
-There are songs that wait.
-
-You hear them, you love them, you add them to a playlist and move on. Years pass. And then one day something happens and the song finds you again, and this time it means something else entirely.
+There are songs that wait. You hear them, you love them, you add them to a playlist and move on. Years pass. And then one day something happens and the song finds you again, and this time it means something else entirely.
 
 Bachpan from Hunterrr has been in my playlist since 2015. I first heard it watching the film in Bhilai. I loved it immediately, melancholic, beautifully written, unlike anything else in the movie. I thought I understood it.
 
@@ -26,7 +24,7 @@ For all my flaws, I always thought of him as a better version of me. Kinder, wis
 
 The last time I saw him was in Bhilai in February 2021. I was returning the keys to his car, which I had borrowed for a couple of days. We hugged, said we'd meet soon — he had just quit his job in Chennai and was moving back to Bhilai to start something of his own. Two months later, in April, he was gone.
 
-People remember someone by different things. Whenever I hear an old Dev Anand song I think of my grandmother, sitting somewhere, singing along to her favourite actor. She's been gone for twenty-five years but that memory is still there, clear as anything.
+People remember someone by different things. Whenever I hear an old Dev Anand song I think of [my grandmother](/blog/sambar), sitting somewhere, singing along to her favourite actor. She's been gone for twenty-five years but that memory is still there, clear as anything.
 
 Whenever I hear Bachpan, I remember Dhruva. College group studies the night before an exam, panicking once it was over about whether we'd passed. Cricket matches that had no particular end. Planning for the future. Travelling. Playing PlayStation. All of it comes back.
 
@@ -36,7 +34,7 @@ The film Hunterrr is about Mandar, a self-confessed pleasure-seeker who holds no
 
 I recognised something in that. I've lived most of my life in my own world, carefree, not thinking too hard about what others feel or expect. Grief doesn't check whether you're ready. It arrives anyway.
 
-That's where Bachpan lives. It's a song about childhood, friendship, and the cruel realization that death doesn't follow the rules you believed in as a child. When we were young, death was a game. Someone pointed a finger, made a gun sound, and you fell dramatically into the dust. Everyone laughed. A minute later you were all back on your feet.
+That's where Bachpan lives. It's a song about childhood, friendship, and the cruel realisation that death doesn't follow the rules you believed in as a child. When we were young, death was a game. Someone pointed a finger, made a gun sound, and you fell dramatically into the dust. Everyone laughed. A minute later you were all back on your feet.
 
 <div class="lyrics">
 कानी आँख से एआईएम लगा के धाम से गोली चला दी<br>
@@ -47,7 +45,7 @@ That's where Bachpan lives. It's a song about childhood, friendship, and the cru
 
 Then you grow up. One day someone really leaves. And the game turns out to have been a lie all along.
 
-I was in Pune during the lockdown, alone, while everyone else was in Bhilai. Dhruva had been in hospital for more than two weeks. Updates came through our close friends group on WhatsApp — that was the only way I knew what was happening.
+I was in Pune during the lockdown, alone, while everyone else was in Bhilai. Dhruva had been in hospital for more than two weeks. Updates came through our close friends' group on WhatsApp, and that was the only way I knew what was happening.
 
 On the night of the 24th, a message came in saying he was improving. I turned to my girlfriend and said, bhai thik ho jayega lagta hai. He's going to be fine.
 
