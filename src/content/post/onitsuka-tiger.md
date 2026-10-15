@@ -1,6 +1,6 @@
 ---
 title: "Onitsuka Tiger Mexico 66 SD Vintage — My First Pair"
-description: "Onitsuka Tiger Mexico 66 SD Vintage — a shoe from 1966 that still stops people on the street. A first pair, an honest take."
+description: "Onitsuka Tiger Mexico 66 SD Vintage in cream and green, my first pair, bought on a trip to the Phoenix Mall store that was meant to be for my girlfriend's dad."
 publishDate: "2026-05-30T10:00:00"
 featured: false
 tags: ["Fashion"]
@@ -8,18 +8,20 @@ img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1780458816/Onitsuka_Tig
 img_alt: "Onitsuka Tiger Mexico 66 SD Vintage in cream and green"
 ---
 
-I bought my first pair of Onitsuka Tigers last week: the Mexico 66 SD Vintage.
+I bought my first pair of Onitsuka Tigers in May, the Mexico 66 SD Vintage in cream and green, and I wasn't even the one who was supposed to be shopping.
 
-Friends had been telling me for years that Onitsuka Tigers were worth it. I believed them in theory but never enough to actually buy a pair. What finally pushed me was my girlfriend telling me her dad had spotted someone wearing a pair and wanted one for himself. Would I come along to the store? We went to the Onitsuka Tiger store at Phoenix Mall in Viman Nagar — I had no plans to buy anything. Then I tried a pair on. That was it. There was no real deliberation after that. Her dad got his pair, I got mine, and we walked out having spent more than either of us planned.
+Friends had been telling me for years that Onitsuka Tigers were worth it, and none more than my friend Sourabh, who rode [Spiti](/blog/spiti-part-1) with me. He used to rave about them, though he hasn't bought a pair himself recently. He lives in Bhilai, where the only option is to order online, and the model he likes is often out of stock in his size. I believed them in theory but never enough to actually buy a pair. What finally got me into a store was my girlfriend's dad. He'd spotted someone wearing a pair and wanted one for himself, and she asked if I'd come along. We went to the Onitsuka Tiger store at Phoenix Mall in Viman Nagar, and I had no plans to buy anything. Then I tried a pair on, and that was the end of the plan. Her dad got his pair, I got mine, and we walked out having spent more than either of us had planned.
 
-They're not cheap. But once you have them on, the price stops feeling like a stretch.
+I took a 41. I tried the 42 as well, but it was slightly loose at the back when I walked. I have wide feet, so I usually buy a size up to stop shoes from biting, but the 41 was snug without biting anywhere. If you're buying, don't wait too long. Onitsuka Tigers sell out fast, especially in 41 and 42, the most common sizes for Indian men.
 
-They're light. Lighter than they look. The leather is soft from day one, no breaking-in period, and they sit on the foot in a way that just works. I wore them all day without thinking about them, which is about the best thing you can say about a shoe.
+Mine cost ₹18,500, and her dad's, a different model, was around ₹16,500. They're not cheap, but once you have them on, the price stops feeling like a stretch. They're lighter than they look, and the leather is soft from day one, so there was no breaking-in period. The first time I wore them, I wore them all day without thinking about them, which is about the best thing you can say about a shoe.
 
-The silhouette is from 1966 and it still looks right. Clean lines, the stripe, nothing extra. Some designs age because they chase trends. This one didn't bother.
+The design goes back to 1966. Onitsuka Tiger developed the Mexico 66 for athletes heading to the 1968 Olympics in Mexico City, and it was the first shoe to carry the Tiger Stripes, the crossed stripes on the side that are still on every pair. It got a second life decades later, when Uma Thurman wore a yellow and black pair in Kill Bill: Volume 1. Sixty years on, the silhouette still looks right, with clean lines, the stripes and nothing extra.
 
-Her dad wears his to work every day. That's the thing about a genuinely good design — it doesn't belong to a particular age or occasion. A sneaker that works equally well on a 25-year-old on a weekend and a 60-year-old at the office isn't doing anything clever. It's just that good.
+That's probably why it works for both of us. My girlfriend's dad wears his to work every day, while mine are for everything else, so it isn't a shoe for one age or one occasion. The cream and green is understated enough to go with most things and distinctive enough that people notice. They look best with jeans or chinos. Some people wear them with trousers as well, but that's not my cup of tea. People have asked me about them more than once, which hasn't happened with any other shoe I've owned, and the comments are always the same: great colour, which model is it, and what did it cost?
 
-The colourway I went with is the cream and green, understated enough to go with most things, distinctive enough that people notice. I've had two separate conversations about them with strangers since buying them, which has never happened with any other shoe I've owned.
+The only place they don't go is on the bike. I wear them whenever I'm not riding. The leather is soft, and I want to keep it soft and clean, and if I rode in them, the left shoe would wear out fast from the gear shifting. This is a shoe to be worn and walked in, not ridden in.
 
-It's been a week. They're already getting daily wear.
+If your friends have been telling you for years that Onitsuka Tigers are worth it, believe them. Just get to the store before the 41s run out.
+
+As for her dad, his have barely left his feet since that day, and at this rate he'll wear them out soon. That means I'll probably be going shopping with him again, and who knows, I might come back with a pair of my own, just like last time.
