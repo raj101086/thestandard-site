@@ -29,7 +29,7 @@ My own copy of MTV Best didn't survive. After five or six years of heavy use, th
 
 What I didn't lose were all the artists I'd discovered through that CD, and one of them was Bryan Adams. MTV Best was my introduction to him, and I'm still a fan. When he toured India in October 2018, I went to Bangalore from Pune for the show and took my brother along. It was at Ozone Urbana, on the far outskirts of the city near the airport, and it was an open-air concert, so flights kept passing low overhead and drowning him out. It was a fever dream, a nostalgia overdose. He and his band are great performers, and he played all the ones I'd grown up with: 18 Til I Die, Please Forgive Me, Summer of '69, (Everything I Do) I Do It for You, Let's Make a Night to Remember, Open Road, Cloud Number Nine. The Bangalore crowd did their part and made every song memorable.
 
-Afterwards I told the girl I'd burned that mix for, still a friend all these years later, that my brother and I had been to see Bryan Adams, and she was jealous. She lives in the States and still hadn't been to one of his concerts.
+Afterwards I told the girl I'd burned that mix for, still a friend all these years later, that my brother and I had been to see Bryan Adams, and she was a bit jealous. She lives in the States and still hadn't been to one of his concerts.
 
 The whole of MTV Best may still exist, too. She says the copy she made from mine is sitting in her Google Drive, all 150-odd songs of it. If it is, then she still has my MTV Best more than twenty years later, and I don't. Just before sitting down to write this, I messaged her to ask for the songs. She hasn't replied yet, and I'm starting to have my doubts that it's there at all.
 
