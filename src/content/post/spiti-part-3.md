@@ -1,11 +1,13 @@
 ---
-title: "Spiti — Part Three"
-description: "The road to Chandratal, a lake that made the whole journey worth it, and a night I still think about."
-publishDate: 2026-06-25
+title: "Spiti — Part One"
+description: "Twelve days through Spiti Valley in 2015, on a rented Bullet 500, with a paper map that didn't survive the trip."
+publishDate: 2026-06-19
 tags: ["Travel"]
-img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1782282775/Solitude_qdm0m6.jpg"
-img_alt: "Sitting by Chandratal Lake"
+img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1781851359/IMG_2211_mexfyh.jpg"
+img_alt: "Spiti Valley, mountain road"
 featured: false
+series: "Spiti"
+seriesPart: 3
 ---
 
 The left turn toward Chandratal, just after Kunzum Pass, was the worst road we had encountered on the entire trip. And by that point we knew what bad roads looked like.

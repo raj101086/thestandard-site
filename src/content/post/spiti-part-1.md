@@ -6,6 +6,8 @@ tags: ["Travel"]
 img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1781851359/IMG_2211_mexfyh.jpg"
 img_alt: "Spiti Valley, mountain road"
 featured: false
+series: "Spiti"
+seriesPart: 1
 ---
 
 There's a lot written about Spiti now. Travel vlogs, drone footage, the same ten viewpoints shot from the same ten angles. None of that is what I think about when I think about Spiti.

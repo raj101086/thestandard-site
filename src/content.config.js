@@ -13,6 +13,8 @@ const post = defineCollection({
     img_alt: z.string().optional(),
     img_position: z.string().optional(),
     featured: z.boolean().optional(),
+    series: z.string().optional(),
+    seriesPart: z.number().optional(),
   }),
 });
 

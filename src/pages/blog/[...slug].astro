@@ -30,14 +30,31 @@ const wordCount = (entry.body || "")
   .filter(Boolean).length;
 const readingTime = Math.max(1, Math.round(wordCount / 200));
 
+const CATEGORIES = [
+  "Fashion", "Motorcycles", "Film & Series", "Music",
+  "Photography", "Books", "Coffee & Food", "Travel", "Watches"
+];
+const primaryTag = entry.data.tags?.[0];
+const categoryHref = primaryTag && CATEGORIES.includes(primaryTag)
+  ? `/blog/category/${primaryTag.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`
+  : null;
+
 const allPosts = await getCollection("post");
+
+const currentSeries = entry.data.series;
+
+const rank = (p) => {
+  if (currentSeries && p.data.series === currentSeries) return 0;
+  if (p.data.tags?.[0] === primaryTag) return 1;
+  return 2;
+};
+
 const relatedPosts = allPosts
   .filter(p => p.id !== entry.id)
   .sort((a, b) => {
-    const sameCategory = a.data.tags?.[0] === entry.data.tags?.[0];
-    const bSameCategory = b.data.tags?.[0] === entry.data.tags?.[0];
-    if (sameCategory && !bSameCategory) return -1;
-    if (!sameCategory && bSameCategory) return 1;
+    const diff = rank(a) - rank(b);
+    if (diff !== 0) return diff;
+    if (rank(a) === 0) return (a.data.seriesPart ?? 0) - (b.data.seriesPart ?? 0);
     return b.data.publishDate.valueOf() - a.data.publishDate.valueOf();
   })
   .slice(0, 3)
@@ -63,8 +80,10 @@ const relatedPosts = allPosts
     <header class="post-header">
       <div class="post-header-split">
         <div class="post-header-left">
-          {entry.data.tags && entry.data.tags.length > 0 && (
-            <div class="post-eyebrow">{entry.data.tags[0]}</div>
+          {primaryTag && (
+            categoryHref
+              ? <a href={categoryHref} class="post-eyebrow post-eyebrow-link">{primaryTag}</a>
+              : <div class="post-eyebrow">{primaryTag}</div>
           )}
           <h1 class="post-title font-brand">{entry.data.title}</h1>
           <div class="post-meta">
@@ -197,6 +216,12 @@ const relatedPosts = allPosts
     color: #B8986A;
     margin-bottom: 1rem;
   }
+  .post-eyebrow-link {
+    align-self: flex-start;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .post-eyebrow-link:hover { color: #E8E2D6; }
   .post-title {
     font-size: clamp(28px, 4vw, 48px);
     line-height: 1.1;

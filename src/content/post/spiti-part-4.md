@@ -1,11 +1,13 @@
 ---
-title: "Spiti — Part Four"
-description: "The morning after Chandratal, the road back, and everything the mountains left behind."
-publishDate: 2026-06-28
+title: "Spiti — Part One"
+description: "Twelve days through Spiti Valley in 2015, on a rented Bullet 500, with a paper map that didn't survive the trip."
+publishDate: 2026-06-19
 tags: ["Travel"]
-img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1782730709/1000288220_wfki20.jpg"
-img_alt: "Manikaran Gurudwara, Parvati Valley"
+img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1781851359/IMG_2211_mexfyh.jpg"
+img_alt: "Spiti Valley, mountain road"
 featured: false
+series: "Spiti"
+seriesPart: 4
 ---
 
 The night at Chandratal was rough. Strong winds hit the tent from every direction, the kind that make you lie there wondering if the whole thing is going to lift off the ground. Sleep at that altitude is never deep, you drift off and then you're just awake again, staring at the canvas. I woke up at 4 and had no interest in stepping outside into the dark and the cold, so I lay there until first light.

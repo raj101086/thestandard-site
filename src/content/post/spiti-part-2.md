@@ -1,11 +1,13 @@
 ---
-title: "Spiti — Part Two"
-description: "Four days in Kaza, the heartland of Spiti, and the places that made us not want to leave."
-publishDate: 2026-06-22
+title: "Spiti — Part One"
+description: "Twelve days through Spiti Valley in 2015, on a rented Bullet 500, with a paper map that didn't survive the trip."
+publishDate: 2026-06-19
 tags: ["Travel"]
-img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1782113914/Key_c3ohfk.jpg"
-img_alt: "Key Monastery, Spiti Valley"
+img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1781851359/IMG_2211_mexfyh.jpg"
+img_alt: "Spiti Valley, mountain road"
 featured: false
+series: "Spiti"
+seriesPart: 2
 ---
 
 [We had ridden into Kaza in complete darkness](/blog/spiti-part-1) and seen nothing of it. The next morning I stepped outside and stopped.
