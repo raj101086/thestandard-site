@@ -1,6 +1,6 @@
 ---
 title: "MTV Best"
-description: "MTV Best, the ₹20 bootleg MP3 CD from 2003 that introduced me to Bryan Adams and English music, and the last copy of it, which may be sitting in someone else’s Google Drive."
+description: "MTV Best, the ₹20 bootleg MP3 CD from 2003 that introduced me to Bryan Adams and English music, and the copy of it that survived in a friend’s Google Drive."
 publishDate: 2026-10-17
 tags: ["Music"]
 img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1792131867/pexels-poranimm-athithawatthee-284222-851177_smbg3t.jpg"
@@ -34,3 +34,5 @@ Afterwards I told the girl I'd burned that mix for, still a friend all these yea
 The whole of MTV Best may still exist, too. She says the copy she made from mine is sitting in her Google Drive, all 150-odd songs of it. If it is, then she still has my MTV Best more than twenty years later, and I don't. Just before sitting down to write this, I messaged her to ask for the songs. She hasn't replied yet, and I'm starting to have my doubts that it's there at all.
 
 If she sends them, I'd like to burn them onto a CD and call it MTV Best again. The songs would be the same files, copied bit for bit from the ones I had in 2003, under the same name. Whether it would be the same CD is a modern take on the Ship of Theseus, and I don't have an answer yet.
+
+P.S. She replied after this post went up and sent me the files. There are 107 songs, not the 150-odd I remembered, with gaps here and there, but most of the ones I listened to the most are there, minus a few. The files still carry their old track numbers. The Lady in Red is 86, just as I said. Hotel California is 68, so I was off by one. The Ship of Theseus question just got harder, now that forty-odd planks are missing. She also insisted that I edit this post, so here it is.
