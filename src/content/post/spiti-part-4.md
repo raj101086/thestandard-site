@@ -30,6 +30,8 @@ The next morning we stopped at Vashisht on the way out of Manali, just 4 or 5 ki
 
 We left Vashisht and the trip was winding down and neither of us was ready for it to end. We were like kids in a candy store who know the shop is about to close, one more road, one more place, one more reason to not point the bike toward Shimla just yet. Somewhere on the way we remembered Malana. A village hidden high in the mountains near Kasol, supposedly one of the oldest democracies in the world, its people said to be descendants of Alexander the Great, with its own laws where outsiders are considered untouchable and fined just for touching things. We had read about it for years. The turn toward Kasol was right there. We took it.
 
+Right at the turn, near Bhuntar, the Parvati meets the Beas, and we stopped at the sangam. A man was parking his bike by the road, about to start the walk up the hill to where he stayed. He was an engineer at a hydropower plant, and we got talking. He seemed a little frustrated. "You're here for two weeks," he told us. "That's enough to enjoy it. Nobody can stay in these mountains for long. They take a toll on you, because everything is difficult. Look at me. I have to climb up and down this hill just to get home."
+
 The road was beautiful. Tall pines, cool wind, the kind of gentle scenery that felt like a different country after the arid landscape of Kaza. When we arrived we stopped at a café and asked about getting to Malana. The owner looked at us and said nothing. We asked someone else. The answer was blunt, long trek, not guaranteed entry, probably not worth it. We weren't in the mood to gamble a full day on a maybe. We dropped the plan.
 
 Someone pointed us toward Manikaran instead.
@@ -46,7 +48,7 @@ We rode back to Kasol and checked into a riverside hotel. That evening, sitting 
 
 <img src="https://res.cloudinary.com/dpsbm1jkq/image/upload/v1782731056/Screenshot_20260629_163206_Instagram_owbkm7.jpg" alt="Riverside hotel, Kasol" />
 
-The next morning we rode from Kasol to Shimla. By the time we arrived, the Bullet was finished. The brakes were almost gone, the front forks were leaking, the rear indicator had been knocked out somewhere on the road. It had carried two grown men across twelve days and some of the worst roads in the country without giving up. We rode it to the rental shop and handed it back. The owner looked it over, checked the damage, and didn't take too much from the deposit. Decent of him.
+The next morning we rode from Kasol to Shimla, and somewhere on that last leg we finally got to eat an apple. It remains one of the best I've ever had, fresh and juicy, the kind we hardly get in the cities. By the time we arrived, the Bullet was finished. The brakes were almost gone, the front forks were leaking, the rear indicator had been knocked out somewhere on the road. It had carried two grown men across twelve days and some of the worst roads in the country without giving up. We rode it to the rental shop and handed it back. The owner looked it over, checked the damage, and didn't take too much from the deposit. Decent of him.
 
 We found a hotel near Mall Road and walked around Shimla that evening. By pure chance we ran into an old friend from college, someone we hadn't seen since graduation. That kind of coincidence feels different when you're at the end of a trip like that. We had dinner at Indian Coffee House. It was nowhere near as good as the one in Bhilai. And at some point during the evening, a monkey walked up and took the softy ice cream right out of my hand.
 

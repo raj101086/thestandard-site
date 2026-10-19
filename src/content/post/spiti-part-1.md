@@ -24,7 +24,7 @@ We flew Raipur to Delhi, took an overnight bus from Delhi to Shimla, and in Shim
 
 Before we rode out of Shimla I stopped at a local travel store and bought a proper paper road map of Himachal Pradesh. Mobile networks in the mountains were patchy, data was expensive, and Google Maps wasn't the dependable crutch it is now.
 
-That folded map was our lifeline. For three days it guided us through winding mountain roads, river valleys, and villages that looked untouched by time. On the fourth, we stopped at a junction to figure out which way to go. I reached into my pocket for the map. It wasn't there. We looked at each other, said something unprintable, and then laughed. We'd figure it out.
+That folded map was our lifeline. On the first day it took us to Hatu Peak, a short detour above Narkanda. The road to the top was narrow and kept doubling back on itself, and at the summit a few ponies were grazing, paying no attention to us. It seemed magical, the perfect start to the trip. Over the next two days the map guided us through winding mountain roads, river valleys, and villages that looked untouched by time. On the fourth, we stopped at a junction to figure out which way to go. I reached into my pocket for the map. It wasn't there. We looked at each other, said something unprintable, and then laughed. We'd figure it out.
 
 <img src="https://res.cloudinary.com/dpsbm1jkq/image/upload/v1781851357/IMG_2204_jzmb8n.jpg" alt="The road through Spiti Valley" />
 
@@ -33,6 +33,8 @@ From then on we navigated the oldest way there is, stopping anyone we passed and
 That method had its flaws. On one occasion, a couple of wrong turns led us up some genuinely bad roads, only to arrive at an army camp on top of a mountain that had nothing to do with our route. An Indian army officer stopped us, mostly confused. "You can't be here." Fair enough. He pointed us back the way we'd come. We were embarrassed, a little annoyed at the lost time, and then almost immediately found it funny. That seemed to be the pattern of this trip.
 
 The road from Shimla to Tabo is one of the most beautiful stretches I've ridden. A river running alongside on one side, mountains rising on the other, the kind of landscape I'd only seen in photographs and movies until then. First time up north for me, and it showed why people ride to the mountains year after year.
+
+It was apple-picking season, and the orchards along the road were full. We tried to buy a few more than once, and nobody would sell us a single apple. I still don't know why. Everything was being packed into crates and loaded onto trucks, most likely for export.
 
 We'd decided on one rule: start early, ride until it got close to dark, then find a stay wherever we'd landed for the day. I wasn't entirely sold on the plan, but went along with it. My friend was the salt-of-the-earth type, the kind who believed in living in the moment, at least back then. This plan worked better than it should have. Until Kaza we mostly stayed in government circuit houses and guest houses, usually empty, meant for visiting officials, but a quiet word with the caretaker got us a room, hot food, and a fraction of what a hotel would have charged. Not something I'd necessarily recommend now. At the time, it felt like exactly the right way to be doing it.
 
