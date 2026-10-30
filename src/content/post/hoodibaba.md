@@ -3,9 +3,9 @@ title: "Hoodibaba"
 description: "The Bajaj Caliber 115, the Hoodibaba, my first motorcycle, bought on 10 July 2003 after my bicycle was stolen, and the 150,000 kilometres it did between my brother and me."
 publishDate: 2026-10-30
 tags: ["Motorcycles"]
-img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1793342522/8854acc3-8a3c-4e20-a0e7-118274298d07_xkvodu.jpg"
-img_alt: "Me on the black Bajaj Caliber 115, ready to leave for my first day of college"
-img_position: "50% 45%"
+img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1793345812/hoodibaba-hero_e6ynpe.png"
+img_alt: "Hoodibaba! in large type over green stripes, with Bajaj Caliber 115 and 10 July 2003, Bhilai"
+img_position: "50% 50%"
 featured: false
 ---
 
@@ -30,5 +30,7 @@ Once I had it, I rode that bike everywhere. I rode it to school and coaching, an
 There were a number of accidents too, each one freakier than the last. The one I remember best was our own version of the infamous scene in Kaho Naa... Pyaar Hai where Hrithik's motorcycle skids and he slides off a bridge, minus the bridge. My friend Tushaar, who's no longer with us, loved speed as much as I did. One day we were flying along when a milkman, with milk cans hanging on both sides of his cycle, came from the front and took an immediate left. I braked, but the drum brakes weren't enough to stop in time. We slammed into his cycle and skidded along the road with it, and every can of milk spilled. There I was, picking up my motorcycle and checking it for damage, and there was Tushaar, having a fight with the milkman.
 
 I rode the Caliber for seven years, from 2003 until 2010, when I left Bhilai for Jamshedpur. I finished my 12th on it. My mother still has a framed photo of me sitting on it, ready to leave for my first day of college. Then came my engineering, and after that I rode it to my first job every morning. Over those years I did [all sorts of modifications](/blog/cost-of-ownership) to it, from low-riser handlebars to lights around the rear wheel that lit up whenever I braked. Funnily enough, the two motorcycles I own now are both completely stock. After me, my brother did his engineering on it too. It worked fine until the end. When he moved to Bangalore he took it with him, used it for a year or so and finally sold it for next to nothing. By then it had close to 150,000 kilometres on it.
+
+![Two prints from my mother's frame, with me on the Bajaj Caliber 115 on my first day of college at the bottom](https://res.cloudinary.com/dpsbm1jkq/image/upload/v1793345909/8854acc3-8a3c-4e20-a0e7-118274298d07_xkvodu.jpg)
 
 It took me through everything: good times and bad times, broke days, heartbreak, all those rides and all those accidents, and it rode on through all of it and did its job. My brother and I have both come a long way since the days of riding the Hoodibaba through the lanes of Bhilai, but we'll always have a soft corner for it. It was the first bike that was ours. I still feel good whenever I see one on the road, and yes, you can still see them. That's how good that engine was.
