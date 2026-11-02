@@ -1,6 +1,6 @@
 ---
 title: "Gattaca"
-description: "Gattaca turns thirty next year. Its version of the future feels less like fiction now than it did then — and it's still the most human science fiction film ever made."
+description: "Gattaca and ‘there is no gene for the human spirit’: why the 1997 film still feels like the most human science fiction ever made, nearly thirty years on."
 publishDate: 2026-07-19
 tags: ["Film & Series"]
 img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1784534974/2239005_sbnrea.png"

@@ -1,5 +1,5 @@
 ---
-title: "Orange County"
+title: "Orange County — Gorillaz"
 description: "Orange County is the happiest sad song Gorillaz have made, with a Damon Albarn vocal that sounds like it's coming from another room."
 publishDate: 2026-09-22
 tags: ["Music"]

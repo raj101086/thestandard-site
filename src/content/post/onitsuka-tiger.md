@@ -1,6 +1,6 @@
 ---
 title: "Onitsuka Tiger Mexico 66 SD Vintage — My First Pair"
-description: "Onitsuka Tiger Mexico 66 SD Vintage in cream and green, my first pair, bought on a trip to the Phoenix Mall store that was meant to be for my girlfriend's dad."
+description: "Onitsuka Tiger Mexico 66 SD Vintage review: why I took a 41 instead of a 42, the ₹18,500 price, and how the cream and green pair wears day to day."
 publishDate: "2026-05-30T10:00:00"
 featured: false
 tags: ["Fashion"]
