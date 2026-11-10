@@ -3,7 +3,7 @@ title: "The Bookcase Under the TV"
 description: "The Odessa File by Frederick Forsyth was the first novel I read, at sixteen, picked at random from a bookcase in Bhilai during a summer too hot for cricket."
 publishDate: 2026-09-30
 tags: ["Books"]
-img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1790761193/7e8fc52d-5ef2-4986-8423-798bd79732d0_nirrxt.jpg"
+img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1794289619/IMG_5076_gfq0tg.jpg"
 img_alt: "The glass-fronted bookcase under the TV at home in Bhilai, still full of paperbacks"
 img_position: "50% 17%"
 featured: false
