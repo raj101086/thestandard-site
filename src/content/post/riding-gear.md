@@ -1,12 +1,12 @@
 ---
-title: "Riding Gear: The Hits and the Misses"
-description: "Riding gear after five years and 50,000 kilometres: the Aspida Tourance, KYT R2R Pro, Shima boots, Ixon gloves and Bluarmor C30 that earned their place, and the DSG jacket that didn't."
+title: "Riding Gear in India: Five Years of Hits and Misses"
+description: "Riding gear in India after five years and 50,000 km: the Aspida Tourance, KYT R2R Pro, Bluarmor C30, Shima and Ixon gear that worked, and the misses."
 publishDate: 2026-11-10
 tags: ["Motorcycles"]
 img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1794289609/IMG_5040_lxq7t8.jpg"
 img_alt: "Snowpiercer, my Triumph Street Triple 765 R, on the road during the November 2026 ride from Pune to Durg"
 img_position: "50% 50%"
-featured: false
+featured: true
 ---
 
 My first motorcycle, [the Caliber](/blog/hoodibaba), carried three and sometimes four of us to cricket tournaments, with total disregard for safety. We were just dumb. Eighteen years later, when [Mashooqa](/blog/mashooqa-royal-enfield-interceptor) arrived in May 2021, the first things I bought were a helmet and a jacket, ordered online so they'd reach me in Bhilai before I rode her to Pune. Both got a proper test on the first day. I left home at 5 in the morning, it started raining heavily near Chhatrapati Sambhajinagar, and I reached the Lemon Tree there around 8, completely drenched. Five years, two motorcycles and more than 50,000 kilometres later, I've bought a fair amount of riding gear. Some of it was a hit and some of it a miss, and a couple of things from that first order are still with me.
