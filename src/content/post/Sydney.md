@@ -1,6 +1,6 @@
 ---
 title: "Sydney: A Guinness and a Rainbow"
-description: "Sydney in one afternoon: the Opera House from the Quay, the ferry and up close, a Guinness at the Fortune of War, the Harbour Bridge in the rain and a double rainbow."
+description: "Sydney in one afternoon: the Opera House three ways, a Guinness at the Fortune of War, the Harbour Bridge in the rain and a double rainbow."
 publishDate: 2026-11-27
 tags: ["Travel"]
 img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1795601951/IMG_5474_l8t6bg.jpg"
@@ -19,11 +19,13 @@ From Central I worked out the local trains myself and found one to Mascot, near 
 
 ![Red-Haired Shanks at the 13th-floor window of my hotel in Mascot, Sydney](https://res.cloudinary.com/dpsbm1jkq/image/upload/v1795657938/IMG_5412_j5olfl.jpg)
 
-It felt like a summer afternoon, and it seemed to have brought thousands of tourists to the same place as me. Circular Quay was buzzing. A violinist was playing All of Me by John Legend, and a little further along a band was playing a song I can't recall now. Right outside the station a massive cruise liner was docked, and just to the right of it was the Opera House. My picture of it came from years of cricket broadcasts and, mostly, from the 2000 Sydney Olympics, watched on television back in Bhilai. In person it was slightly underwhelming. I took a few photos anyway, and that's when I missed having a shorter lens. With only the 55-200, street photography meant walking back to fit anything into the frame, but I had to make it work, and I was happy to walk.
+It felt like a summer afternoon, and it seemed to have brought thousands of tourists to the same place as me. Circular Quay was buzzing. A violinist was playing All of Me by John Legend, and a little further along a band was playing a song I can't recall now. Right outside the station a massive cruise liner was docked, and just to the right of it was the Opera House.
+
+My picture of it came from years of cricket broadcasts and, mostly, from the 2000 Sydney Olympics, watched on television back in Bhilai. In person it was slightly underwhelming. I took a few photos anyway, and that's when I missed having a shorter lens. With only the 55-200, street photography meant walking back to fit anything into the frame, but I had to make it work, and I was happy to walk.
 
 I headed for The Rocks Markets, which felt like a flea market, and glanced along the stalls. The Rocks is all small lanes criss-crossing up and down around Argyle Street, and I took a few of them by accident and got lost more than once. That turned out to be the theme of the day. On a trip, I doubt anyone can get lost without finding something new.
 
-The first thing it found me was a pub with a sign calling it Sydney's oldest, the Fortune of War on George Street, so I went in to check. It was packed, but I found a small table for two in the corner, left my bag on it and went to the counter. I got a pint of Guinness, my first in many years, and I loved it. I finished it quickly, and as I stepped back outside, a man passing by told me, "Beautiful beard, baby." That was two compliments in one day, and it wasn't even 3 o'clock.
+The first thing getting lost found me was a pub with a sign calling it Sydney's oldest, the Fortune of War on George Street, so I went in to check. It was packed, but I found a small table for two in the corner, left my bag on it and went to the counter. I got a pint of Guinness, my first in many years, and I loved it. I finished it quickly, and as I stepped back outside, a man passing by told me, "Beautiful beard, baby." That was two compliments in one day, and the afternoon wasn't over yet.
 
 ![A pint of Guinness at the Fortune of War, The Rocks](https://res.cloudinary.com/dpsbm1jkq/image/upload/v1795657942/IMG_5420_ruiulw.jpg)
 
@@ -45,7 +47,9 @@ From there I walked all the way across the Sydney Harbour Bridge towards Milsons
 
 ![A boat tearing through Sydney Harbour, seen from the top of the Harbour Bridge](https://res.cloudinary.com/dpsbm1jkq/image/upload/v1795601950/DSCF9982_ddzhgs.jpg)
 
-Just as I came down the stairs at the far end, it started to rain, and once again the day found me something. I took shelter in a gelato shop. I was hungry by then, because I hadn't had lunch and was running on nothing but breakfast in Newcastle and the Guinness, so I ordered a medium cup with two scoops, and it was yummy. When the rain stopped I walked down to the wharf at Milsons Point and took the ferry back across to Circular Quay, filming the Opera House as we came in. From the water it looked majestic. This was the building I'd seen since childhood on television and in photos, and now it was right in front of me, and I was in awe of it.
+Just as I came down the stairs at the far end, it started to rain, and once again the day found me something. I took shelter in a gelato shop. I was hungry by then, because I hadn't had lunch and was running on nothing but breakfast in Newcastle and the Guinness, so I ordered a medium cup with two scoops, and it was yummy.
+
+When the rain stopped I walked down to the wharf at Milsons Point and took the ferry back across to Circular Quay, filming the Opera House as we came in. From the water it looked majestic. This was the building I'd seen since childhood on television and in photos, and now it was right in front of me, and I was in awe of it.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xLh_iu3NYdk" title="Sydney Opera House from the Milsons Point ferry" allowfullscreen></iframe>
 
@@ -61,6 +65,8 @@ By 7 my legs had had enough. My Apple Health app said I'd walked almost 9.5 kilo
 
 That was also when my X-T30 gave up. It started showing an error and wouldn't take any more pictures. I found out later that it had simply run out of file numbers. It didn't bother me much, because I'd already shot a lot that day.
 
-Hungry again by then, because gelato tastes good but doesn't fill you up, I walked back towards Circular Quay hoping for a table at the Opera Bar, but it was packed to the brim and I had no luck. So I took the train back to Mascot. Leaving the hotel that afternoon, I'd noticed quite a few Asian restaurants nearby, so I checked a few reviews on Google and settled on Great Western, which called itself an authentic Chinese restaurant. I went to see whether it really was, and boy, was it. As soon as I stepped in, I was back in 2017, in one of the restaurants in Dalian from [my time in China](/blog/chinese-hot-pot-my-last-meal). Apart from the missing lazy Susan, everything felt the same: rows and rows of baijiu, Asahi and Harbin beer, and a menu full of dishes I'd loved eating there. I was happy. I ordered a few of them, with an Asahi and a Harbin.
+Hungry again by then, because gelato tastes good but doesn't fill you up, I walked back towards Circular Quay hoping for a table at the Opera Bar, but it was packed to the brim and I had no luck. So I took the train back to Mascot.
 
-The full Opera Bar had sent me to China, the rain had sent me to gelato, and the wrong turns had sent me to a Guinness. It was a wonderful end to a day that had been good to me from the start, and after a hearty dinner my hotel bed was the only thing I was looking for. The next morning I had somewhere to be: the SCG.
+Leaving the hotel that afternoon, I'd noticed quite a few Asian restaurants nearby, so I checked a few reviews on Google and settled on Great Western, which called itself an authentic Chinese restaurant. I went to see whether it really was, and boy, was it. As soon as I stepped in, I was back in 2017, in one of the restaurants in Dalian from [my time in China](/blog/chinese-hot-pot-my-last-meal). Apart from the missing lazy Susan, everything felt the same: rows and rows of baijiu, Asahi and Harbin beer, and a menu full of dishes I'd loved eating there. I was happy. I ordered a few of them, with an Asahi and a Harbin.
+
+It was a wonderful end to a day that had been good to me from the start, and after a hearty dinner my hotel bed was the only thing I was looking for. The next morning I had somewhere to be: [the SCG](/blog/sydney-cricket-ground).
