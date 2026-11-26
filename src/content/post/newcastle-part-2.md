@@ -1,7 +1,7 @@
 ---
 title: "Newcastle: One Last Tooheys Old"
 description: "Newcastle, NSW through a local's eyes: Fort Scratchley, the Pasha Bulker, the Bogey Hole, a thickshake at Jim's, Coal & Cedar and The Grain Store."
-publishDate: 2026-11-26
+publishDate: 2026-11-26T12:00:00
 tags: ["Travel"]
 img: "https://res.cloudinary.com/dpsbm1jkq/image/upload/v1795601955/IMG_5361_pkpqcl.jpg"
 img_alt: "Lake Macquarie in the evening, seen from the club, near Newcastle, NSW"
